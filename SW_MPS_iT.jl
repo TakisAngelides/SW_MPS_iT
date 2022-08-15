@@ -31,5 +31,5 @@ _, psi = run_SW_DMRG(sites, params)
 # Save the MPS as h5 file
 
 f = h5open(mps_file_path, "w")
-write(f, "my_psi", psi)
+write(f, "MPS", psi)
 close(f)
