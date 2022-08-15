@@ -2,7 +2,7 @@ environment = "JULIA_DEPOT_PATH='/lustre/fs23/group/nic/tangelides/.julia:$JULIA
 
 executable = /lustre/fs23/group/nic/tangelides/julia-1.7.2/bin/julia
 
-arguments = /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_Observables_iT.jl $(N) $(x) $(mg) $(D) $(l_0) $(lambda) $(acc) $(ms) $(r) $(choice)
+arguments = /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_Observables_iT.jl $(N) $(x) $(mg) $(D) $(l_0) $(lambda) $(acc) $(ns) $(r) $(choice)
 
 transfer_input_files = /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_Observables_iT.jl
 
