@@ -10,10 +10,10 @@ should_transfer_files = IF_NEEDED
 
 max_retries = 5
 
-error = /lustre/fs23/group/nic/tangelides/Logs/$(Cluster)_$(Process)_N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ms_$(ms)_acc_$(acc)_lam_$(lambda)_r_$(r)_choice_$(choice).error
+error = /lustre/fs23/group/nic/tangelides/Logs/$(Cluster)_$(Process)_N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_choice_$(choice).error
 
-output = /lustre/fs23/group/nic/tangelides/Logs/$(Cluster)_$(Process)_N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ms_$(ms)_acc_$(acc)_lam_$(lambda)_r_$(r)_choice_$(choice).out                    
+output = /lustre/fs23/group/nic/tangelides/Logs/$(Cluster)_$(Process)_N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_choice_$(choice).out                    
 
-log = /lustre/fs23/group/nic/tangelides/Logs/$(Cluster)_$(Process)_N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ms_$(ms)_acc_$(acc)_lam_$(lambda)_r_$(r)_choice_$(choice).log 
+log = /lustre/fs23/group/nic/tangelides/Logs/$(Cluster)_$(Process)_N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_choice_$(choice).log 
 
 queue
