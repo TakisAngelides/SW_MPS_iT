@@ -61,7 +61,7 @@ function DMRG(H, sites, params)
     sweeps = Sweeps(ns) # This is the maximum number of sweeps to be done if accuracy (acc) is not reached
     observer = my_observer(acc, 1000.0, sites, params) # 1000.0 is for initial energy of the algorithm and should be set well above the estimated g.s. energy
     
-    energy, psi = dmrg(H, psi_0, sweeps, ishermitian = true, noise = noise_vector, observer = observer, maxdim = D, write_when_maxdim_exceeds = 80)
+    energy, psi = dmrg(H, psi_0, sweeps, ishermitian = true, noise = noise_vector, observer = observer, maxdim = D)
 
     return energy, psi
 
