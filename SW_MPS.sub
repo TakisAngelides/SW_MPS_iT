@@ -8,9 +8,9 @@ transfer_input_files = /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_MPS_iT.jl
 
 should_transfer_files = IF_NEEDED
 
-mem = 2*($(D)*$(D)*64/1e6)+1000 # DAG nodes log seems to suggest I need *1.5 of this amount 
+# mem = 2*($(D)*$(D)*64/1e6)+1000 
 
-request_memory = $(mem)
+# request_memory = $(mem)
 
 +RequestRuntime = 6.99*24*3600
 
