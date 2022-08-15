@@ -1,14 +1,14 @@
-environment = "JULIA_DEPOT_PATH='/lustre/fs23/group/nic/tangelides/.julia:$JULIA_DEPOT_PATH'"
+environment = "JULIA_DEPOT_PATH='/lustre/fs23/group/nic/tangelides/.julia:$JULIA_DEPOT_PATH' TMPDIR='/lustre/fs23/group/nic/tangelides/SW_MPS_iT'"
 
 executable = /lustre/fs23/group/nic/tangelides/julia-1.7.2/bin/julia
 
-arguments = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.jl $(N) $(x) $(mg) $(D) $(l_0) $(lambda) $(acc) $(ms) $(D_p) $(mg_p) $(r)
+arguments = /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_MPS_iT.jl $(N) $(x) $(mg) $(D) $(l_0) $(lambda) $(acc) $(ms) $(D_p) $(mg_p) $(r) $(silent) $(initial_noise)
 
-transfer_input_files = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.jl
+transfer_input_files = /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_MPS_iT.jl
 
 should_transfer_files = IF_NEEDED
 
-mem = 2*($(D)*$(D)*$(D)*$(D)*64/1e6)+1000 # DAG nodes log seems to suggest I need *1.5 of this amount 
+mem = 2*($(D)*$(D)*64/1e6)+1000 # DAG nodes log seems to suggest I need *1.5 of this amount 
 
 request_memory = $(mem)
 
@@ -16,6 +16,10 @@ request_memory = $(mem)
 
 max_retries = 5
 
-error = /lustre/fs23/group/nic/tangelides/Logs/$(Cluster)_$(Process)_N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ms_$(ms)_acc_$(acc)_lam_$(lambda)_r_$(r).error
+error = /lustre/fs23/group/nic/tangelides/Logs/$(Cluster)_$(Process)_N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ms_$(ms)_acc_$(acc)_lam_$(lambda)_r_$(r)_silent_$(silent)_initial_noise_$(initial_noise).error
+
+output = /lustre/fs23/group/nic/tangelides/Logs/$(Cluster)_$(Process)_N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ms_$(ms)_acc_$(acc)_lam_$(lambda)_r_$(r)_silent_$(silent)_initial_noise_$(initial_noise).out                    
+
+log = /lustre/fs23/group/nic/tangelides/Logs/$(Cluster)_$(Process)_N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ms_$(ms)_acc_$(acc)_lam_$(lambda)_r_$(r)_silent_$(silent)_initial_noise_$(initial_noise).log 
 
 queue

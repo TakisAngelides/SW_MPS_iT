@@ -6,9 +6,7 @@ include("Observables_iT.jl")
 
 function run_SW_DMRG(sites, params)
 
-    OpSum = get_SW_OpSum(params)
-
-    H = get_MPO_from_OpSum(OpSum, sites)
+    H = get_MPO_from_OpSum(get_SW_OpSum(params), sites)
 
     energy, psi = DMRG(H, sites, params)
 
@@ -81,4 +79,4 @@ function main()
 
 end
 
-main()
+# main()
