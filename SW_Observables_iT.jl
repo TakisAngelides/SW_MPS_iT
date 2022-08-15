@@ -27,6 +27,7 @@ if choice == 1
     path_to_text_file = path*text_file_name
     
     open(path_to_text_file, "w") do f
+        sites = siteinds(psi)
         charge_configuration_list = get_SW_charge_configuration(psi, sites)
         electric_field_configuration_list = get_SW_electric_field_configuration(charge_configuration_list, l_0)
         left_edge = floor(Int, N*0.48)
