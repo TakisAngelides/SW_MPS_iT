@@ -8,7 +8,7 @@ D = parse(Int64, ARGS[4]) # Bond dimension of MPS to be computed
 l_0 = parse(Float64, ARGS[5]) # l_0 = theta/(2*pi)
 lambda = parse(Float64, ARGS[6]) # Lagrange multiplier to enforce total charge squared to be 0
 acc = parse(Float64, ARGS[7]) # Tolerance for stopping condition of the variational algorithm
-ms = parse(Int64, ARGS[8]) # Maximum number of sweeps of the variational algorithm
+ns = parse(Int64, ARGS[8]) # Maximum number of sweeps of the variational algorithm
 r = parse(Float64, ARGS[9]) # Wilson parameter
 choice = parse(Int64, ARGS[10]) # Choice for observables
 
