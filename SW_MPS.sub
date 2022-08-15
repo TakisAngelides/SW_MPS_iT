@@ -1,4 +1,4 @@
-environment = "JULIA_DEPOT_PATH='/lustre/fs23/group/nic/tangelides/.julia:$JULIA_DEPOT_PATH' TMPDIR='/lustre/fs23/group/nic/tangelides/SW_MPS_iT'"
+environment = "JULIA_DEPOT_PATH='/lustre/fs23/group/nic/tangelides/.julia:$JULIA_DEPOT_PATH'" # TMPDIR='/lustre/fs23/group/nic/tangelides/SW_MPS_iT'
 
 executable = /lustre/fs23/group/nic/tangelides/julia-1.7.2/bin/julia
 
