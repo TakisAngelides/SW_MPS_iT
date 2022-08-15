@@ -2,8 +2,8 @@ include("run_DMRG_iT.jl")
 
 N = parse(Int, ARGS[1]) # Number of physical lattice sites
 x = parse(Float64, ARGS[2]) # 1/(ag)^2
-mg = parse(Float64, ARGS[3]) # m/g
-D = parse(Int64, ARGS[4]) # Bond dimension of MPS to be computed
+D = parse(Int64, ARGS[3]) # Bond dimension of MPS to be computed
+mg = parse(Float64, ARGS[4]) # m/g
 l_0 = parse(Float64, ARGS[5]) # l_0 = theta/(2*pi)
 lambda = parse(Float64, ARGS[6]) # Lagrange multiplier to enforce total charge squared to be 0
 acc = parse(Float64, ARGS[7]) # Tolerance for stopping condition of the variational algorithm
