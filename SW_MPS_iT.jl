@@ -25,7 +25,7 @@ params = Dict("initial_noise" => initial_noise, "silent" => silent, "N" => N, "D
 sites = siteinds("S=1/2", 2*N)
 
 if isfile(previous_mps_file_path)
-    f = h5open(mps_file_path, "r")
+    f = h5open(previous_mps_file_path, "r")
     sites = read(f, "sites", Vector{Index{Int64}})
     close(f)
 end
