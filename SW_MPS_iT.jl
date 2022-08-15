@@ -20,17 +20,17 @@ mps_file_path = "/lustre/fs23/group/nic/tangelides/SW_MPS_iT/N_$(N)_x_$(x)_D_$(D
 
 previous_mps_file_path = "/lustre/fs23/group/nic/tangelides/SW_MPS_iT/N_$(N)_x_$(x)_D_$(D_p)_l0_$(l_0)_mg_$(mg_p)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r).h5"
 
-params = Dict("initial_noise" => initial_noise, "silent" => silent, "N" => N, "D" => D, "x" => x, "ns" => ns, "lambda" => lambda, "l_0" => l_0, "mg" => mg, "r" => r, "acc" => acc, "sweep_observables_file_path" => sweep_observables_file_path, "previous_mps_file_path" => previous_mps_file_path)
-
-sites = siteinds("S=1/2", 2*N)
-
-println(typeof(sites))
-
 if isfile(previous_mps_file_path)
     f = h5open(previous_mps_file_path, "r")
-    sites = read(f, "sites")
+    previous_psi = read(f, "MPS", MPS)
+    sites = siteinds(previous_psi)
     close(f)
+else
+    sites = siteinds("S=1/2", 2*N)
+    previous_psi = randomMPS(sites, D)
 end
+
+params = Dict("initial_noise" => initial_noise, "silent" => silent, "N" => N, "D" => D, "x" => x, "ns" => ns, "lambda" => lambda, "l_0" => l_0, "mg" => mg, "r" => r, "acc" => acc, "sweep_observables_file_path" => sweep_observables_file_path, "previous_mps_file_path" => previous_mps_file_path, "previous_psi" => previous_psi)
 
 # Compute the MPS
 
@@ -40,5 +40,4 @@ _, psi = run_SW_DMRG(sites, params)
 
 f = h5open(mps_file_path, "w")
 write(f, "MPS", psi)
-write(f, "sites", sites)
 close(f)

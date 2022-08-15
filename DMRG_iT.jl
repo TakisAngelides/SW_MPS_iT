@@ -48,14 +48,7 @@ function DMRG(H, sites, params)
     acc = params["acc"]
     previous_mps_file_path = params["previous_mps_file_path"]
     initial_noise = params["initial_noise"]
-
-    if isfile(previous_mps_file_path)
-        f = h5open(previous_mps_file_path,"r")
-        psi_0 = read(f, "MPS", MPS)
-        close(f)
-    else
-        psi_0 = randomMPS(sites, D)
-    end
+    psi_0 = params["previous_psi"]
 
     noise_vector = LinRange(initial_noise, 0.0, ns) # Noise to be added to the MPS during DMRG
     sweeps = Sweeps(ns, maxdim = D) # This is the maximum number of sweeps to be done if accuracy (acc) is not reached
