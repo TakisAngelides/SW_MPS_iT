@@ -24,6 +24,12 @@ params = Dict("initial_noise" => initial_noise, "silent" => silent, "N" => N, "D
 
 sites = siteinds("S=1/2", 2*N)
 
+if isfile(previous_mps_file_path)
+    f = h5open(mps_file_path, "r")
+    sites = read(f, "sites")
+    close(f)
+end
+
 # Compute the MPS
 
 _, psi = run_SW_DMRG(sites, params)
@@ -32,4 +38,5 @@ _, psi = run_SW_DMRG(sites, params)
 
 f = h5open(mps_file_path, "w")
 write(f, "MPS", psi)
+write(f, "sites", sites)
 close(f)
