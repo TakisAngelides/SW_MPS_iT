@@ -58,7 +58,7 @@ function DMRG(H, sites, params)
     end
 
     noise_vector = LinRange(initial_noise, 0.0, ns) # Noise to be added to the MPS during DMRG
-    sweeps = Sweeps(ns) # This is the maximum number of sweeps to be done if accuracy (acc) is not reached
+    sweeps = Sweeps(ns, maxdim = D) # This is the maximum number of sweeps to be done if accuracy (acc) is not reached
     observer = my_observer(acc, 1000.0, sites, params) # 1000.0 is for initial energy of the algorithm and should be set well above the estimated g.s. energy
     
     energy, psi = dmrg(H, psi_0, sweeps, ishermitian = true, noise = noise_vector, observer = observer, maxdim = D)

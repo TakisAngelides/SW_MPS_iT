@@ -1,102 +1,102 @@
 CONFIG /afs/ifh.de/user/a/angeltak/SW_MPS_iT/dagman.config
 JOB N64x100mg-0098D20l00125r10 /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_MPS.sub
-VARS N64x100mg-0098D20l00125r10 N="64" x="10.0" mg="-0.098" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="1000" D_p="0" mg_p="-0.098" r="1.0" silent="true" initial_noise="0.0"
+VARS N64x100mg-0098D20l00125r10 N="64" x="10.0" mg="-0.098" D="20" l_0="0.125" lambda="100.0" acc="1e-08" ns="5" D_p="0" mg_p="-0.098" r="1.0" silent="true" initial_noise="0.0"
 RETRY N64x100mg-0098D20l00125r10 3
 SCRIPT HOLD N64x100mg-0098D20l00125r10 /usr/bin/condor_release $JOBID
 JOB N64x100mg-0098D40l00125r10 /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_MPS.sub
-VARS N64x100mg-0098D40l00125r10 N="64" x="10.0" mg="-0.098" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="1000" D_p="20" mg_p="-0.098" r="1.0" silent="true" initial_noise="0.0"
+VARS N64x100mg-0098D40l00125r10 N="64" x="10.0" mg="-0.098" D="40" l_0="0.125" lambda="100.0" acc="1e-08" ns="5" D_p="20" mg_p="-0.098" r="1.0" silent="true" initial_noise="0.0"
 RETRY N64x100mg-0098D40l00125r10 3
 SCRIPT HOLD N64x100mg-0098D40l00125r10 /usr/bin/condor_release $JOBID
 JOB N64x100mg-0098D60l00125r10 /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_MPS.sub
-VARS N64x100mg-0098D60l00125r10 N="64" x="10.0" mg="-0.098" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="1000" D_p="40" mg_p="-0.098" r="1.0" silent="true" initial_noise="0.0"
+VARS N64x100mg-0098D60l00125r10 N="64" x="10.0" mg="-0.098" D="60" l_0="0.125" lambda="100.0" acc="1e-08" ns="5" D_p="40" mg_p="-0.098" r="1.0" silent="true" initial_noise="0.0"
 RETRY N64x100mg-0098D60l00125r10 3
 SCRIPT HOLD N64x100mg-0098D60l00125r10 /usr/bin/condor_release $JOBID
 JOB N64x100mg-0098D80l00125r10 /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_MPS.sub
-VARS N64x100mg-0098D80l00125r10 N="64" x="10.0" mg="-0.098" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="1000" D_p="60" mg_p="-0.098" r="1.0" silent="true" initial_noise="0.0"
+VARS N64x100mg-0098D80l00125r10 N="64" x="10.0" mg="-0.098" D="80" l_0="0.125" lambda="100.0" acc="1e-08" ns="5" D_p="60" mg_p="-0.098" r="1.0" silent="true" initial_noise="0.0"
 RETRY N64x100mg-0098D80l00125r10 3
 SCRIPT HOLD N64x100mg-0098D80l00125r10 /usr/bin/condor_release $JOBID
 JOB N64x100mg-0098D100l00125r10 /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_MPS.sub
-VARS N64x100mg-0098D100l00125r10 N="64" x="10.0" mg="-0.098" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="1000" D_p="80" mg_p="-0.098" r="1.0" silent="true" initial_noise="0.0"
+VARS N64x100mg-0098D100l00125r10 N="64" x="10.0" mg="-0.098" D="100" l_0="0.125" lambda="100.0" acc="1e-08" ns="5" D_p="80" mg_p="-0.098" r="1.0" silent="true" initial_noise="0.0"
 RETRY N64x100mg-0098D100l00125r10 3
 SCRIPT HOLD N64x100mg-0098D100l00125r10 /usr/bin/condor_release $JOBID
 JOB N64x100mg-009765D20l00125r10 /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_MPS.sub
-VARS N64x100mg-009765D20l00125r10 N="64" x="10.0" mg="-0.09765" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="1000" D_p="0" mg_p="-0.09765" r="1.0" silent="true" initial_noise="0.0"
+VARS N64x100mg-009765D20l00125r10 N="64" x="10.0" mg="-0.09765" D="20" l_0="0.125" lambda="100.0" acc="1e-08" ns="5" D_p="0" mg_p="-0.09765" r="1.0" silent="true" initial_noise="0.0"
 RETRY N64x100mg-009765D20l00125r10 3
 SCRIPT HOLD N64x100mg-009765D20l00125r10 /usr/bin/condor_release $JOBID
 JOB N64x100mg-009765D40l00125r10 /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_MPS.sub
-VARS N64x100mg-009765D40l00125r10 N="64" x="10.0" mg="-0.09765" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="1000" D_p="20" mg_p="-0.09765" r="1.0" silent="true" initial_noise="0.0"
+VARS N64x100mg-009765D40l00125r10 N="64" x="10.0" mg="-0.09765" D="40" l_0="0.125" lambda="100.0" acc="1e-08" ns="5" D_p="20" mg_p="-0.09765" r="1.0" silent="true" initial_noise="0.0"
 RETRY N64x100mg-009765D40l00125r10 3
 SCRIPT HOLD N64x100mg-009765D40l00125r10 /usr/bin/condor_release $JOBID
 JOB N64x100mg-009765D60l00125r10 /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_MPS.sub
-VARS N64x100mg-009765D60l00125r10 N="64" x="10.0" mg="-0.09765" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="1000" D_p="40" mg_p="-0.09765" r="1.0" silent="true" initial_noise="0.0"
+VARS N64x100mg-009765D60l00125r10 N="64" x="10.0" mg="-0.09765" D="60" l_0="0.125" lambda="100.0" acc="1e-08" ns="5" D_p="40" mg_p="-0.09765" r="1.0" silent="true" initial_noise="0.0"
 RETRY N64x100mg-009765D60l00125r10 3
 SCRIPT HOLD N64x100mg-009765D60l00125r10 /usr/bin/condor_release $JOBID
 JOB N64x100mg-009765D80l00125r10 /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_MPS.sub
-VARS N64x100mg-009765D80l00125r10 N="64" x="10.0" mg="-0.09765" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="1000" D_p="60" mg_p="-0.09765" r="1.0" silent="true" initial_noise="0.0"
+VARS N64x100mg-009765D80l00125r10 N="64" x="10.0" mg="-0.09765" D="80" l_0="0.125" lambda="100.0" acc="1e-08" ns="5" D_p="60" mg_p="-0.09765" r="1.0" silent="true" initial_noise="0.0"
 RETRY N64x100mg-009765D80l00125r10 3
 SCRIPT HOLD N64x100mg-009765D80l00125r10 /usr/bin/condor_release $JOBID
 JOB N64x100mg-009765D100l00125r10 /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_MPS.sub
-VARS N64x100mg-009765D100l00125r10 N="64" x="10.0" mg="-0.09765" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="1000" D_p="80" mg_p="-0.09765" r="1.0" silent="true" initial_noise="0.0"
+VARS N64x100mg-009765D100l00125r10 N="64" x="10.0" mg="-0.09765" D="100" l_0="0.125" lambda="100.0" acc="1e-08" ns="5" D_p="80" mg_p="-0.09765" r="1.0" silent="true" initial_noise="0.0"
 RETRY N64x100mg-009765D100l00125r10 3
 SCRIPT HOLD N64x100mg-009765D100l00125r10 /usr/bin/condor_release $JOBID
 JOB N64x100mg-00975D20l00125r10 /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_MPS.sub
-VARS N64x100mg-00975D20l00125r10 N="64" x="10.0" mg="-0.0975" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="1000" D_p="0" mg_p="-0.0975" r="1.0" silent="true" initial_noise="0.0"
+VARS N64x100mg-00975D20l00125r10 N="64" x="10.0" mg="-0.0975" D="20" l_0="0.125" lambda="100.0" acc="1e-08" ns="5" D_p="0" mg_p="-0.0975" r="1.0" silent="true" initial_noise="0.0"
 RETRY N64x100mg-00975D20l00125r10 3
 SCRIPT HOLD N64x100mg-00975D20l00125r10 /usr/bin/condor_release $JOBID
 JOB N64x100mg-00975D40l00125r10 /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_MPS.sub
-VARS N64x100mg-00975D40l00125r10 N="64" x="10.0" mg="-0.0975" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="1000" D_p="20" mg_p="-0.0975" r="1.0" silent="true" initial_noise="0.0"
+VARS N64x100mg-00975D40l00125r10 N="64" x="10.0" mg="-0.0975" D="40" l_0="0.125" lambda="100.0" acc="1e-08" ns="5" D_p="20" mg_p="-0.0975" r="1.0" silent="true" initial_noise="0.0"
 RETRY N64x100mg-00975D40l00125r10 3
 SCRIPT HOLD N64x100mg-00975D40l00125r10 /usr/bin/condor_release $JOBID
 JOB N64x100mg-00975D60l00125r10 /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_MPS.sub
-VARS N64x100mg-00975D60l00125r10 N="64" x="10.0" mg="-0.0975" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="1000" D_p="40" mg_p="-0.0975" r="1.0" silent="true" initial_noise="0.0"
+VARS N64x100mg-00975D60l00125r10 N="64" x="10.0" mg="-0.0975" D="60" l_0="0.125" lambda="100.0" acc="1e-08" ns="5" D_p="40" mg_p="-0.0975" r="1.0" silent="true" initial_noise="0.0"
 RETRY N64x100mg-00975D60l00125r10 3
 SCRIPT HOLD N64x100mg-00975D60l00125r10 /usr/bin/condor_release $JOBID
 JOB N64x100mg-00975D80l00125r10 /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_MPS.sub
-VARS N64x100mg-00975D80l00125r10 N="64" x="10.0" mg="-0.0975" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="1000" D_p="60" mg_p="-0.0975" r="1.0" silent="true" initial_noise="0.0"
+VARS N64x100mg-00975D80l00125r10 N="64" x="10.0" mg="-0.0975" D="80" l_0="0.125" lambda="100.0" acc="1e-08" ns="5" D_p="60" mg_p="-0.0975" r="1.0" silent="true" initial_noise="0.0"
 RETRY N64x100mg-00975D80l00125r10 3
 SCRIPT HOLD N64x100mg-00975D80l00125r10 /usr/bin/condor_release $JOBID
 JOB N64x100mg-00975D100l00125r10 /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_MPS.sub
-VARS N64x100mg-00975D100l00125r10 N="64" x="10.0" mg="-0.0975" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="1000" D_p="80" mg_p="-0.0975" r="1.0" silent="true" initial_noise="0.0"
+VARS N64x100mg-00975D100l00125r10 N="64" x="10.0" mg="-0.0975" D="100" l_0="0.125" lambda="100.0" acc="1e-08" ns="5" D_p="80" mg_p="-0.0975" r="1.0" silent="true" initial_noise="0.0"
 RETRY N64x100mg-00975D100l00125r10 3
 SCRIPT HOLD N64x100mg-00975D100l00125r10 /usr/bin/condor_release $JOBID
 JOB N64x100mg-009725D20l00125r10 /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_MPS.sub
-VARS N64x100mg-009725D20l00125r10 N="64" x="10.0" mg="-0.09725" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="1000" D_p="0" mg_p="-0.09725" r="1.0" silent="true" initial_noise="0.0"
+VARS N64x100mg-009725D20l00125r10 N="64" x="10.0" mg="-0.09725" D="20" l_0="0.125" lambda="100.0" acc="1e-08" ns="5" D_p="0" mg_p="-0.09725" r="1.0" silent="true" initial_noise="0.0"
 RETRY N64x100mg-009725D20l00125r10 3
 SCRIPT HOLD N64x100mg-009725D20l00125r10 /usr/bin/condor_release $JOBID
 JOB N64x100mg-009725D40l00125r10 /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_MPS.sub
-VARS N64x100mg-009725D40l00125r10 N="64" x="10.0" mg="-0.09725" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="1000" D_p="20" mg_p="-0.09725" r="1.0" silent="true" initial_noise="0.0"
+VARS N64x100mg-009725D40l00125r10 N="64" x="10.0" mg="-0.09725" D="40" l_0="0.125" lambda="100.0" acc="1e-08" ns="5" D_p="20" mg_p="-0.09725" r="1.0" silent="true" initial_noise="0.0"
 RETRY N64x100mg-009725D40l00125r10 3
 SCRIPT HOLD N64x100mg-009725D40l00125r10 /usr/bin/condor_release $JOBID
 JOB N64x100mg-009725D60l00125r10 /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_MPS.sub
-VARS N64x100mg-009725D60l00125r10 N="64" x="10.0" mg="-0.09725" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="1000" D_p="40" mg_p="-0.09725" r="1.0" silent="true" initial_noise="0.0"
+VARS N64x100mg-009725D60l00125r10 N="64" x="10.0" mg="-0.09725" D="60" l_0="0.125" lambda="100.0" acc="1e-08" ns="5" D_p="40" mg_p="-0.09725" r="1.0" silent="true" initial_noise="0.0"
 RETRY N64x100mg-009725D60l00125r10 3
 SCRIPT HOLD N64x100mg-009725D60l00125r10 /usr/bin/condor_release $JOBID
 JOB N64x100mg-009725D80l00125r10 /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_MPS.sub
-VARS N64x100mg-009725D80l00125r10 N="64" x="10.0" mg="-0.09725" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="1000" D_p="60" mg_p="-0.09725" r="1.0" silent="true" initial_noise="0.0"
+VARS N64x100mg-009725D80l00125r10 N="64" x="10.0" mg="-0.09725" D="80" l_0="0.125" lambda="100.0" acc="1e-08" ns="5" D_p="60" mg_p="-0.09725" r="1.0" silent="true" initial_noise="0.0"
 RETRY N64x100mg-009725D80l00125r10 3
 SCRIPT HOLD N64x100mg-009725D80l00125r10 /usr/bin/condor_release $JOBID
 JOB N64x100mg-009725D100l00125r10 /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_MPS.sub
-VARS N64x100mg-009725D100l00125r10 N="64" x="10.0" mg="-0.09725" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="1000" D_p="80" mg_p="-0.09725" r="1.0" silent="true" initial_noise="0.0"
+VARS N64x100mg-009725D100l00125r10 N="64" x="10.0" mg="-0.09725" D="100" l_0="0.125" lambda="100.0" acc="1e-08" ns="5" D_p="80" mg_p="-0.09725" r="1.0" silent="true" initial_noise="0.0"
 RETRY N64x100mg-009725D100l00125r10 3
 SCRIPT HOLD N64x100mg-009725D100l00125r10 /usr/bin/condor_release $JOBID
 JOB N64x100mg-0097D20l00125r10 /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_MPS.sub
-VARS N64x100mg-0097D20l00125r10 N="64" x="10.0" mg="-0.097" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="1000" D_p="0" mg_p="-0.097" r="1.0" silent="true" initial_noise="0.0"
+VARS N64x100mg-0097D20l00125r10 N="64" x="10.0" mg="-0.097" D="20" l_0="0.125" lambda="100.0" acc="1e-08" ns="5" D_p="0" mg_p="-0.097" r="1.0" silent="true" initial_noise="0.0"
 RETRY N64x100mg-0097D20l00125r10 3
 SCRIPT HOLD N64x100mg-0097D20l00125r10 /usr/bin/condor_release $JOBID
 JOB N64x100mg-0097D40l00125r10 /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_MPS.sub
-VARS N64x100mg-0097D40l00125r10 N="64" x="10.0" mg="-0.097" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="1000" D_p="20" mg_p="-0.097" r="1.0" silent="true" initial_noise="0.0"
+VARS N64x100mg-0097D40l00125r10 N="64" x="10.0" mg="-0.097" D="40" l_0="0.125" lambda="100.0" acc="1e-08" ns="5" D_p="20" mg_p="-0.097" r="1.0" silent="true" initial_noise="0.0"
 RETRY N64x100mg-0097D40l00125r10 3
 SCRIPT HOLD N64x100mg-0097D40l00125r10 /usr/bin/condor_release $JOBID
 JOB N64x100mg-0097D60l00125r10 /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_MPS.sub
-VARS N64x100mg-0097D60l00125r10 N="64" x="10.0" mg="-0.097" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="1000" D_p="40" mg_p="-0.097" r="1.0" silent="true" initial_noise="0.0"
+VARS N64x100mg-0097D60l00125r10 N="64" x="10.0" mg="-0.097" D="60" l_0="0.125" lambda="100.0" acc="1e-08" ns="5" D_p="40" mg_p="-0.097" r="1.0" silent="true" initial_noise="0.0"
 RETRY N64x100mg-0097D60l00125r10 3
 SCRIPT HOLD N64x100mg-0097D60l00125r10 /usr/bin/condor_release $JOBID
 JOB N64x100mg-0097D80l00125r10 /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_MPS.sub
-VARS N64x100mg-0097D80l00125r10 N="64" x="10.0" mg="-0.097" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="1000" D_p="60" mg_p="-0.097" r="1.0" silent="true" initial_noise="0.0"
+VARS N64x100mg-0097D80l00125r10 N="64" x="10.0" mg="-0.097" D="80" l_0="0.125" lambda="100.0" acc="1e-08" ns="5" D_p="60" mg_p="-0.097" r="1.0" silent="true" initial_noise="0.0"
 RETRY N64x100mg-0097D80l00125r10 3
 SCRIPT HOLD N64x100mg-0097D80l00125r10 /usr/bin/condor_release $JOBID
 JOB N64x100mg-0097D100l00125r10 /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_MPS.sub
-VARS N64x100mg-0097D100l00125r10 N="64" x="10.0" mg="-0.097" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="1000" D_p="80" mg_p="-0.097" r="1.0" silent="true" initial_noise="0.0"
+VARS N64x100mg-0097D100l00125r10 N="64" x="10.0" mg="-0.097" D="100" l_0="0.125" lambda="100.0" acc="1e-08" ns="5" D_p="80" mg_p="-0.097" r="1.0" silent="true" initial_noise="0.0"
 RETRY N64x100mg-0097D100l00125r10 3
 SCRIPT HOLD N64x100mg-0097D100l00125r10 /usr/bin/condor_release $JOBID
 PARENT N64x100mg-0098D20l00125r10 CHILD N64x100mg-0098D40l00125r10
