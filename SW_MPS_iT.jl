@@ -26,7 +26,7 @@ sites = siteinds("S=1/2", 2*N)
 
 if isfile(previous_mps_file_path)
     f = h5open(mps_file_path, "r")
-    sites = read(f, "sites")
+    sites = read(f, "sites", Vector{Index{Int64}})
     close(f)
 end
 
@@ -34,7 +34,7 @@ end
 
 _, psi = run_SW_DMRG(sites, params)
 
-# Save the MPS as h5 file
+# Save the MPS as h5 file including its sites object
 
 f = h5open(mps_file_path, "w")
 write(f, "MPS", psi)
