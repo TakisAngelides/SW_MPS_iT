@@ -1,5 +1,6 @@
 using ITensors.HDF5
 using ITensors
+using Statistics
 include("Observables_iT.jl")
 
 N = parse(Int, ARGS[1]) # Number of physical lattice sites
