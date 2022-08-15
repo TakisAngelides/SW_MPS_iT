@@ -4,7 +4,6 @@ function get_SW_local_charge_OpSum(site_idx)
 
     ampo += "Sz",2*site_idx-1
     ampo += "Sz",2*site_idx
-    ampo += -"Id",1
 
     return ampo
 
