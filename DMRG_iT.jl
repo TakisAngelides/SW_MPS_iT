@@ -13,7 +13,7 @@ function ITensors.checkdone!(o::my_observer;kwargs...)
     sw = kwargs[:sweep]
     energy = kwargs[:energy]
     if abs(energy-o.last_energy)/abs(energy) < o.energy_tol
-        println("Stopping DMRG after sweep $sw")
+        println("Energy tolerance reached, stopping DMRG after sweep $sw")
         return true
     end
     # Otherwise, update last_energy and keep going
