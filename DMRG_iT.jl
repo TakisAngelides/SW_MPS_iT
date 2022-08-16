@@ -9,6 +9,18 @@ mutable struct my_observer <: AbstractObserver
     params::Dict
 end
 
+function ITensors.checkdone!(o::my_observer;kwargs...)
+    sw = kwargs[:sweep]
+    energy = kwargs[:energy]
+    if abs(energy-o.last_energy)/abs(energy) < o.energy_tol
+        println("Stopping DMRG after sweep $sw")
+        return true
+    end
+    # Otherwise, update last_energy and keep going
+    o.last_energy = energy
+    return false
+end
+
 function ITensors.measure!(o::my_observer; kwargs...)
 
     sweep = kwargs[:sweep]
@@ -46,7 +58,6 @@ function DMRG(H, sites, params)
     D = params["D"]
     ns = params["ns"]
     acc = params["acc"]
-    previous_mps_file_path = params["previous_mps_file_path"]
     initial_noise = params["initial_noise"]
     psi_0 = params["previous_psi"]
 
