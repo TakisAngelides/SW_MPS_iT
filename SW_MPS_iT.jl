@@ -20,7 +20,12 @@ mps_file_path = "/lustre/fs23/group/nic/tangelides/SW_MPS_iT/N_$(N)_x_$(x)_D_$(D
 
 previous_mps_file_path = "/lustre/fs23/group/nic/tangelides/SW_MPS_iT/N_$(N)_x_$(x)_D_$(D_p)_l0_$(l_0)_mg_$(mg_p)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r).h5"
 
-if isfile(previous_mps_file_path)
+if isfile(mps_file_path)
+    f = h5open(mps_file_path, "r")
+    previous_psi = read(f, "MPS", MPS)
+    sites = siteinds(previous_psi)
+    close(f)
+elseif isfile(previous_mps_file_path)
     f = h5open(previous_mps_file_path, "r")
     previous_psi = read(f, "MPS", MPS)
     sites = siteinds(previous_psi)
