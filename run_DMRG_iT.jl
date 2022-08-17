@@ -14,6 +14,17 @@ function run_SW_DMRG(sites, params)
 
 end
 
+function run_SW_DMRG_first_excited_state(sites, params, psi_gs, energy_gs)
+
+    P = outer(psi_gs', psi_gs)
+    H = get_MPO_from_OpSum(get_SW_OpSum(params), sites)
+    Heff = H-energy_gs.*P
+    energy, psi = DMRG(Heff, sites, params)
+
+    return energy, psi
+
+end
+
 function run_Ising_DMRG()
 
     # Exact gs energy for N => 10, J => -1, g_z => -0.1, g_x => 1.5, ns => 5, D => 34 is: -16.706153497716304
