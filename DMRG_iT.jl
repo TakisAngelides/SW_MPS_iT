@@ -49,7 +49,7 @@ function ITensors.measure!(o::my_observer; kwargs...)
 
 end
 
-function DMRG(H, sites, params)
+function DMRG(H, sites, params)::Tuple{Float64, MPS}
 
     """
     ns = number of sweeps
@@ -62,7 +62,8 @@ function DMRG(H, sites, params)
     psi_0 = params["previous_psi"]
 
     noise_vector = LinRange(initial_noise, 0.0, ns) # Noise to be added to the MPS during DMRG
-    sweeps = Sweeps(ns, maxdim = D) # This is the maximum number of sweeps to be done if accuracy (acc) is not reached
+    maxdim_vec = D*ones(ns)
+    sweeps = Sweeps(ns, maxdim = maxdim_vec) # This is the maximum number of sweeps to be done if accuracy (acc) is not reached
     observer = my_observer(acc, 1000.0, sites, params) # 1000.0 is for initial energy of the algorithm and should be set well above the estimated g.s. energy
     
     energy, psi = dmrg(H, psi_0, sweeps, ishermitian = true, noise = noise_vector, observer = observer, maxdim = D)
