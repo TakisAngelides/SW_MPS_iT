@@ -43,6 +43,10 @@ energy, psi = run_SW_DMRG(sites, params)
 
 # Save the MPS as h5 file including its sites object
 
+if isfile(mps_file_path)
+    rm(mps_file_path)
+end
+
 f = h5open(mps_file_path, "w")
 write(f, "MPS", psi)
 write(f, "gs_energy", energy)
