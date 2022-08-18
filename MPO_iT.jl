@@ -9,6 +9,16 @@ function get_SW_local_charge_OpSum(site_idx)
 
 end
 
+function get_SW_local_z_OpSum(site_idx)
+
+    ampo = OpSum()
+
+    ampo += 2,"Sz",site_idx
+
+    return ampo
+
+end
+
 function get_SW_OpSum(params)
 
     """
@@ -192,6 +202,21 @@ function get_SW_Staggered_local_charge_Opsum(site_idx)
 
     ampo += "Sz",site_idx
     ampo += 0.5*(-1)^site_idx,"Id",site_idx
+
+    return ampo
+
+end
+
+function get_SW_chiral_condensate_OpSum(params)
+
+    N = params["N"]
+
+    ampo = OpSum()
+
+    for n=1:N
+        ampo += 1j,"S-",2*n-1,"S+",2*n
+        ampo += -1j,"S+",2*n-1,"S-",2*n
+    end
 
     return ampo
 

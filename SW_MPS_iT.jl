@@ -39,10 +39,11 @@ params = Dict("initial_noise" => initial_noise, "silent" => silent, "N" => N, "D
 
 # Compute the MPS
 
-_, psi = run_SW_DMRG(sites, params)
+energy, psi = run_SW_DMRG(sites, params)
 
 # Save the MPS as h5 file including its sites object
 
 f = h5open(mps_file_path, "w")
 write(f, "MPS", psi)
+write(f, "gs_energy")
 close(f)

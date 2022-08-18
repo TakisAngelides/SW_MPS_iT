@@ -2,9 +2,9 @@ environment = "JULIA_DEPOT_PATH='/lustre/fs23/group/nic/tangelides/.julia:$JULIA
 
 executable = /lustre/fs23/group/nic/tangelides/julia-1.7.2/bin/julia
 
-arguments = /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_MPS_iT.jl $(N) $(x) $(D) $(mg) $(l_0) $(lambda) $(acc) $(ns) $(D_p) $(mg_p) $(r) $(silent) $(initial_noise)
+arguments = /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.jl $(N) $(x) $(D) $(mg) $(l_0) $(lambda) $(acc) $(ns) $(D_p) $(mg_p) $(r) $(silent) $(initial_noise)
 
-transfer_input_files = /afs/ifh.de/user/a/angeltak/SW_MPS_iT/SW_MPS_iT.jl
+transfer_input_files = /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.jl
 
 should_transfer_files = IF_NEEDED
 
@@ -12,14 +12,14 @@ mem = 2*($(D)*$(D)*64/1e6)+1000
 
 request_memory = $(mem)
 
-+RequestRuntime = 6.99*24*3600
+# +RequestRuntime = 6.99*24*3600
 
 max_retries = 5
 
 error = /lustre/fs23/group/nic/tangelides/Logs/$(Cluster)_$(Process)_N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_silent_$(silent)_initial_noise_$(initial_noise).error
 
-output = /lustre/fs23/group/nic/tangelides/Logs/$(Cluster)_$(Process)_N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_silent_$(silent)_initial_noise_$(initial_noise).out                    
+# output = /lustre/fs23/group/nic/tangelides/Logs/$(Cluster)_$(Process)_N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_silent_$(silent)_initial_noise_$(initial_noise).out                    
 
-log = /lustre/fs23/group/nic/tangelides/Logs/$(Cluster)_$(Process)_N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_silent_$(silent)_initial_noise_$(initial_noise).log 
+# log = /lustre/fs23/group/nic/tangelides/Logs/$(Cluster)_$(Process)_N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_silent_$(silent)_initial_noise_$(initial_noise).log 
 
 queue
