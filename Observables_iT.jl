@@ -71,7 +71,8 @@ end
 
 function get_SW_chiral_condensate(psi)
 
-    N = length(psi)
+    N_spin = length(psi)
+    N = Int(N_spin/2)
 
     cc_opsum = get_SW_chiral_condensate_OpSum(N)
     sites = siteinds(psi)
