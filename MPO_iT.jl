@@ -212,8 +212,8 @@ function get_SW_chiral_condensate_OpSum(N::Int64)
     ampo = OpSum()
 
     for n=1:N
-        ampo += 1j,"S-",2*n-1,"S+",2*n
-        ampo += -1j,"S+",2*n-1,"S-",2*n
+        ampo += 1im,"S-",2*n-1,"S+",2*n
+        ampo += -1im,"S+",2*n-1,"S-",2*n
     end
 
     return ampo
