@@ -1,5 +1,5 @@
 include("MPO_iT.jl")
-using ITensors.svd
+using ITensors.LinearAlgebra.svd
 using ITensors.orthogonalize!
 
 function get_SW_charge_configuration(z_configuration_list)
