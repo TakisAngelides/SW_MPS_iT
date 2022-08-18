@@ -140,3 +140,59 @@ function get_MPO_from_OpSum(OpSum, sites)
     return MPO(OpSum, sites)
 
 end
+
+function get_SW_Staggered_OpSum(params)
+
+    N = params["N"]
+    l_0 = params["l_0"]
+    x = params["x"]
+    mg = params["mg"]
+    lambda = params["lambda"]
+
+    ampo = OpSum()
+
+    for n=1:2*N-1
+        ampo += x,"S+",n,"S-",n+1
+        ampo += x,"S-",n,"S+",n+1
+        ampo += 0.5*sqrt(x)*mg*(-1)^n,"Id",1
+        ampo += sqrt(x)*mg*(-1)^n,"Sz",n
+    end
+
+    for n=1:2*N-1
+        for k=1:n
+            ampo += 2*l_0,"Sz",k
+            ampo += l_0*(-1)^n,"Id",1
+            for p=1:n
+                ampo += "Sz",k,"Sz",p
+                ampo += 0.5*(-1)^p,"Sz",k
+                ampo += 0.5*(-1)^k,"Sz",p
+                ampo += (-1)^(p+k),"Id",1
+            end
+        end
+    end
+
+    for k=1:n
+        for p=1:n
+            ampo += lambda,"Sz",k,"Sz",p
+            ampo += 0.5*lambda*(-1)^p,"Sz",k
+            ampo += 0.5*lambda*(-1)^k,"Sz",p
+            ampo += lambda*(-1)^(p+k),"Id",1
+        end
+    end
+
+    ampo += (l_0^2)*(2*N-1)
+
+    return ampo
+
+end
+
+function get_SW_Staggered_local_charge_Opsum(site_idx)
+
+    ampo = OpSum()
+
+    ampo += "Sz",site_idx
+    ampo += 0.5*(-1)^site_idx,"Id",site_idx
+
+    return ampo
+
+end
