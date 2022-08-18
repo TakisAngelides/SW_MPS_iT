@@ -45,5 +45,5 @@ energy, psi = run_SW_DMRG(sites, params)
 
 f = h5open(mps_file_path, "w")
 write(f, "MPS", psi)
-write(f, "gs_energy")
+write(f, "$gs_energy", energy)
 close(f)
