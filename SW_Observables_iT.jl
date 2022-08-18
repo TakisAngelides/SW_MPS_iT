@@ -49,7 +49,7 @@ open(path_to_text_file, "w") do f
 
     ee = get_SW_entanglement_entropy(psi)
 
-    cc = get_SW_chiral_condensate(psi, params)
+    cc = get_SW_chiral_condensate(psi)
 
     write(f, "Energy, Average Electric Field, Number of Links, Total Charge, Chiral Condensate, Entanglement Entropy (First Line)\n")
 

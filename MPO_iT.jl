@@ -207,9 +207,7 @@ function get_SW_Staggered_local_charge_Opsum(site_idx)
 
 end
 
-function get_SW_chiral_condensate_OpSum(params)
-
-    N = params["N"]
+function get_SW_chiral_condensate_OpSum(N::Int64)
 
     ampo = OpSum()
 

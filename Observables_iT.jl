@@ -69,9 +69,11 @@ function get_SW_entanglement_entropy(psi)
 
 end
 
-function get_SW_chiral_condensate(psi, params)
+function get_SW_chiral_condensate(psi)
 
-    cc_opsum = get_SW_chiral_condensate_OpSum(params)
+    N = length(psi)
+
+    cc_opsum = get_SW_chiral_condensate_OpSum(N)
     sites = siteinds(psi)
     cc_mpo = get_MPO_from_OpSum(cc_opsum, sites)
     
