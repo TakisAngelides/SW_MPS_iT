@@ -1,6 +1,5 @@
 include("MPO_iT.jl")
-using ITensors.LinearAlgebra.svd
-using ITensors.orthogonalize!
+using ITensors
 
 function get_SW_charge_configuration(z_configuration_list)
 
@@ -57,7 +56,7 @@ function get_SW_entanglement_entropy(psi)
 
     orthogonalize!(psi, half_of_spin_chain)
 
-    _, S = svd(psi[half_of_spin_chain], linkind(psi, half_of_spin_chain-1), sites[half_of_spin_chain])
+    _, S = svd(psi[half_of_spin_chain], (linkind(psi, half_of_spin_chain-1), sites[half_of_spin_chain]))
 
     SvN = 0.0 # von Neumann entropy
 
