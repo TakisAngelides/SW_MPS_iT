@@ -59,7 +59,7 @@ open(path_to_text_file, "w") do f
 
     l_tmp = length(z_configuration_list)
 
-    for (index, element) in enumarate(z_configuration_list)
+    for (index, element) in enumerate(z_configuration_list)
         if index != l_tmp
             write(f, "$(element),")
         else
