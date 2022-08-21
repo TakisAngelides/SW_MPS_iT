@@ -18,7 +18,7 @@ function run_SW_DMRG_first_excited_state(sites, params, psi_gs, energy_gs)
 
     P = outer(psi_gs', psi_gs)
     H = get_MPO_from_OpSum(get_SW_OpSum(params), sites)
-    Heff = H-energy_gs.*P
+    Heff = H + energy_gs.*P
     energy, psi = DMRG(Heff, sites, params)
 
     return energy, psi
