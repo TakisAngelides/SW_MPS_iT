@@ -1,1041 +1,1121 @@
 CONFIG dagman.config
-JOB N100x250mg-0095D20l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0095D20l00125r10 N="100" x="25.0" mg="-0.095" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0095D40l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0095D40l00125r10 N="100" x="25.0" mg="-0.095" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0095D60l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0095D60l00125r10 N="100" x="25.0" mg="-0.095" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0095D80l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0095D80l00125r10 N="100" x="25.0" mg="-0.095" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0095D100l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0095D100l00125r10 N="100" x="25.0" mg="-0.095" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0095D120l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0095D120l00125r10 N="100" x="25.0" mg="-0.095" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0095D140l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0095D140l00125r10 N="100" x="25.0" mg="-0.095" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0095D160l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0095D160l00125r10 N="100" x="25.0" mg="-0.095" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0095D180l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0095D180l00125r10 N="100" x="25.0" mg="-0.095" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0095D200l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0095D200l00125r10 N="100" x="25.0" mg="-0.095" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0095D220l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0095D220l00125r10 N="100" x="25.0" mg="-0.095" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0095D240l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0095D240l00125r10 N="100" x="25.0" mg="-0.095" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0095D260l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0095D260l00125r10 N="100" x="25.0" mg="-0.095" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0085D20l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0085D20l00125r10 N="100" x="25.0" mg="-0.085" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0085D40l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0085D40l00125r10 N="100" x="25.0" mg="-0.085" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0085D60l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0085D60l00125r10 N="100" x="25.0" mg="-0.085" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0085D80l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0085D80l00125r10 N="100" x="25.0" mg="-0.085" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0085D100l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0085D100l00125r10 N="100" x="25.0" mg="-0.085" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0085D120l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0085D120l00125r10 N="100" x="25.0" mg="-0.085" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0085D140l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0085D140l00125r10 N="100" x="25.0" mg="-0.085" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0085D160l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0085D160l00125r10 N="100" x="25.0" mg="-0.085" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0085D180l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0085D180l00125r10 N="100" x="25.0" mg="-0.085" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0085D200l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0085D200l00125r10 N="100" x="25.0" mg="-0.085" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0085D220l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0085D220l00125r10 N="100" x="25.0" mg="-0.085" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0085D240l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0085D240l00125r10 N="100" x="25.0" mg="-0.085" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0085D260l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0085D260l00125r10 N="100" x="25.0" mg="-0.085" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0075D20l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0075D20l00125r10 N="100" x="25.0" mg="-0.075" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0075D40l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0075D40l00125r10 N="100" x="25.0" mg="-0.075" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0075D60l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0075D60l00125r10 N="100" x="25.0" mg="-0.075" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0075D80l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0075D80l00125r10 N="100" x="25.0" mg="-0.075" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0075D100l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0075D100l00125r10 N="100" x="25.0" mg="-0.075" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0075D120l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0075D120l00125r10 N="100" x="25.0" mg="-0.075" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0075D140l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0075D140l00125r10 N="100" x="25.0" mg="-0.075" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0075D160l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0075D160l00125r10 N="100" x="25.0" mg="-0.075" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0075D180l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0075D180l00125r10 N="100" x="25.0" mg="-0.075" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0075D200l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0075D200l00125r10 N="100" x="25.0" mg="-0.075" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0075D220l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0075D220l00125r10 N="100" x="25.0" mg="-0.075" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0075D240l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0075D240l00125r10 N="100" x="25.0" mg="-0.075" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0075D260l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0075D260l00125r10 N="100" x="25.0" mg="-0.075" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0065D20l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0065D20l00125r10 N="100" x="25.0" mg="-0.065" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0065D40l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0065D40l00125r10 N="100" x="25.0" mg="-0.065" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0065D60l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0065D60l00125r10 N="100" x="25.0" mg="-0.065" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0065D80l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0065D80l00125r10 N="100" x="25.0" mg="-0.065" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0065D100l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0065D100l00125r10 N="100" x="25.0" mg="-0.065" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0065D120l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0065D120l00125r10 N="100" x="25.0" mg="-0.065" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0065D140l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0065D140l00125r10 N="100" x="25.0" mg="-0.065" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0065D160l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0065D160l00125r10 N="100" x="25.0" mg="-0.065" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0065D180l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0065D180l00125r10 N="100" x="25.0" mg="-0.065" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0065D200l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0065D200l00125r10 N="100" x="25.0" mg="-0.065" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0065D220l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0065D220l00125r10 N="100" x="25.0" mg="-0.065" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0065D240l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0065D240l00125r10 N="100" x="25.0" mg="-0.065" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0065D260l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0065D260l00125r10 N="100" x="25.0" mg="-0.065" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0055D20l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0055D20l00125r10 N="100" x="25.0" mg="-0.055" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0055D40l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0055D40l00125r10 N="100" x="25.0" mg="-0.055" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0055D60l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0055D60l00125r10 N="100" x="25.0" mg="-0.055" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0055D80l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0055D80l00125r10 N="100" x="25.0" mg="-0.055" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0055D100l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0055D100l00125r10 N="100" x="25.0" mg="-0.055" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0055D120l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0055D120l00125r10 N="100" x="25.0" mg="-0.055" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0055D140l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0055D140l00125r10 N="100" x="25.0" mg="-0.055" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0055D160l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0055D160l00125r10 N="100" x="25.0" mg="-0.055" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0055D180l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0055D180l00125r10 N="100" x="25.0" mg="-0.055" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0055D200l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0055D200l00125r10 N="100" x="25.0" mg="-0.055" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0055D220l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0055D220l00125r10 N="100" x="25.0" mg="-0.055" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0055D240l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0055D240l00125r10 N="100" x="25.0" mg="-0.055" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N100x250mg-0055D260l00125r10 SW_Observables_iT.sub
-VARS N100x250mg-0055D260l00125r10 N="100" x="25.0" mg="-0.055" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-008D20l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-008D20l00125r10 N="125" x="39.062" mg="-0.08" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-008D40l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-008D40l00125r10 N="125" x="39.062" mg="-0.08" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-008D60l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-008D60l00125r10 N="125" x="39.062" mg="-0.08" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-008D80l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-008D80l00125r10 N="125" x="39.062" mg="-0.08" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-008D100l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-008D100l00125r10 N="125" x="39.062" mg="-0.08" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-008D120l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-008D120l00125r10 N="125" x="39.062" mg="-0.08" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-008D140l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-008D140l00125r10 N="125" x="39.062" mg="-0.08" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-008D160l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-008D160l00125r10 N="125" x="39.062" mg="-0.08" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-008D180l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-008D180l00125r10 N="125" x="39.062" mg="-0.08" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-008D200l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-008D200l00125r10 N="125" x="39.062" mg="-0.08" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-008D220l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-008D220l00125r10 N="125" x="39.062" mg="-0.08" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-008D240l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-008D240l00125r10 N="125" x="39.062" mg="-0.08" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-008D260l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-008D260l00125r10 N="125" x="39.062" mg="-0.08" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-007D20l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-007D20l00125r10 N="125" x="39.062" mg="-0.07" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-007D40l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-007D40l00125r10 N="125" x="39.062" mg="-0.07" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-007D60l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-007D60l00125r10 N="125" x="39.062" mg="-0.07" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-007D80l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-007D80l00125r10 N="125" x="39.062" mg="-0.07" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-007D100l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-007D100l00125r10 N="125" x="39.062" mg="-0.07" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-007D120l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-007D120l00125r10 N="125" x="39.062" mg="-0.07" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-007D140l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-007D140l00125r10 N="125" x="39.062" mg="-0.07" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-007D160l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-007D160l00125r10 N="125" x="39.062" mg="-0.07" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-007D180l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-007D180l00125r10 N="125" x="39.062" mg="-0.07" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-007D200l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-007D200l00125r10 N="125" x="39.062" mg="-0.07" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-007D220l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-007D220l00125r10 N="125" x="39.062" mg="-0.07" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-007D240l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-007D240l00125r10 N="125" x="39.062" mg="-0.07" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-007D260l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-007D260l00125r10 N="125" x="39.062" mg="-0.07" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-006D20l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-006D20l00125r10 N="125" x="39.062" mg="-0.06" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-006D40l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-006D40l00125r10 N="125" x="39.062" mg="-0.06" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-006D60l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-006D60l00125r10 N="125" x="39.062" mg="-0.06" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-006D80l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-006D80l00125r10 N="125" x="39.062" mg="-0.06" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-006D100l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-006D100l00125r10 N="125" x="39.062" mg="-0.06" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-006D120l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-006D120l00125r10 N="125" x="39.062" mg="-0.06" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-006D140l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-006D140l00125r10 N="125" x="39.062" mg="-0.06" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-006D160l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-006D160l00125r10 N="125" x="39.062" mg="-0.06" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-006D180l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-006D180l00125r10 N="125" x="39.062" mg="-0.06" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-006D200l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-006D200l00125r10 N="125" x="39.062" mg="-0.06" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-006D220l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-006D220l00125r10 N="125" x="39.062" mg="-0.06" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-006D240l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-006D240l00125r10 N="125" x="39.062" mg="-0.06" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-006D260l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-006D260l00125r10 N="125" x="39.062" mg="-0.06" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-005D20l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-005D20l00125r10 N="125" x="39.062" mg="-0.05" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-005D40l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-005D40l00125r10 N="125" x="39.062" mg="-0.05" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-005D60l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-005D60l00125r10 N="125" x="39.062" mg="-0.05" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-005D80l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-005D80l00125r10 N="125" x="39.062" mg="-0.05" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-005D100l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-005D100l00125r10 N="125" x="39.062" mg="-0.05" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-005D120l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-005D120l00125r10 N="125" x="39.062" mg="-0.05" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-005D140l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-005D140l00125r10 N="125" x="39.062" mg="-0.05" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-005D160l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-005D160l00125r10 N="125" x="39.062" mg="-0.05" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-005D180l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-005D180l00125r10 N="125" x="39.062" mg="-0.05" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-005D200l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-005D200l00125r10 N="125" x="39.062" mg="-0.05" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-005D220l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-005D220l00125r10 N="125" x="39.062" mg="-0.05" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-005D240l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-005D240l00125r10 N="125" x="39.062" mg="-0.05" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-005D260l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-005D260l00125r10 N="125" x="39.062" mg="-0.05" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-004D20l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-004D20l00125r10 N="125" x="39.062" mg="-0.04" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-004D40l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-004D40l00125r10 N="125" x="39.062" mg="-0.04" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-004D60l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-004D60l00125r10 N="125" x="39.062" mg="-0.04" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-004D80l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-004D80l00125r10 N="125" x="39.062" mg="-0.04" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-004D100l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-004D100l00125r10 N="125" x="39.062" mg="-0.04" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-004D120l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-004D120l00125r10 N="125" x="39.062" mg="-0.04" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-004D140l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-004D140l00125r10 N="125" x="39.062" mg="-0.04" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-004D160l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-004D160l00125r10 N="125" x="39.062" mg="-0.04" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-004D180l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-004D180l00125r10 N="125" x="39.062" mg="-0.04" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-004D200l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-004D200l00125r10 N="125" x="39.062" mg="-0.04" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-004D220l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-004D220l00125r10 N="125" x="39.062" mg="-0.04" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-004D240l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-004D240l00125r10 N="125" x="39.062" mg="-0.04" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N125x39062mg-004D260l00125r10 SW_Observables_iT.sub
-VARS N125x39062mg-004D260l00125r10 N="125" x="39.062" mg="-0.04" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-007D20l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-007D20l00125r10 N="150" x="56.25" mg="-0.07" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-007D40l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-007D40l00125r10 N="150" x="56.25" mg="-0.07" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-007D60l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-007D60l00125r10 N="150" x="56.25" mg="-0.07" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-007D80l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-007D80l00125r10 N="150" x="56.25" mg="-0.07" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-007D100l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-007D100l00125r10 N="150" x="56.25" mg="-0.07" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-007D120l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-007D120l00125r10 N="150" x="56.25" mg="-0.07" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-007D140l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-007D140l00125r10 N="150" x="56.25" mg="-0.07" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-007D160l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-007D160l00125r10 N="150" x="56.25" mg="-0.07" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-007D180l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-007D180l00125r10 N="150" x="56.25" mg="-0.07" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-007D200l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-007D200l00125r10 N="150" x="56.25" mg="-0.07" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-007D220l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-007D220l00125r10 N="150" x="56.25" mg="-0.07" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-007D240l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-007D240l00125r10 N="150" x="56.25" mg="-0.07" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-007D260l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-007D260l00125r10 N="150" x="56.25" mg="-0.07" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-006D20l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-006D20l00125r10 N="150" x="56.25" mg="-0.06" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-006D40l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-006D40l00125r10 N="150" x="56.25" mg="-0.06" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-006D60l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-006D60l00125r10 N="150" x="56.25" mg="-0.06" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-006D80l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-006D80l00125r10 N="150" x="56.25" mg="-0.06" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-006D100l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-006D100l00125r10 N="150" x="56.25" mg="-0.06" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-006D120l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-006D120l00125r10 N="150" x="56.25" mg="-0.06" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-006D140l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-006D140l00125r10 N="150" x="56.25" mg="-0.06" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-006D160l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-006D160l00125r10 N="150" x="56.25" mg="-0.06" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-006D180l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-006D180l00125r10 N="150" x="56.25" mg="-0.06" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-006D200l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-006D200l00125r10 N="150" x="56.25" mg="-0.06" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-006D220l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-006D220l00125r10 N="150" x="56.25" mg="-0.06" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-006D240l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-006D240l00125r10 N="150" x="56.25" mg="-0.06" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-006D260l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-006D260l00125r10 N="150" x="56.25" mg="-0.06" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-005D20l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-005D20l00125r10 N="150" x="56.25" mg="-0.05" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-005D40l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-005D40l00125r10 N="150" x="56.25" mg="-0.05" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-005D60l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-005D60l00125r10 N="150" x="56.25" mg="-0.05" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-005D80l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-005D80l00125r10 N="150" x="56.25" mg="-0.05" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-005D100l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-005D100l00125r10 N="150" x="56.25" mg="-0.05" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-005D120l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-005D120l00125r10 N="150" x="56.25" mg="-0.05" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-005D140l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-005D140l00125r10 N="150" x="56.25" mg="-0.05" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-005D160l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-005D160l00125r10 N="150" x="56.25" mg="-0.05" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-005D180l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-005D180l00125r10 N="150" x="56.25" mg="-0.05" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-005D200l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-005D200l00125r10 N="150" x="56.25" mg="-0.05" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-005D220l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-005D220l00125r10 N="150" x="56.25" mg="-0.05" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-005D240l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-005D240l00125r10 N="150" x="56.25" mg="-0.05" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-005D260l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-005D260l00125r10 N="150" x="56.25" mg="-0.05" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-004D20l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-004D20l00125r10 N="150" x="56.25" mg="-0.04" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-004D40l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-004D40l00125r10 N="150" x="56.25" mg="-0.04" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-004D60l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-004D60l00125r10 N="150" x="56.25" mg="-0.04" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-004D80l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-004D80l00125r10 N="150" x="56.25" mg="-0.04" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-004D100l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-004D100l00125r10 N="150" x="56.25" mg="-0.04" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-004D120l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-004D120l00125r10 N="150" x="56.25" mg="-0.04" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-004D140l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-004D140l00125r10 N="150" x="56.25" mg="-0.04" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-004D160l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-004D160l00125r10 N="150" x="56.25" mg="-0.04" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-004D180l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-004D180l00125r10 N="150" x="56.25" mg="-0.04" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-004D200l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-004D200l00125r10 N="150" x="56.25" mg="-0.04" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-004D220l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-004D220l00125r10 N="150" x="56.25" mg="-0.04" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-004D240l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-004D240l00125r10 N="150" x="56.25" mg="-0.04" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-004D260l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-004D260l00125r10 N="150" x="56.25" mg="-0.04" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-003D20l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-003D20l00125r10 N="150" x="56.25" mg="-0.03" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-003D40l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-003D40l00125r10 N="150" x="56.25" mg="-0.03" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-003D60l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-003D60l00125r10 N="150" x="56.25" mg="-0.03" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-003D80l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-003D80l00125r10 N="150" x="56.25" mg="-0.03" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-003D100l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-003D100l00125r10 N="150" x="56.25" mg="-0.03" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-003D120l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-003D120l00125r10 N="150" x="56.25" mg="-0.03" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-003D140l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-003D140l00125r10 N="150" x="56.25" mg="-0.03" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-003D160l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-003D160l00125r10 N="150" x="56.25" mg="-0.03" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-003D180l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-003D180l00125r10 N="150" x="56.25" mg="-0.03" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-003D200l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-003D200l00125r10 N="150" x="56.25" mg="-0.03" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-003D220l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-003D220l00125r10 N="150" x="56.25" mg="-0.03" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-003D240l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-003D240l00125r10 N="150" x="56.25" mg="-0.03" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N150x5625mg-003D260l00125r10 SW_Observables_iT.sub
-VARS N150x5625mg-003D260l00125r10 N="150" x="56.25" mg="-0.03" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-006D20l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-006D20l00125r10 N="200" x="100.0" mg="-0.06" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-006D40l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-006D40l00125r10 N="200" x="100.0" mg="-0.06" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-006D60l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-006D60l00125r10 N="200" x="100.0" mg="-0.06" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-006D80l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-006D80l00125r10 N="200" x="100.0" mg="-0.06" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-006D100l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-006D100l00125r10 N="200" x="100.0" mg="-0.06" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-006D120l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-006D120l00125r10 N="200" x="100.0" mg="-0.06" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-006D140l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-006D140l00125r10 N="200" x="100.0" mg="-0.06" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-006D160l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-006D160l00125r10 N="200" x="100.0" mg="-0.06" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-006D180l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-006D180l00125r10 N="200" x="100.0" mg="-0.06" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-006D200l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-006D200l00125r10 N="200" x="100.0" mg="-0.06" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-006D220l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-006D220l00125r10 N="200" x="100.0" mg="-0.06" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-006D240l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-006D240l00125r10 N="200" x="100.0" mg="-0.06" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-006D260l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-006D260l00125r10 N="200" x="100.0" mg="-0.06" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-005D20l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-005D20l00125r10 N="200" x="100.0" mg="-0.05" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-005D40l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-005D40l00125r10 N="200" x="100.0" mg="-0.05" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-005D60l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-005D60l00125r10 N="200" x="100.0" mg="-0.05" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-005D80l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-005D80l00125r10 N="200" x="100.0" mg="-0.05" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-005D100l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-005D100l00125r10 N="200" x="100.0" mg="-0.05" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-005D120l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-005D120l00125r10 N="200" x="100.0" mg="-0.05" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-005D140l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-005D140l00125r10 N="200" x="100.0" mg="-0.05" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-005D160l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-005D160l00125r10 N="200" x="100.0" mg="-0.05" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-005D180l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-005D180l00125r10 N="200" x="100.0" mg="-0.05" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-005D200l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-005D200l00125r10 N="200" x="100.0" mg="-0.05" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-005D220l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-005D220l00125r10 N="200" x="100.0" mg="-0.05" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-005D240l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-005D240l00125r10 N="200" x="100.0" mg="-0.05" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-005D260l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-005D260l00125r10 N="200" x="100.0" mg="-0.05" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-004D20l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-004D20l00125r10 N="200" x="100.0" mg="-0.04" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-004D40l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-004D40l00125r10 N="200" x="100.0" mg="-0.04" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-004D60l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-004D60l00125r10 N="200" x="100.0" mg="-0.04" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-004D80l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-004D80l00125r10 N="200" x="100.0" mg="-0.04" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-004D100l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-004D100l00125r10 N="200" x="100.0" mg="-0.04" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-004D120l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-004D120l00125r10 N="200" x="100.0" mg="-0.04" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-004D140l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-004D140l00125r10 N="200" x="100.0" mg="-0.04" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-004D160l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-004D160l00125r10 N="200" x="100.0" mg="-0.04" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-004D180l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-004D180l00125r10 N="200" x="100.0" mg="-0.04" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-004D200l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-004D200l00125r10 N="200" x="100.0" mg="-0.04" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-004D220l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-004D220l00125r10 N="200" x="100.0" mg="-0.04" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-004D240l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-004D240l00125r10 N="200" x="100.0" mg="-0.04" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-004D260l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-004D260l00125r10 N="200" x="100.0" mg="-0.04" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-003D20l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-003D20l00125r10 N="200" x="100.0" mg="-0.03" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-003D40l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-003D40l00125r10 N="200" x="100.0" mg="-0.03" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-003D60l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-003D60l00125r10 N="200" x="100.0" mg="-0.03" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-003D80l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-003D80l00125r10 N="200" x="100.0" mg="-0.03" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-003D100l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-003D100l00125r10 N="200" x="100.0" mg="-0.03" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-003D120l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-003D120l00125r10 N="200" x="100.0" mg="-0.03" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-003D140l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-003D140l00125r10 N="200" x="100.0" mg="-0.03" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-003D160l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-003D160l00125r10 N="200" x="100.0" mg="-0.03" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-003D180l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-003D180l00125r10 N="200" x="100.0" mg="-0.03" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-003D200l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-003D200l00125r10 N="200" x="100.0" mg="-0.03" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-003D220l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-003D220l00125r10 N="200" x="100.0" mg="-0.03" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-003D240l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-003D240l00125r10 N="200" x="100.0" mg="-0.03" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-003D260l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-003D260l00125r10 N="200" x="100.0" mg="-0.03" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-002D20l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-002D20l00125r10 N="200" x="100.0" mg="-0.02" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-002D40l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-002D40l00125r10 N="200" x="100.0" mg="-0.02" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-002D60l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-002D60l00125r10 N="200" x="100.0" mg="-0.02" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-002D80l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-002D80l00125r10 N="200" x="100.0" mg="-0.02" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-002D100l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-002D100l00125r10 N="200" x="100.0" mg="-0.02" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-002D120l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-002D120l00125r10 N="200" x="100.0" mg="-0.02" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-002D140l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-002D140l00125r10 N="200" x="100.0" mg="-0.02" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-002D160l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-002D160l00125r10 N="200" x="100.0" mg="-0.02" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-002D180l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-002D180l00125r10 N="200" x="100.0" mg="-0.02" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-002D200l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-002D200l00125r10 N="200" x="100.0" mg="-0.02" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-002D220l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-002D220l00125r10 N="200" x="100.0" mg="-0.02" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-002D240l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-002D240l00125r10 N="200" x="100.0" mg="-0.02" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N200x1000mg-002D260l00125r10 SW_Observables_iT.sub
-VARS N200x1000mg-002D260l00125r10 N="200" x="100.0" mg="-0.02" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0057D20l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0057D20l00125r10 N="225" x="126.562" mg="-0.057" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0057D40l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0057D40l00125r10 N="225" x="126.562" mg="-0.057" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0057D60l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0057D60l00125r10 N="225" x="126.562" mg="-0.057" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0057D80l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0057D80l00125r10 N="225" x="126.562" mg="-0.057" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0057D100l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0057D100l00125r10 N="225" x="126.562" mg="-0.057" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0057D120l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0057D120l00125r10 N="225" x="126.562" mg="-0.057" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0057D140l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0057D140l00125r10 N="225" x="126.562" mg="-0.057" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0057D160l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0057D160l00125r10 N="225" x="126.562" mg="-0.057" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0057D180l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0057D180l00125r10 N="225" x="126.562" mg="-0.057" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0057D200l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0057D200l00125r10 N="225" x="126.562" mg="-0.057" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0057D220l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0057D220l00125r10 N="225" x="126.562" mg="-0.057" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0057D240l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0057D240l00125r10 N="225" x="126.562" mg="-0.057" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0057D260l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0057D260l00125r10 N="225" x="126.562" mg="-0.057" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0047D20l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0047D20l00125r10 N="225" x="126.562" mg="-0.047" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0047D40l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0047D40l00125r10 N="225" x="126.562" mg="-0.047" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0047D60l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0047D60l00125r10 N="225" x="126.562" mg="-0.047" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0047D80l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0047D80l00125r10 N="225" x="126.562" mg="-0.047" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0047D100l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0047D100l00125r10 N="225" x="126.562" mg="-0.047" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0047D120l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0047D120l00125r10 N="225" x="126.562" mg="-0.047" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0047D140l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0047D140l00125r10 N="225" x="126.562" mg="-0.047" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0047D160l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0047D160l00125r10 N="225" x="126.562" mg="-0.047" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0047D180l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0047D180l00125r10 N="225" x="126.562" mg="-0.047" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0047D200l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0047D200l00125r10 N="225" x="126.562" mg="-0.047" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0047D220l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0047D220l00125r10 N="225" x="126.562" mg="-0.047" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0047D240l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0047D240l00125r10 N="225" x="126.562" mg="-0.047" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0047D260l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0047D260l00125r10 N="225" x="126.562" mg="-0.047" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0037D20l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0037D20l00125r10 N="225" x="126.562" mg="-0.037" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0037D40l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0037D40l00125r10 N="225" x="126.562" mg="-0.037" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0037D60l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0037D60l00125r10 N="225" x="126.562" mg="-0.037" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0037D80l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0037D80l00125r10 N="225" x="126.562" mg="-0.037" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0037D100l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0037D100l00125r10 N="225" x="126.562" mg="-0.037" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0037D120l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0037D120l00125r10 N="225" x="126.562" mg="-0.037" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0037D140l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0037D140l00125r10 N="225" x="126.562" mg="-0.037" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0037D160l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0037D160l00125r10 N="225" x="126.562" mg="-0.037" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0037D180l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0037D180l00125r10 N="225" x="126.562" mg="-0.037" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0037D200l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0037D200l00125r10 N="225" x="126.562" mg="-0.037" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0037D220l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0037D220l00125r10 N="225" x="126.562" mg="-0.037" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0037D240l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0037D240l00125r10 N="225" x="126.562" mg="-0.037" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0037D260l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0037D260l00125r10 N="225" x="126.562" mg="-0.037" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0027D20l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0027D20l00125r10 N="225" x="126.562" mg="-0.027" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0027D40l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0027D40l00125r10 N="225" x="126.562" mg="-0.027" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0027D60l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0027D60l00125r10 N="225" x="126.562" mg="-0.027" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0027D80l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0027D80l00125r10 N="225" x="126.562" mg="-0.027" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0027D100l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0027D100l00125r10 N="225" x="126.562" mg="-0.027" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0027D120l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0027D120l00125r10 N="225" x="126.562" mg="-0.027" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0027D140l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0027D140l00125r10 N="225" x="126.562" mg="-0.027" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0027D160l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0027D160l00125r10 N="225" x="126.562" mg="-0.027" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0027D180l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0027D180l00125r10 N="225" x="126.562" mg="-0.027" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0027D200l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0027D200l00125r10 N="225" x="126.562" mg="-0.027" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0027D220l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0027D220l00125r10 N="225" x="126.562" mg="-0.027" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0027D240l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0027D240l00125r10 N="225" x="126.562" mg="-0.027" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0027D260l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0027D260l00125r10 N="225" x="126.562" mg="-0.027" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0017D20l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0017D20l00125r10 N="225" x="126.562" mg="-0.017" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0017D40l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0017D40l00125r10 N="225" x="126.562" mg="-0.017" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0017D60l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0017D60l00125r10 N="225" x="126.562" mg="-0.017" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0017D80l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0017D80l00125r10 N="225" x="126.562" mg="-0.017" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0017D100l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0017D100l00125r10 N="225" x="126.562" mg="-0.017" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0017D120l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0017D120l00125r10 N="225" x="126.562" mg="-0.017" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0017D140l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0017D140l00125r10 N="225" x="126.562" mg="-0.017" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0017D160l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0017D160l00125r10 N="225" x="126.562" mg="-0.017" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0017D180l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0017D180l00125r10 N="225" x="126.562" mg="-0.017" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0017D200l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0017D200l00125r10 N="225" x="126.562" mg="-0.017" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0017D220l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0017D220l00125r10 N="225" x="126.562" mg="-0.017" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0017D240l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0017D240l00125r10 N="225" x="126.562" mg="-0.017" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N225x126562mg-0017D260l00125r10 SW_Observables_iT.sub
-VARS N225x126562mg-0017D260l00125r10 N="225" x="126.562" mg="-0.017" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0054D20l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0054D20l00125r10 N="250" x="156.25" mg="-0.054" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0054D40l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0054D40l00125r10 N="250" x="156.25" mg="-0.054" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0054D60l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0054D60l00125r10 N="250" x="156.25" mg="-0.054" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0054D80l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0054D80l00125r10 N="250" x="156.25" mg="-0.054" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0054D100l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0054D100l00125r10 N="250" x="156.25" mg="-0.054" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0054D120l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0054D120l00125r10 N="250" x="156.25" mg="-0.054" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0054D140l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0054D140l00125r10 N="250" x="156.25" mg="-0.054" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0054D160l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0054D160l00125r10 N="250" x="156.25" mg="-0.054" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0054D180l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0054D180l00125r10 N="250" x="156.25" mg="-0.054" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0054D200l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0054D200l00125r10 N="250" x="156.25" mg="-0.054" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0054D220l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0054D220l00125r10 N="250" x="156.25" mg="-0.054" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0054D240l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0054D240l00125r10 N="250" x="156.25" mg="-0.054" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0054D260l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0054D260l00125r10 N="250" x="156.25" mg="-0.054" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0044D20l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0044D20l00125r10 N="250" x="156.25" mg="-0.044" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0044D40l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0044D40l00125r10 N="250" x="156.25" mg="-0.044" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0044D60l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0044D60l00125r10 N="250" x="156.25" mg="-0.044" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0044D80l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0044D80l00125r10 N="250" x="156.25" mg="-0.044" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0044D100l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0044D100l00125r10 N="250" x="156.25" mg="-0.044" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0044D120l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0044D120l00125r10 N="250" x="156.25" mg="-0.044" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0044D140l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0044D140l00125r10 N="250" x="156.25" mg="-0.044" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0044D160l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0044D160l00125r10 N="250" x="156.25" mg="-0.044" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0044D180l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0044D180l00125r10 N="250" x="156.25" mg="-0.044" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0044D200l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0044D200l00125r10 N="250" x="156.25" mg="-0.044" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0044D220l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0044D220l00125r10 N="250" x="156.25" mg="-0.044" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0044D240l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0044D240l00125r10 N="250" x="156.25" mg="-0.044" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0044D260l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0044D260l00125r10 N="250" x="156.25" mg="-0.044" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0034D20l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0034D20l00125r10 N="250" x="156.25" mg="-0.034" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0034D40l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0034D40l00125r10 N="250" x="156.25" mg="-0.034" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0034D60l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0034D60l00125r10 N="250" x="156.25" mg="-0.034" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0034D80l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0034D80l00125r10 N="250" x="156.25" mg="-0.034" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0034D100l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0034D100l00125r10 N="250" x="156.25" mg="-0.034" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0034D120l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0034D120l00125r10 N="250" x="156.25" mg="-0.034" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0034D140l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0034D140l00125r10 N="250" x="156.25" mg="-0.034" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0034D160l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0034D160l00125r10 N="250" x="156.25" mg="-0.034" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0034D180l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0034D180l00125r10 N="250" x="156.25" mg="-0.034" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0034D200l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0034D200l00125r10 N="250" x="156.25" mg="-0.034" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0034D220l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0034D220l00125r10 N="250" x="156.25" mg="-0.034" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0034D240l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0034D240l00125r10 N="250" x="156.25" mg="-0.034" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0034D260l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0034D260l00125r10 N="250" x="156.25" mg="-0.034" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0024D20l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0024D20l00125r10 N="250" x="156.25" mg="-0.024" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0024D40l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0024D40l00125r10 N="250" x="156.25" mg="-0.024" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0024D60l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0024D60l00125r10 N="250" x="156.25" mg="-0.024" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0024D80l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0024D80l00125r10 N="250" x="156.25" mg="-0.024" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0024D100l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0024D100l00125r10 N="250" x="156.25" mg="-0.024" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0024D120l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0024D120l00125r10 N="250" x="156.25" mg="-0.024" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0024D140l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0024D140l00125r10 N="250" x="156.25" mg="-0.024" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0024D160l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0024D160l00125r10 N="250" x="156.25" mg="-0.024" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0024D180l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0024D180l00125r10 N="250" x="156.25" mg="-0.024" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0024D200l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0024D200l00125r10 N="250" x="156.25" mg="-0.024" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0024D220l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0024D220l00125r10 N="250" x="156.25" mg="-0.024" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0024D240l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0024D240l00125r10 N="250" x="156.25" mg="-0.024" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0024D260l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0024D260l00125r10 N="250" x="156.25" mg="-0.024" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0014D20l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0014D20l00125r10 N="250" x="156.25" mg="-0.014" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0014D40l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0014D40l00125r10 N="250" x="156.25" mg="-0.014" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0014D60l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0014D60l00125r10 N="250" x="156.25" mg="-0.014" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0014D80l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0014D80l00125r10 N="250" x="156.25" mg="-0.014" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0014D100l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0014D100l00125r10 N="250" x="156.25" mg="-0.014" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0014D120l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0014D120l00125r10 N="250" x="156.25" mg="-0.014" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0014D140l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0014D140l00125r10 N="250" x="156.25" mg="-0.014" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0014D160l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0014D160l00125r10 N="250" x="156.25" mg="-0.014" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0014D180l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0014D180l00125r10 N="250" x="156.25" mg="-0.014" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0014D200l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0014D200l00125r10 N="250" x="156.25" mg="-0.014" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0014D220l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0014D220l00125r10 N="250" x="156.25" mg="-0.014" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0014D240l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0014D240l00125r10 N="250" x="156.25" mg="-0.014" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N250x15625mg-0014D260l00125r10 SW_Observables_iT.sub
-VARS N250x15625mg-0014D260l00125r10 N="250" x="156.25" mg="-0.014" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0052D20l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0052D20l00125r10 N="275" x="189.062" mg="-0.052" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0052D40l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0052D40l00125r10 N="275" x="189.062" mg="-0.052" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0052D60l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0052D60l00125r10 N="275" x="189.062" mg="-0.052" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0052D80l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0052D80l00125r10 N="275" x="189.062" mg="-0.052" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0052D100l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0052D100l00125r10 N="275" x="189.062" mg="-0.052" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0052D120l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0052D120l00125r10 N="275" x="189.062" mg="-0.052" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0052D140l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0052D140l00125r10 N="275" x="189.062" mg="-0.052" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0052D160l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0052D160l00125r10 N="275" x="189.062" mg="-0.052" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0052D180l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0052D180l00125r10 N="275" x="189.062" mg="-0.052" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0052D200l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0052D200l00125r10 N="275" x="189.062" mg="-0.052" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0052D220l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0052D220l00125r10 N="275" x="189.062" mg="-0.052" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0052D240l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0052D240l00125r10 N="275" x="189.062" mg="-0.052" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0052D260l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0052D260l00125r10 N="275" x="189.062" mg="-0.052" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0042D20l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0042D20l00125r10 N="275" x="189.062" mg="-0.042" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0042D40l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0042D40l00125r10 N="275" x="189.062" mg="-0.042" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0042D60l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0042D60l00125r10 N="275" x="189.062" mg="-0.042" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0042D80l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0042D80l00125r10 N="275" x="189.062" mg="-0.042" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0042D100l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0042D100l00125r10 N="275" x="189.062" mg="-0.042" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0042D120l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0042D120l00125r10 N="275" x="189.062" mg="-0.042" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0042D140l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0042D140l00125r10 N="275" x="189.062" mg="-0.042" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0042D160l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0042D160l00125r10 N="275" x="189.062" mg="-0.042" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0042D180l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0042D180l00125r10 N="275" x="189.062" mg="-0.042" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0042D200l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0042D200l00125r10 N="275" x="189.062" mg="-0.042" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0042D220l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0042D220l00125r10 N="275" x="189.062" mg="-0.042" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0042D240l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0042D240l00125r10 N="275" x="189.062" mg="-0.042" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0042D260l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0042D260l00125r10 N="275" x="189.062" mg="-0.042" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0032D20l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0032D20l00125r10 N="275" x="189.062" mg="-0.032" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0032D40l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0032D40l00125r10 N="275" x="189.062" mg="-0.032" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0032D60l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0032D60l00125r10 N="275" x="189.062" mg="-0.032" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0032D80l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0032D80l00125r10 N="275" x="189.062" mg="-0.032" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0032D100l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0032D100l00125r10 N="275" x="189.062" mg="-0.032" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0032D120l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0032D120l00125r10 N="275" x="189.062" mg="-0.032" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0032D140l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0032D140l00125r10 N="275" x="189.062" mg="-0.032" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0032D160l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0032D160l00125r10 N="275" x="189.062" mg="-0.032" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0032D180l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0032D180l00125r10 N="275" x="189.062" mg="-0.032" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0032D200l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0032D200l00125r10 N="275" x="189.062" mg="-0.032" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0032D220l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0032D220l00125r10 N="275" x="189.062" mg="-0.032" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0032D240l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0032D240l00125r10 N="275" x="189.062" mg="-0.032" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0032D260l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0032D260l00125r10 N="275" x="189.062" mg="-0.032" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0022D20l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0022D20l00125r10 N="275" x="189.062" mg="-0.022" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0022D40l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0022D40l00125r10 N="275" x="189.062" mg="-0.022" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0022D60l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0022D60l00125r10 N="275" x="189.062" mg="-0.022" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0022D80l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0022D80l00125r10 N="275" x="189.062" mg="-0.022" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0022D100l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0022D100l00125r10 N="275" x="189.062" mg="-0.022" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0022D120l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0022D120l00125r10 N="275" x="189.062" mg="-0.022" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0022D140l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0022D140l00125r10 N="275" x="189.062" mg="-0.022" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0022D160l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0022D160l00125r10 N="275" x="189.062" mg="-0.022" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0022D180l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0022D180l00125r10 N="275" x="189.062" mg="-0.022" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0022D200l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0022D200l00125r10 N="275" x="189.062" mg="-0.022" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0022D220l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0022D220l00125r10 N="275" x="189.062" mg="-0.022" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0022D240l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0022D240l00125r10 N="275" x="189.062" mg="-0.022" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0022D260l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0022D260l00125r10 N="275" x="189.062" mg="-0.022" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0012D20l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0012D20l00125r10 N="275" x="189.062" mg="-0.012" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0012D40l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0012D40l00125r10 N="275" x="189.062" mg="-0.012" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0012D60l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0012D60l00125r10 N="275" x="189.062" mg="-0.012" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0012D80l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0012D80l00125r10 N="275" x="189.062" mg="-0.012" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0012D100l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0012D100l00125r10 N="275" x="189.062" mg="-0.012" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0012D120l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0012D120l00125r10 N="275" x="189.062" mg="-0.012" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0012D140l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0012D140l00125r10 N="275" x="189.062" mg="-0.012" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0012D160l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0012D160l00125r10 N="275" x="189.062" mg="-0.012" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0012D180l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0012D180l00125r10 N="275" x="189.062" mg="-0.012" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0012D200l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0012D200l00125r10 N="275" x="189.062" mg="-0.012" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0012D220l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0012D220l00125r10 N="275" x="189.062" mg="-0.012" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0012D240l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0012D240l00125r10 N="275" x="189.062" mg="-0.012" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N275x189062mg-0012D260l00125r10 SW_Observables_iT.sub
-VARS N275x189062mg-0012D260l00125r10 N="275" x="189.062" mg="-0.012" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0048D20l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0048D20l00125r10 N="300" x="225.0" mg="-0.048" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0048D40l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0048D40l00125r10 N="300" x="225.0" mg="-0.048" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0048D60l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0048D60l00125r10 N="300" x="225.0" mg="-0.048" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0048D80l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0048D80l00125r10 N="300" x="225.0" mg="-0.048" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0048D100l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0048D100l00125r10 N="300" x="225.0" mg="-0.048" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0048D120l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0048D120l00125r10 N="300" x="225.0" mg="-0.048" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0048D140l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0048D140l00125r10 N="300" x="225.0" mg="-0.048" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0048D160l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0048D160l00125r10 N="300" x="225.0" mg="-0.048" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0048D180l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0048D180l00125r10 N="300" x="225.0" mg="-0.048" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0048D200l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0048D200l00125r10 N="300" x="225.0" mg="-0.048" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0048D220l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0048D220l00125r10 N="300" x="225.0" mg="-0.048" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0048D240l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0048D240l00125r10 N="300" x="225.0" mg="-0.048" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0048D260l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0048D260l00125r10 N="300" x="225.0" mg="-0.048" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0038D20l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0038D20l00125r10 N="300" x="225.0" mg="-0.038" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0038D40l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0038D40l00125r10 N="300" x="225.0" mg="-0.038" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0038D60l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0038D60l00125r10 N="300" x="225.0" mg="-0.038" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0038D80l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0038D80l00125r10 N="300" x="225.0" mg="-0.038" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0038D100l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0038D100l00125r10 N="300" x="225.0" mg="-0.038" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0038D120l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0038D120l00125r10 N="300" x="225.0" mg="-0.038" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0038D140l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0038D140l00125r10 N="300" x="225.0" mg="-0.038" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0038D160l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0038D160l00125r10 N="300" x="225.0" mg="-0.038" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0038D180l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0038D180l00125r10 N="300" x="225.0" mg="-0.038" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0038D200l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0038D200l00125r10 N="300" x="225.0" mg="-0.038" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0038D220l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0038D220l00125r10 N="300" x="225.0" mg="-0.038" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0038D240l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0038D240l00125r10 N="300" x="225.0" mg="-0.038" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0038D260l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0038D260l00125r10 N="300" x="225.0" mg="-0.038" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0028D20l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0028D20l00125r10 N="300" x="225.0" mg="-0.028" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0028D40l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0028D40l00125r10 N="300" x="225.0" mg="-0.028" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0028D60l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0028D60l00125r10 N="300" x="225.0" mg="-0.028" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0028D80l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0028D80l00125r10 N="300" x="225.0" mg="-0.028" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0028D100l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0028D100l00125r10 N="300" x="225.0" mg="-0.028" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0028D120l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0028D120l00125r10 N="300" x="225.0" mg="-0.028" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0028D140l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0028D140l00125r10 N="300" x="225.0" mg="-0.028" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0028D160l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0028D160l00125r10 N="300" x="225.0" mg="-0.028" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0028D180l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0028D180l00125r10 N="300" x="225.0" mg="-0.028" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0028D200l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0028D200l00125r10 N="300" x="225.0" mg="-0.028" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0028D220l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0028D220l00125r10 N="300" x="225.0" mg="-0.028" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0028D240l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0028D240l00125r10 N="300" x="225.0" mg="-0.028" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0028D260l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0028D260l00125r10 N="300" x="225.0" mg="-0.028" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0018D20l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0018D20l00125r10 N="300" x="225.0" mg="-0.018" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0018D40l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0018D40l00125r10 N="300" x="225.0" mg="-0.018" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0018D60l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0018D60l00125r10 N="300" x="225.0" mg="-0.018" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0018D80l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0018D80l00125r10 N="300" x="225.0" mg="-0.018" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0018D100l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0018D100l00125r10 N="300" x="225.0" mg="-0.018" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0018D120l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0018D120l00125r10 N="300" x="225.0" mg="-0.018" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0018D140l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0018D140l00125r10 N="300" x="225.0" mg="-0.018" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0018D160l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0018D160l00125r10 N="300" x="225.0" mg="-0.018" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0018D180l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0018D180l00125r10 N="300" x="225.0" mg="-0.018" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0018D200l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0018D200l00125r10 N="300" x="225.0" mg="-0.018" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0018D220l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0018D220l00125r10 N="300" x="225.0" mg="-0.018" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0018D240l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0018D240l00125r10 N="300" x="225.0" mg="-0.018" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0018D260l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0018D260l00125r10 N="300" x="225.0" mg="-0.018" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0008D20l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0008D20l00125r10 N="300" x="225.0" mg="-0.008" D="20" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0008D40l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0008D40l00125r10 N="300" x="225.0" mg="-0.008" D="40" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0008D60l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0008D60l00125r10 N="300" x="225.0" mg="-0.008" D="60" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0008D80l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0008D80l00125r10 N="300" x="225.0" mg="-0.008" D="80" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0008D100l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0008D100l00125r10 N="300" x="225.0" mg="-0.008" D="100" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0008D120l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0008D120l00125r10 N="300" x="225.0" mg="-0.008" D="120" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0008D140l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0008D140l00125r10 N="300" x="225.0" mg="-0.008" D="140" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0008D160l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0008D160l00125r10 N="300" x="225.0" mg="-0.008" D="160" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0008D180l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0008D180l00125r10 N="300" x="225.0" mg="-0.008" D="180" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0008D200l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0008D200l00125r10 N="300" x="225.0" mg="-0.008" D="200" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0008D220l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0008D220l00125r10 N="300" x="225.0" mg="-0.008" D="220" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0008D240l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0008D240l00125r10 N="300" x="225.0" mg="-0.008" D="240" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
-JOB N300x2250mg-0008D260l00125r10 SW_Observables_iT.sub
-VARS N300x2250mg-0008D260l00125r10 N="300" x="225.0" mg="-0.008" D="260" l_0="0.125" lambda="100.0" acc="1e-10" ns="500" r="1.0"
+JOB N32x100mg-015D20l001r10 SW_Observables_iT.sub
+VARS N32x100mg-015D20l001r10 N="32" x="10.0" mg="-0.15" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-015D40l001r10 SW_Observables_iT.sub
+VARS N32x100mg-015D40l001r10 N="32" x="10.0" mg="-0.15" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-015D60l001r10 SW_Observables_iT.sub
+VARS N32x100mg-015D60l001r10 N="32" x="10.0" mg="-0.15" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-015D80l001r10 SW_Observables_iT.sub
+VARS N32x100mg-015D80l001r10 N="32" x="10.0" mg="-0.15" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-015D100l001r10 SW_Observables_iT.sub
+VARS N32x100mg-015D100l001r10 N="32" x="10.0" mg="-0.15" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-015D120l001r10 SW_Observables_iT.sub
+VARS N32x100mg-015D120l001r10 N="32" x="10.0" mg="-0.15" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-015D140l001r10 SW_Observables_iT.sub
+VARS N32x100mg-015D140l001r10 N="32" x="10.0" mg="-0.15" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-015D160l001r10 SW_Observables_iT.sub
+VARS N32x100mg-015D160l001r10 N="32" x="10.0" mg="-0.15" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-014111D20l001r10 SW_Observables_iT.sub
+VARS N32x100mg-014111D20l001r10 N="32" x="10.0" mg="-0.14111" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-014111D40l001r10 SW_Observables_iT.sub
+VARS N32x100mg-014111D40l001r10 N="32" x="10.0" mg="-0.14111" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-014111D60l001r10 SW_Observables_iT.sub
+VARS N32x100mg-014111D60l001r10 N="32" x="10.0" mg="-0.14111" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-014111D80l001r10 SW_Observables_iT.sub
+VARS N32x100mg-014111D80l001r10 N="32" x="10.0" mg="-0.14111" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-014111D100l001r10 SW_Observables_iT.sub
+VARS N32x100mg-014111D100l001r10 N="32" x="10.0" mg="-0.14111" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-014111D120l001r10 SW_Observables_iT.sub
+VARS N32x100mg-014111D120l001r10 N="32" x="10.0" mg="-0.14111" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-014111D140l001r10 SW_Observables_iT.sub
+VARS N32x100mg-014111D140l001r10 N="32" x="10.0" mg="-0.14111" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-014111D160l001r10 SW_Observables_iT.sub
+VARS N32x100mg-014111D160l001r10 N="32" x="10.0" mg="-0.14111" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-013222D20l001r10 SW_Observables_iT.sub
+VARS N32x100mg-013222D20l001r10 N="32" x="10.0" mg="-0.13222" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-013222D40l001r10 SW_Observables_iT.sub
+VARS N32x100mg-013222D40l001r10 N="32" x="10.0" mg="-0.13222" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-013222D60l001r10 SW_Observables_iT.sub
+VARS N32x100mg-013222D60l001r10 N="32" x="10.0" mg="-0.13222" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-013222D80l001r10 SW_Observables_iT.sub
+VARS N32x100mg-013222D80l001r10 N="32" x="10.0" mg="-0.13222" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-013222D100l001r10 SW_Observables_iT.sub
+VARS N32x100mg-013222D100l001r10 N="32" x="10.0" mg="-0.13222" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-013222D120l001r10 SW_Observables_iT.sub
+VARS N32x100mg-013222D120l001r10 N="32" x="10.0" mg="-0.13222" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-013222D140l001r10 SW_Observables_iT.sub
+VARS N32x100mg-013222D140l001r10 N="32" x="10.0" mg="-0.13222" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-013222D160l001r10 SW_Observables_iT.sub
+VARS N32x100mg-013222D160l001r10 N="32" x="10.0" mg="-0.13222" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-012333D20l001r10 SW_Observables_iT.sub
+VARS N32x100mg-012333D20l001r10 N="32" x="10.0" mg="-0.12333" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-012333D40l001r10 SW_Observables_iT.sub
+VARS N32x100mg-012333D40l001r10 N="32" x="10.0" mg="-0.12333" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-012333D60l001r10 SW_Observables_iT.sub
+VARS N32x100mg-012333D60l001r10 N="32" x="10.0" mg="-0.12333" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-012333D80l001r10 SW_Observables_iT.sub
+VARS N32x100mg-012333D80l001r10 N="32" x="10.0" mg="-0.12333" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-012333D100l001r10 SW_Observables_iT.sub
+VARS N32x100mg-012333D100l001r10 N="32" x="10.0" mg="-0.12333" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-012333D120l001r10 SW_Observables_iT.sub
+VARS N32x100mg-012333D120l001r10 N="32" x="10.0" mg="-0.12333" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-012333D140l001r10 SW_Observables_iT.sub
+VARS N32x100mg-012333D140l001r10 N="32" x="10.0" mg="-0.12333" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-012333D160l001r10 SW_Observables_iT.sub
+VARS N32x100mg-012333D160l001r10 N="32" x="10.0" mg="-0.12333" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-011444D20l001r10 SW_Observables_iT.sub
+VARS N32x100mg-011444D20l001r10 N="32" x="10.0" mg="-0.11444" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-011444D40l001r10 SW_Observables_iT.sub
+VARS N32x100mg-011444D40l001r10 N="32" x="10.0" mg="-0.11444" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-011444D60l001r10 SW_Observables_iT.sub
+VARS N32x100mg-011444D60l001r10 N="32" x="10.0" mg="-0.11444" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-011444D80l001r10 SW_Observables_iT.sub
+VARS N32x100mg-011444D80l001r10 N="32" x="10.0" mg="-0.11444" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-011444D100l001r10 SW_Observables_iT.sub
+VARS N32x100mg-011444D100l001r10 N="32" x="10.0" mg="-0.11444" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-011444D120l001r10 SW_Observables_iT.sub
+VARS N32x100mg-011444D120l001r10 N="32" x="10.0" mg="-0.11444" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-011444D140l001r10 SW_Observables_iT.sub
+VARS N32x100mg-011444D140l001r10 N="32" x="10.0" mg="-0.11444" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-011444D160l001r10 SW_Observables_iT.sub
+VARS N32x100mg-011444D160l001r10 N="32" x="10.0" mg="-0.11444" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-010556D20l001r10 SW_Observables_iT.sub
+VARS N32x100mg-010556D20l001r10 N="32" x="10.0" mg="-0.10556" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-010556D40l001r10 SW_Observables_iT.sub
+VARS N32x100mg-010556D40l001r10 N="32" x="10.0" mg="-0.10556" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-010556D60l001r10 SW_Observables_iT.sub
+VARS N32x100mg-010556D60l001r10 N="32" x="10.0" mg="-0.10556" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-010556D80l001r10 SW_Observables_iT.sub
+VARS N32x100mg-010556D80l001r10 N="32" x="10.0" mg="-0.10556" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-010556D100l001r10 SW_Observables_iT.sub
+VARS N32x100mg-010556D100l001r10 N="32" x="10.0" mg="-0.10556" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-010556D120l001r10 SW_Observables_iT.sub
+VARS N32x100mg-010556D120l001r10 N="32" x="10.0" mg="-0.10556" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-010556D140l001r10 SW_Observables_iT.sub
+VARS N32x100mg-010556D140l001r10 N="32" x="10.0" mg="-0.10556" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-010556D160l001r10 SW_Observables_iT.sub
+VARS N32x100mg-010556D160l001r10 N="32" x="10.0" mg="-0.10556" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-009667D20l001r10 SW_Observables_iT.sub
+VARS N32x100mg-009667D20l001r10 N="32" x="10.0" mg="-0.09667" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-009667D40l001r10 SW_Observables_iT.sub
+VARS N32x100mg-009667D40l001r10 N="32" x="10.0" mg="-0.09667" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-009667D60l001r10 SW_Observables_iT.sub
+VARS N32x100mg-009667D60l001r10 N="32" x="10.0" mg="-0.09667" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-009667D80l001r10 SW_Observables_iT.sub
+VARS N32x100mg-009667D80l001r10 N="32" x="10.0" mg="-0.09667" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-009667D100l001r10 SW_Observables_iT.sub
+VARS N32x100mg-009667D100l001r10 N="32" x="10.0" mg="-0.09667" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-009667D120l001r10 SW_Observables_iT.sub
+VARS N32x100mg-009667D120l001r10 N="32" x="10.0" mg="-0.09667" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-009667D140l001r10 SW_Observables_iT.sub
+VARS N32x100mg-009667D140l001r10 N="32" x="10.0" mg="-0.09667" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-009667D160l001r10 SW_Observables_iT.sub
+VARS N32x100mg-009667D160l001r10 N="32" x="10.0" mg="-0.09667" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-008778D20l001r10 SW_Observables_iT.sub
+VARS N32x100mg-008778D20l001r10 N="32" x="10.0" mg="-0.08778" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-008778D40l001r10 SW_Observables_iT.sub
+VARS N32x100mg-008778D40l001r10 N="32" x="10.0" mg="-0.08778" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-008778D60l001r10 SW_Observables_iT.sub
+VARS N32x100mg-008778D60l001r10 N="32" x="10.0" mg="-0.08778" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-008778D80l001r10 SW_Observables_iT.sub
+VARS N32x100mg-008778D80l001r10 N="32" x="10.0" mg="-0.08778" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-008778D100l001r10 SW_Observables_iT.sub
+VARS N32x100mg-008778D100l001r10 N="32" x="10.0" mg="-0.08778" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-008778D120l001r10 SW_Observables_iT.sub
+VARS N32x100mg-008778D120l001r10 N="32" x="10.0" mg="-0.08778" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-008778D140l001r10 SW_Observables_iT.sub
+VARS N32x100mg-008778D140l001r10 N="32" x="10.0" mg="-0.08778" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-008778D160l001r10 SW_Observables_iT.sub
+VARS N32x100mg-008778D160l001r10 N="32" x="10.0" mg="-0.08778" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-007889D20l001r10 SW_Observables_iT.sub
+VARS N32x100mg-007889D20l001r10 N="32" x="10.0" mg="-0.07889" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-007889D40l001r10 SW_Observables_iT.sub
+VARS N32x100mg-007889D40l001r10 N="32" x="10.0" mg="-0.07889" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-007889D60l001r10 SW_Observables_iT.sub
+VARS N32x100mg-007889D60l001r10 N="32" x="10.0" mg="-0.07889" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-007889D80l001r10 SW_Observables_iT.sub
+VARS N32x100mg-007889D80l001r10 N="32" x="10.0" mg="-0.07889" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-007889D100l001r10 SW_Observables_iT.sub
+VARS N32x100mg-007889D100l001r10 N="32" x="10.0" mg="-0.07889" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-007889D120l001r10 SW_Observables_iT.sub
+VARS N32x100mg-007889D120l001r10 N="32" x="10.0" mg="-0.07889" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-007889D140l001r10 SW_Observables_iT.sub
+VARS N32x100mg-007889D140l001r10 N="32" x="10.0" mg="-0.07889" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-007889D160l001r10 SW_Observables_iT.sub
+VARS N32x100mg-007889D160l001r10 N="32" x="10.0" mg="-0.07889" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-007D20l001r10 SW_Observables_iT.sub
+VARS N32x100mg-007D20l001r10 N="32" x="10.0" mg="-0.07" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-007D40l001r10 SW_Observables_iT.sub
+VARS N32x100mg-007D40l001r10 N="32" x="10.0" mg="-0.07" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-007D60l001r10 SW_Observables_iT.sub
+VARS N32x100mg-007D60l001r10 N="32" x="10.0" mg="-0.07" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-007D80l001r10 SW_Observables_iT.sub
+VARS N32x100mg-007D80l001r10 N="32" x="10.0" mg="-0.07" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-007D100l001r10 SW_Observables_iT.sub
+VARS N32x100mg-007D100l001r10 N="32" x="10.0" mg="-0.07" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-007D120l001r10 SW_Observables_iT.sub
+VARS N32x100mg-007D120l001r10 N="32" x="10.0" mg="-0.07" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-007D140l001r10 SW_Observables_iT.sub
+VARS N32x100mg-007D140l001r10 N="32" x="10.0" mg="-0.07" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N32x100mg-007D160l001r10 SW_Observables_iT.sub
+VARS N32x100mg-007D160l001r10 N="32" x="10.0" mg="-0.07" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-015D20l001r10 SW_Observables_iT.sub
+VARS N48x100mg-015D20l001r10 N="48" x="10.0" mg="-0.15" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-015D40l001r10 SW_Observables_iT.sub
+VARS N48x100mg-015D40l001r10 N="48" x="10.0" mg="-0.15" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-015D60l001r10 SW_Observables_iT.sub
+VARS N48x100mg-015D60l001r10 N="48" x="10.0" mg="-0.15" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-015D80l001r10 SW_Observables_iT.sub
+VARS N48x100mg-015D80l001r10 N="48" x="10.0" mg="-0.15" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-015D100l001r10 SW_Observables_iT.sub
+VARS N48x100mg-015D100l001r10 N="48" x="10.0" mg="-0.15" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-015D120l001r10 SW_Observables_iT.sub
+VARS N48x100mg-015D120l001r10 N="48" x="10.0" mg="-0.15" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-015D140l001r10 SW_Observables_iT.sub
+VARS N48x100mg-015D140l001r10 N="48" x="10.0" mg="-0.15" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-015D160l001r10 SW_Observables_iT.sub
+VARS N48x100mg-015D160l001r10 N="48" x="10.0" mg="-0.15" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-014111D20l001r10 SW_Observables_iT.sub
+VARS N48x100mg-014111D20l001r10 N="48" x="10.0" mg="-0.14111" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-014111D40l001r10 SW_Observables_iT.sub
+VARS N48x100mg-014111D40l001r10 N="48" x="10.0" mg="-0.14111" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-014111D60l001r10 SW_Observables_iT.sub
+VARS N48x100mg-014111D60l001r10 N="48" x="10.0" mg="-0.14111" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-014111D80l001r10 SW_Observables_iT.sub
+VARS N48x100mg-014111D80l001r10 N="48" x="10.0" mg="-0.14111" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-014111D100l001r10 SW_Observables_iT.sub
+VARS N48x100mg-014111D100l001r10 N="48" x="10.0" mg="-0.14111" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-014111D120l001r10 SW_Observables_iT.sub
+VARS N48x100mg-014111D120l001r10 N="48" x="10.0" mg="-0.14111" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-014111D140l001r10 SW_Observables_iT.sub
+VARS N48x100mg-014111D140l001r10 N="48" x="10.0" mg="-0.14111" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-014111D160l001r10 SW_Observables_iT.sub
+VARS N48x100mg-014111D160l001r10 N="48" x="10.0" mg="-0.14111" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-013222D20l001r10 SW_Observables_iT.sub
+VARS N48x100mg-013222D20l001r10 N="48" x="10.0" mg="-0.13222" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-013222D40l001r10 SW_Observables_iT.sub
+VARS N48x100mg-013222D40l001r10 N="48" x="10.0" mg="-0.13222" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-013222D60l001r10 SW_Observables_iT.sub
+VARS N48x100mg-013222D60l001r10 N="48" x="10.0" mg="-0.13222" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-013222D80l001r10 SW_Observables_iT.sub
+VARS N48x100mg-013222D80l001r10 N="48" x="10.0" mg="-0.13222" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-013222D100l001r10 SW_Observables_iT.sub
+VARS N48x100mg-013222D100l001r10 N="48" x="10.0" mg="-0.13222" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-013222D120l001r10 SW_Observables_iT.sub
+VARS N48x100mg-013222D120l001r10 N="48" x="10.0" mg="-0.13222" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-013222D140l001r10 SW_Observables_iT.sub
+VARS N48x100mg-013222D140l001r10 N="48" x="10.0" mg="-0.13222" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-013222D160l001r10 SW_Observables_iT.sub
+VARS N48x100mg-013222D160l001r10 N="48" x="10.0" mg="-0.13222" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-012333D20l001r10 SW_Observables_iT.sub
+VARS N48x100mg-012333D20l001r10 N="48" x="10.0" mg="-0.12333" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-012333D40l001r10 SW_Observables_iT.sub
+VARS N48x100mg-012333D40l001r10 N="48" x="10.0" mg="-0.12333" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-012333D60l001r10 SW_Observables_iT.sub
+VARS N48x100mg-012333D60l001r10 N="48" x="10.0" mg="-0.12333" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-012333D80l001r10 SW_Observables_iT.sub
+VARS N48x100mg-012333D80l001r10 N="48" x="10.0" mg="-0.12333" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-012333D100l001r10 SW_Observables_iT.sub
+VARS N48x100mg-012333D100l001r10 N="48" x="10.0" mg="-0.12333" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-012333D120l001r10 SW_Observables_iT.sub
+VARS N48x100mg-012333D120l001r10 N="48" x="10.0" mg="-0.12333" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-012333D140l001r10 SW_Observables_iT.sub
+VARS N48x100mg-012333D140l001r10 N="48" x="10.0" mg="-0.12333" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-012333D160l001r10 SW_Observables_iT.sub
+VARS N48x100mg-012333D160l001r10 N="48" x="10.0" mg="-0.12333" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-011444D20l001r10 SW_Observables_iT.sub
+VARS N48x100mg-011444D20l001r10 N="48" x="10.0" mg="-0.11444" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-011444D40l001r10 SW_Observables_iT.sub
+VARS N48x100mg-011444D40l001r10 N="48" x="10.0" mg="-0.11444" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-011444D60l001r10 SW_Observables_iT.sub
+VARS N48x100mg-011444D60l001r10 N="48" x="10.0" mg="-0.11444" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-011444D80l001r10 SW_Observables_iT.sub
+VARS N48x100mg-011444D80l001r10 N="48" x="10.0" mg="-0.11444" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-011444D100l001r10 SW_Observables_iT.sub
+VARS N48x100mg-011444D100l001r10 N="48" x="10.0" mg="-0.11444" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-011444D120l001r10 SW_Observables_iT.sub
+VARS N48x100mg-011444D120l001r10 N="48" x="10.0" mg="-0.11444" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-011444D140l001r10 SW_Observables_iT.sub
+VARS N48x100mg-011444D140l001r10 N="48" x="10.0" mg="-0.11444" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-011444D160l001r10 SW_Observables_iT.sub
+VARS N48x100mg-011444D160l001r10 N="48" x="10.0" mg="-0.11444" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-010556D20l001r10 SW_Observables_iT.sub
+VARS N48x100mg-010556D20l001r10 N="48" x="10.0" mg="-0.10556" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-010556D40l001r10 SW_Observables_iT.sub
+VARS N48x100mg-010556D40l001r10 N="48" x="10.0" mg="-0.10556" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-010556D60l001r10 SW_Observables_iT.sub
+VARS N48x100mg-010556D60l001r10 N="48" x="10.0" mg="-0.10556" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-010556D80l001r10 SW_Observables_iT.sub
+VARS N48x100mg-010556D80l001r10 N="48" x="10.0" mg="-0.10556" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-010556D100l001r10 SW_Observables_iT.sub
+VARS N48x100mg-010556D100l001r10 N="48" x="10.0" mg="-0.10556" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-010556D120l001r10 SW_Observables_iT.sub
+VARS N48x100mg-010556D120l001r10 N="48" x="10.0" mg="-0.10556" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-010556D140l001r10 SW_Observables_iT.sub
+VARS N48x100mg-010556D140l001r10 N="48" x="10.0" mg="-0.10556" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-010556D160l001r10 SW_Observables_iT.sub
+VARS N48x100mg-010556D160l001r10 N="48" x="10.0" mg="-0.10556" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-009667D20l001r10 SW_Observables_iT.sub
+VARS N48x100mg-009667D20l001r10 N="48" x="10.0" mg="-0.09667" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-009667D40l001r10 SW_Observables_iT.sub
+VARS N48x100mg-009667D40l001r10 N="48" x="10.0" mg="-0.09667" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-009667D60l001r10 SW_Observables_iT.sub
+VARS N48x100mg-009667D60l001r10 N="48" x="10.0" mg="-0.09667" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-009667D80l001r10 SW_Observables_iT.sub
+VARS N48x100mg-009667D80l001r10 N="48" x="10.0" mg="-0.09667" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-009667D100l001r10 SW_Observables_iT.sub
+VARS N48x100mg-009667D100l001r10 N="48" x="10.0" mg="-0.09667" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-009667D120l001r10 SW_Observables_iT.sub
+VARS N48x100mg-009667D120l001r10 N="48" x="10.0" mg="-0.09667" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-009667D140l001r10 SW_Observables_iT.sub
+VARS N48x100mg-009667D140l001r10 N="48" x="10.0" mg="-0.09667" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-009667D160l001r10 SW_Observables_iT.sub
+VARS N48x100mg-009667D160l001r10 N="48" x="10.0" mg="-0.09667" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-008778D20l001r10 SW_Observables_iT.sub
+VARS N48x100mg-008778D20l001r10 N="48" x="10.0" mg="-0.08778" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-008778D40l001r10 SW_Observables_iT.sub
+VARS N48x100mg-008778D40l001r10 N="48" x="10.0" mg="-0.08778" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-008778D60l001r10 SW_Observables_iT.sub
+VARS N48x100mg-008778D60l001r10 N="48" x="10.0" mg="-0.08778" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-008778D80l001r10 SW_Observables_iT.sub
+VARS N48x100mg-008778D80l001r10 N="48" x="10.0" mg="-0.08778" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-008778D100l001r10 SW_Observables_iT.sub
+VARS N48x100mg-008778D100l001r10 N="48" x="10.0" mg="-0.08778" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-008778D120l001r10 SW_Observables_iT.sub
+VARS N48x100mg-008778D120l001r10 N="48" x="10.0" mg="-0.08778" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-008778D140l001r10 SW_Observables_iT.sub
+VARS N48x100mg-008778D140l001r10 N="48" x="10.0" mg="-0.08778" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-008778D160l001r10 SW_Observables_iT.sub
+VARS N48x100mg-008778D160l001r10 N="48" x="10.0" mg="-0.08778" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-007889D20l001r10 SW_Observables_iT.sub
+VARS N48x100mg-007889D20l001r10 N="48" x="10.0" mg="-0.07889" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-007889D40l001r10 SW_Observables_iT.sub
+VARS N48x100mg-007889D40l001r10 N="48" x="10.0" mg="-0.07889" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-007889D60l001r10 SW_Observables_iT.sub
+VARS N48x100mg-007889D60l001r10 N="48" x="10.0" mg="-0.07889" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-007889D80l001r10 SW_Observables_iT.sub
+VARS N48x100mg-007889D80l001r10 N="48" x="10.0" mg="-0.07889" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-007889D100l001r10 SW_Observables_iT.sub
+VARS N48x100mg-007889D100l001r10 N="48" x="10.0" mg="-0.07889" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-007889D120l001r10 SW_Observables_iT.sub
+VARS N48x100mg-007889D120l001r10 N="48" x="10.0" mg="-0.07889" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-007889D140l001r10 SW_Observables_iT.sub
+VARS N48x100mg-007889D140l001r10 N="48" x="10.0" mg="-0.07889" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-007889D160l001r10 SW_Observables_iT.sub
+VARS N48x100mg-007889D160l001r10 N="48" x="10.0" mg="-0.07889" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-007D20l001r10 SW_Observables_iT.sub
+VARS N48x100mg-007D20l001r10 N="48" x="10.0" mg="-0.07" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-007D40l001r10 SW_Observables_iT.sub
+VARS N48x100mg-007D40l001r10 N="48" x="10.0" mg="-0.07" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-007D60l001r10 SW_Observables_iT.sub
+VARS N48x100mg-007D60l001r10 N="48" x="10.0" mg="-0.07" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-007D80l001r10 SW_Observables_iT.sub
+VARS N48x100mg-007D80l001r10 N="48" x="10.0" mg="-0.07" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-007D100l001r10 SW_Observables_iT.sub
+VARS N48x100mg-007D100l001r10 N="48" x="10.0" mg="-0.07" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-007D120l001r10 SW_Observables_iT.sub
+VARS N48x100mg-007D120l001r10 N="48" x="10.0" mg="-0.07" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-007D140l001r10 SW_Observables_iT.sub
+VARS N48x100mg-007D140l001r10 N="48" x="10.0" mg="-0.07" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N48x100mg-007D160l001r10 SW_Observables_iT.sub
+VARS N48x100mg-007D160l001r10 N="48" x="10.0" mg="-0.07" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-015D20l001r10 SW_Observables_iT.sub
+VARS N64x100mg-015D20l001r10 N="64" x="10.0" mg="-0.15" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-015D40l001r10 SW_Observables_iT.sub
+VARS N64x100mg-015D40l001r10 N="64" x="10.0" mg="-0.15" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-015D60l001r10 SW_Observables_iT.sub
+VARS N64x100mg-015D60l001r10 N="64" x="10.0" mg="-0.15" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-015D80l001r10 SW_Observables_iT.sub
+VARS N64x100mg-015D80l001r10 N="64" x="10.0" mg="-0.15" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-015D100l001r10 SW_Observables_iT.sub
+VARS N64x100mg-015D100l001r10 N="64" x="10.0" mg="-0.15" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-015D120l001r10 SW_Observables_iT.sub
+VARS N64x100mg-015D120l001r10 N="64" x="10.0" mg="-0.15" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-015D140l001r10 SW_Observables_iT.sub
+VARS N64x100mg-015D140l001r10 N="64" x="10.0" mg="-0.15" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-015D160l001r10 SW_Observables_iT.sub
+VARS N64x100mg-015D160l001r10 N="64" x="10.0" mg="-0.15" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-014111D20l001r10 SW_Observables_iT.sub
+VARS N64x100mg-014111D20l001r10 N="64" x="10.0" mg="-0.14111" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-014111D40l001r10 SW_Observables_iT.sub
+VARS N64x100mg-014111D40l001r10 N="64" x="10.0" mg="-0.14111" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-014111D60l001r10 SW_Observables_iT.sub
+VARS N64x100mg-014111D60l001r10 N="64" x="10.0" mg="-0.14111" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-014111D80l001r10 SW_Observables_iT.sub
+VARS N64x100mg-014111D80l001r10 N="64" x="10.0" mg="-0.14111" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-014111D100l001r10 SW_Observables_iT.sub
+VARS N64x100mg-014111D100l001r10 N="64" x="10.0" mg="-0.14111" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-014111D120l001r10 SW_Observables_iT.sub
+VARS N64x100mg-014111D120l001r10 N="64" x="10.0" mg="-0.14111" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-014111D140l001r10 SW_Observables_iT.sub
+VARS N64x100mg-014111D140l001r10 N="64" x="10.0" mg="-0.14111" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-014111D160l001r10 SW_Observables_iT.sub
+VARS N64x100mg-014111D160l001r10 N="64" x="10.0" mg="-0.14111" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-013222D20l001r10 SW_Observables_iT.sub
+VARS N64x100mg-013222D20l001r10 N="64" x="10.0" mg="-0.13222" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-013222D40l001r10 SW_Observables_iT.sub
+VARS N64x100mg-013222D40l001r10 N="64" x="10.0" mg="-0.13222" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-013222D60l001r10 SW_Observables_iT.sub
+VARS N64x100mg-013222D60l001r10 N="64" x="10.0" mg="-0.13222" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-013222D80l001r10 SW_Observables_iT.sub
+VARS N64x100mg-013222D80l001r10 N="64" x="10.0" mg="-0.13222" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-013222D100l001r10 SW_Observables_iT.sub
+VARS N64x100mg-013222D100l001r10 N="64" x="10.0" mg="-0.13222" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-013222D120l001r10 SW_Observables_iT.sub
+VARS N64x100mg-013222D120l001r10 N="64" x="10.0" mg="-0.13222" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-013222D140l001r10 SW_Observables_iT.sub
+VARS N64x100mg-013222D140l001r10 N="64" x="10.0" mg="-0.13222" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-013222D160l001r10 SW_Observables_iT.sub
+VARS N64x100mg-013222D160l001r10 N="64" x="10.0" mg="-0.13222" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-012333D20l001r10 SW_Observables_iT.sub
+VARS N64x100mg-012333D20l001r10 N="64" x="10.0" mg="-0.12333" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-012333D40l001r10 SW_Observables_iT.sub
+VARS N64x100mg-012333D40l001r10 N="64" x="10.0" mg="-0.12333" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-012333D60l001r10 SW_Observables_iT.sub
+VARS N64x100mg-012333D60l001r10 N="64" x="10.0" mg="-0.12333" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-012333D80l001r10 SW_Observables_iT.sub
+VARS N64x100mg-012333D80l001r10 N="64" x="10.0" mg="-0.12333" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-012333D100l001r10 SW_Observables_iT.sub
+VARS N64x100mg-012333D100l001r10 N="64" x="10.0" mg="-0.12333" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-012333D120l001r10 SW_Observables_iT.sub
+VARS N64x100mg-012333D120l001r10 N="64" x="10.0" mg="-0.12333" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-012333D140l001r10 SW_Observables_iT.sub
+VARS N64x100mg-012333D140l001r10 N="64" x="10.0" mg="-0.12333" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-012333D160l001r10 SW_Observables_iT.sub
+VARS N64x100mg-012333D160l001r10 N="64" x="10.0" mg="-0.12333" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-011444D20l001r10 SW_Observables_iT.sub
+VARS N64x100mg-011444D20l001r10 N="64" x="10.0" mg="-0.11444" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-011444D40l001r10 SW_Observables_iT.sub
+VARS N64x100mg-011444D40l001r10 N="64" x="10.0" mg="-0.11444" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-011444D60l001r10 SW_Observables_iT.sub
+VARS N64x100mg-011444D60l001r10 N="64" x="10.0" mg="-0.11444" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-011444D80l001r10 SW_Observables_iT.sub
+VARS N64x100mg-011444D80l001r10 N="64" x="10.0" mg="-0.11444" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-011444D100l001r10 SW_Observables_iT.sub
+VARS N64x100mg-011444D100l001r10 N="64" x="10.0" mg="-0.11444" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-011444D120l001r10 SW_Observables_iT.sub
+VARS N64x100mg-011444D120l001r10 N="64" x="10.0" mg="-0.11444" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-011444D140l001r10 SW_Observables_iT.sub
+VARS N64x100mg-011444D140l001r10 N="64" x="10.0" mg="-0.11444" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-011444D160l001r10 SW_Observables_iT.sub
+VARS N64x100mg-011444D160l001r10 N="64" x="10.0" mg="-0.11444" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-010556D20l001r10 SW_Observables_iT.sub
+VARS N64x100mg-010556D20l001r10 N="64" x="10.0" mg="-0.10556" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-010556D40l001r10 SW_Observables_iT.sub
+VARS N64x100mg-010556D40l001r10 N="64" x="10.0" mg="-0.10556" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-010556D60l001r10 SW_Observables_iT.sub
+VARS N64x100mg-010556D60l001r10 N="64" x="10.0" mg="-0.10556" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-010556D80l001r10 SW_Observables_iT.sub
+VARS N64x100mg-010556D80l001r10 N="64" x="10.0" mg="-0.10556" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-010556D100l001r10 SW_Observables_iT.sub
+VARS N64x100mg-010556D100l001r10 N="64" x="10.0" mg="-0.10556" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-010556D120l001r10 SW_Observables_iT.sub
+VARS N64x100mg-010556D120l001r10 N="64" x="10.0" mg="-0.10556" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-010556D140l001r10 SW_Observables_iT.sub
+VARS N64x100mg-010556D140l001r10 N="64" x="10.0" mg="-0.10556" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-010556D160l001r10 SW_Observables_iT.sub
+VARS N64x100mg-010556D160l001r10 N="64" x="10.0" mg="-0.10556" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-009667D20l001r10 SW_Observables_iT.sub
+VARS N64x100mg-009667D20l001r10 N="64" x="10.0" mg="-0.09667" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-009667D40l001r10 SW_Observables_iT.sub
+VARS N64x100mg-009667D40l001r10 N="64" x="10.0" mg="-0.09667" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-009667D60l001r10 SW_Observables_iT.sub
+VARS N64x100mg-009667D60l001r10 N="64" x="10.0" mg="-0.09667" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-009667D80l001r10 SW_Observables_iT.sub
+VARS N64x100mg-009667D80l001r10 N="64" x="10.0" mg="-0.09667" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-009667D100l001r10 SW_Observables_iT.sub
+VARS N64x100mg-009667D100l001r10 N="64" x="10.0" mg="-0.09667" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-009667D120l001r10 SW_Observables_iT.sub
+VARS N64x100mg-009667D120l001r10 N="64" x="10.0" mg="-0.09667" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-009667D140l001r10 SW_Observables_iT.sub
+VARS N64x100mg-009667D140l001r10 N="64" x="10.0" mg="-0.09667" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-009667D160l001r10 SW_Observables_iT.sub
+VARS N64x100mg-009667D160l001r10 N="64" x="10.0" mg="-0.09667" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-008778D20l001r10 SW_Observables_iT.sub
+VARS N64x100mg-008778D20l001r10 N="64" x="10.0" mg="-0.08778" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-008778D40l001r10 SW_Observables_iT.sub
+VARS N64x100mg-008778D40l001r10 N="64" x="10.0" mg="-0.08778" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-008778D60l001r10 SW_Observables_iT.sub
+VARS N64x100mg-008778D60l001r10 N="64" x="10.0" mg="-0.08778" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-008778D80l001r10 SW_Observables_iT.sub
+VARS N64x100mg-008778D80l001r10 N="64" x="10.0" mg="-0.08778" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-008778D100l001r10 SW_Observables_iT.sub
+VARS N64x100mg-008778D100l001r10 N="64" x="10.0" mg="-0.08778" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-008778D120l001r10 SW_Observables_iT.sub
+VARS N64x100mg-008778D120l001r10 N="64" x="10.0" mg="-0.08778" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-008778D140l001r10 SW_Observables_iT.sub
+VARS N64x100mg-008778D140l001r10 N="64" x="10.0" mg="-0.08778" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-008778D160l001r10 SW_Observables_iT.sub
+VARS N64x100mg-008778D160l001r10 N="64" x="10.0" mg="-0.08778" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-007889D20l001r10 SW_Observables_iT.sub
+VARS N64x100mg-007889D20l001r10 N="64" x="10.0" mg="-0.07889" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-007889D40l001r10 SW_Observables_iT.sub
+VARS N64x100mg-007889D40l001r10 N="64" x="10.0" mg="-0.07889" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-007889D60l001r10 SW_Observables_iT.sub
+VARS N64x100mg-007889D60l001r10 N="64" x="10.0" mg="-0.07889" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-007889D80l001r10 SW_Observables_iT.sub
+VARS N64x100mg-007889D80l001r10 N="64" x="10.0" mg="-0.07889" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-007889D100l001r10 SW_Observables_iT.sub
+VARS N64x100mg-007889D100l001r10 N="64" x="10.0" mg="-0.07889" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-007889D120l001r10 SW_Observables_iT.sub
+VARS N64x100mg-007889D120l001r10 N="64" x="10.0" mg="-0.07889" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-007889D140l001r10 SW_Observables_iT.sub
+VARS N64x100mg-007889D140l001r10 N="64" x="10.0" mg="-0.07889" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-007889D160l001r10 SW_Observables_iT.sub
+VARS N64x100mg-007889D160l001r10 N="64" x="10.0" mg="-0.07889" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-007D20l001r10 SW_Observables_iT.sub
+VARS N64x100mg-007D20l001r10 N="64" x="10.0" mg="-0.07" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-007D40l001r10 SW_Observables_iT.sub
+VARS N64x100mg-007D40l001r10 N="64" x="10.0" mg="-0.07" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-007D60l001r10 SW_Observables_iT.sub
+VARS N64x100mg-007D60l001r10 N="64" x="10.0" mg="-0.07" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-007D80l001r10 SW_Observables_iT.sub
+VARS N64x100mg-007D80l001r10 N="64" x="10.0" mg="-0.07" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-007D100l001r10 SW_Observables_iT.sub
+VARS N64x100mg-007D100l001r10 N="64" x="10.0" mg="-0.07" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-007D120l001r10 SW_Observables_iT.sub
+VARS N64x100mg-007D120l001r10 N="64" x="10.0" mg="-0.07" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-007D140l001r10 SW_Observables_iT.sub
+VARS N64x100mg-007D140l001r10 N="64" x="10.0" mg="-0.07" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N64x100mg-007D160l001r10 SW_Observables_iT.sub
+VARS N64x100mg-007D160l001r10 N="64" x="10.0" mg="-0.07" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-015D20l001r10 SW_Observables_iT.sub
+VARS N80x100mg-015D20l001r10 N="80" x="10.0" mg="-0.15" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-015D40l001r10 SW_Observables_iT.sub
+VARS N80x100mg-015D40l001r10 N="80" x="10.0" mg="-0.15" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-015D60l001r10 SW_Observables_iT.sub
+VARS N80x100mg-015D60l001r10 N="80" x="10.0" mg="-0.15" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-015D80l001r10 SW_Observables_iT.sub
+VARS N80x100mg-015D80l001r10 N="80" x="10.0" mg="-0.15" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-015D100l001r10 SW_Observables_iT.sub
+VARS N80x100mg-015D100l001r10 N="80" x="10.0" mg="-0.15" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-015D120l001r10 SW_Observables_iT.sub
+VARS N80x100mg-015D120l001r10 N="80" x="10.0" mg="-0.15" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-015D140l001r10 SW_Observables_iT.sub
+VARS N80x100mg-015D140l001r10 N="80" x="10.0" mg="-0.15" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-015D160l001r10 SW_Observables_iT.sub
+VARS N80x100mg-015D160l001r10 N="80" x="10.0" mg="-0.15" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-014111D20l001r10 SW_Observables_iT.sub
+VARS N80x100mg-014111D20l001r10 N="80" x="10.0" mg="-0.14111" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-014111D40l001r10 SW_Observables_iT.sub
+VARS N80x100mg-014111D40l001r10 N="80" x="10.0" mg="-0.14111" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-014111D60l001r10 SW_Observables_iT.sub
+VARS N80x100mg-014111D60l001r10 N="80" x="10.0" mg="-0.14111" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-014111D80l001r10 SW_Observables_iT.sub
+VARS N80x100mg-014111D80l001r10 N="80" x="10.0" mg="-0.14111" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-014111D100l001r10 SW_Observables_iT.sub
+VARS N80x100mg-014111D100l001r10 N="80" x="10.0" mg="-0.14111" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-014111D120l001r10 SW_Observables_iT.sub
+VARS N80x100mg-014111D120l001r10 N="80" x="10.0" mg="-0.14111" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-014111D140l001r10 SW_Observables_iT.sub
+VARS N80x100mg-014111D140l001r10 N="80" x="10.0" mg="-0.14111" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-014111D160l001r10 SW_Observables_iT.sub
+VARS N80x100mg-014111D160l001r10 N="80" x="10.0" mg="-0.14111" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-013222D20l001r10 SW_Observables_iT.sub
+VARS N80x100mg-013222D20l001r10 N="80" x="10.0" mg="-0.13222" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-013222D40l001r10 SW_Observables_iT.sub
+VARS N80x100mg-013222D40l001r10 N="80" x="10.0" mg="-0.13222" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-013222D60l001r10 SW_Observables_iT.sub
+VARS N80x100mg-013222D60l001r10 N="80" x="10.0" mg="-0.13222" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-013222D80l001r10 SW_Observables_iT.sub
+VARS N80x100mg-013222D80l001r10 N="80" x="10.0" mg="-0.13222" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-013222D100l001r10 SW_Observables_iT.sub
+VARS N80x100mg-013222D100l001r10 N="80" x="10.0" mg="-0.13222" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-013222D120l001r10 SW_Observables_iT.sub
+VARS N80x100mg-013222D120l001r10 N="80" x="10.0" mg="-0.13222" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-013222D140l001r10 SW_Observables_iT.sub
+VARS N80x100mg-013222D140l001r10 N="80" x="10.0" mg="-0.13222" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-013222D160l001r10 SW_Observables_iT.sub
+VARS N80x100mg-013222D160l001r10 N="80" x="10.0" mg="-0.13222" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-012333D20l001r10 SW_Observables_iT.sub
+VARS N80x100mg-012333D20l001r10 N="80" x="10.0" mg="-0.12333" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-012333D40l001r10 SW_Observables_iT.sub
+VARS N80x100mg-012333D40l001r10 N="80" x="10.0" mg="-0.12333" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-012333D60l001r10 SW_Observables_iT.sub
+VARS N80x100mg-012333D60l001r10 N="80" x="10.0" mg="-0.12333" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-012333D80l001r10 SW_Observables_iT.sub
+VARS N80x100mg-012333D80l001r10 N="80" x="10.0" mg="-0.12333" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-012333D100l001r10 SW_Observables_iT.sub
+VARS N80x100mg-012333D100l001r10 N="80" x="10.0" mg="-0.12333" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-012333D120l001r10 SW_Observables_iT.sub
+VARS N80x100mg-012333D120l001r10 N="80" x="10.0" mg="-0.12333" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-012333D140l001r10 SW_Observables_iT.sub
+VARS N80x100mg-012333D140l001r10 N="80" x="10.0" mg="-0.12333" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-012333D160l001r10 SW_Observables_iT.sub
+VARS N80x100mg-012333D160l001r10 N="80" x="10.0" mg="-0.12333" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-011444D20l001r10 SW_Observables_iT.sub
+VARS N80x100mg-011444D20l001r10 N="80" x="10.0" mg="-0.11444" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-011444D40l001r10 SW_Observables_iT.sub
+VARS N80x100mg-011444D40l001r10 N="80" x="10.0" mg="-0.11444" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-011444D60l001r10 SW_Observables_iT.sub
+VARS N80x100mg-011444D60l001r10 N="80" x="10.0" mg="-0.11444" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-011444D80l001r10 SW_Observables_iT.sub
+VARS N80x100mg-011444D80l001r10 N="80" x="10.0" mg="-0.11444" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-011444D100l001r10 SW_Observables_iT.sub
+VARS N80x100mg-011444D100l001r10 N="80" x="10.0" mg="-0.11444" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-011444D120l001r10 SW_Observables_iT.sub
+VARS N80x100mg-011444D120l001r10 N="80" x="10.0" mg="-0.11444" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-011444D140l001r10 SW_Observables_iT.sub
+VARS N80x100mg-011444D140l001r10 N="80" x="10.0" mg="-0.11444" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-011444D160l001r10 SW_Observables_iT.sub
+VARS N80x100mg-011444D160l001r10 N="80" x="10.0" mg="-0.11444" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-010556D20l001r10 SW_Observables_iT.sub
+VARS N80x100mg-010556D20l001r10 N="80" x="10.0" mg="-0.10556" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-010556D40l001r10 SW_Observables_iT.sub
+VARS N80x100mg-010556D40l001r10 N="80" x="10.0" mg="-0.10556" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-010556D60l001r10 SW_Observables_iT.sub
+VARS N80x100mg-010556D60l001r10 N="80" x="10.0" mg="-0.10556" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-010556D80l001r10 SW_Observables_iT.sub
+VARS N80x100mg-010556D80l001r10 N="80" x="10.0" mg="-0.10556" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-010556D100l001r10 SW_Observables_iT.sub
+VARS N80x100mg-010556D100l001r10 N="80" x="10.0" mg="-0.10556" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-010556D120l001r10 SW_Observables_iT.sub
+VARS N80x100mg-010556D120l001r10 N="80" x="10.0" mg="-0.10556" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-010556D140l001r10 SW_Observables_iT.sub
+VARS N80x100mg-010556D140l001r10 N="80" x="10.0" mg="-0.10556" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-010556D160l001r10 SW_Observables_iT.sub
+VARS N80x100mg-010556D160l001r10 N="80" x="10.0" mg="-0.10556" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-009667D20l001r10 SW_Observables_iT.sub
+VARS N80x100mg-009667D20l001r10 N="80" x="10.0" mg="-0.09667" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-009667D40l001r10 SW_Observables_iT.sub
+VARS N80x100mg-009667D40l001r10 N="80" x="10.0" mg="-0.09667" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-009667D60l001r10 SW_Observables_iT.sub
+VARS N80x100mg-009667D60l001r10 N="80" x="10.0" mg="-0.09667" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-009667D80l001r10 SW_Observables_iT.sub
+VARS N80x100mg-009667D80l001r10 N="80" x="10.0" mg="-0.09667" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-009667D100l001r10 SW_Observables_iT.sub
+VARS N80x100mg-009667D100l001r10 N="80" x="10.0" mg="-0.09667" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-009667D120l001r10 SW_Observables_iT.sub
+VARS N80x100mg-009667D120l001r10 N="80" x="10.0" mg="-0.09667" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-009667D140l001r10 SW_Observables_iT.sub
+VARS N80x100mg-009667D140l001r10 N="80" x="10.0" mg="-0.09667" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-009667D160l001r10 SW_Observables_iT.sub
+VARS N80x100mg-009667D160l001r10 N="80" x="10.0" mg="-0.09667" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-008778D20l001r10 SW_Observables_iT.sub
+VARS N80x100mg-008778D20l001r10 N="80" x="10.0" mg="-0.08778" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-008778D40l001r10 SW_Observables_iT.sub
+VARS N80x100mg-008778D40l001r10 N="80" x="10.0" mg="-0.08778" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-008778D60l001r10 SW_Observables_iT.sub
+VARS N80x100mg-008778D60l001r10 N="80" x="10.0" mg="-0.08778" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-008778D80l001r10 SW_Observables_iT.sub
+VARS N80x100mg-008778D80l001r10 N="80" x="10.0" mg="-0.08778" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-008778D100l001r10 SW_Observables_iT.sub
+VARS N80x100mg-008778D100l001r10 N="80" x="10.0" mg="-0.08778" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-008778D120l001r10 SW_Observables_iT.sub
+VARS N80x100mg-008778D120l001r10 N="80" x="10.0" mg="-0.08778" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-008778D140l001r10 SW_Observables_iT.sub
+VARS N80x100mg-008778D140l001r10 N="80" x="10.0" mg="-0.08778" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-008778D160l001r10 SW_Observables_iT.sub
+VARS N80x100mg-008778D160l001r10 N="80" x="10.0" mg="-0.08778" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-007889D20l001r10 SW_Observables_iT.sub
+VARS N80x100mg-007889D20l001r10 N="80" x="10.0" mg="-0.07889" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-007889D40l001r10 SW_Observables_iT.sub
+VARS N80x100mg-007889D40l001r10 N="80" x="10.0" mg="-0.07889" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-007889D60l001r10 SW_Observables_iT.sub
+VARS N80x100mg-007889D60l001r10 N="80" x="10.0" mg="-0.07889" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-007889D80l001r10 SW_Observables_iT.sub
+VARS N80x100mg-007889D80l001r10 N="80" x="10.0" mg="-0.07889" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-007889D100l001r10 SW_Observables_iT.sub
+VARS N80x100mg-007889D100l001r10 N="80" x="10.0" mg="-0.07889" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-007889D120l001r10 SW_Observables_iT.sub
+VARS N80x100mg-007889D120l001r10 N="80" x="10.0" mg="-0.07889" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-007889D140l001r10 SW_Observables_iT.sub
+VARS N80x100mg-007889D140l001r10 N="80" x="10.0" mg="-0.07889" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-007889D160l001r10 SW_Observables_iT.sub
+VARS N80x100mg-007889D160l001r10 N="80" x="10.0" mg="-0.07889" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-007D20l001r10 SW_Observables_iT.sub
+VARS N80x100mg-007D20l001r10 N="80" x="10.0" mg="-0.07" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-007D40l001r10 SW_Observables_iT.sub
+VARS N80x100mg-007D40l001r10 N="80" x="10.0" mg="-0.07" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-007D60l001r10 SW_Observables_iT.sub
+VARS N80x100mg-007D60l001r10 N="80" x="10.0" mg="-0.07" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-007D80l001r10 SW_Observables_iT.sub
+VARS N80x100mg-007D80l001r10 N="80" x="10.0" mg="-0.07" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-007D100l001r10 SW_Observables_iT.sub
+VARS N80x100mg-007D100l001r10 N="80" x="10.0" mg="-0.07" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-007D120l001r10 SW_Observables_iT.sub
+VARS N80x100mg-007D120l001r10 N="80" x="10.0" mg="-0.07" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-007D140l001r10 SW_Observables_iT.sub
+VARS N80x100mg-007D140l001r10 N="80" x="10.0" mg="-0.07" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N80x100mg-007D160l001r10 SW_Observables_iT.sub
+VARS N80x100mg-007D160l001r10 N="80" x="10.0" mg="-0.07" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-015D20l001r10 SW_Observables_iT.sub
+VARS N95x100mg-015D20l001r10 N="95" x="10.0" mg="-0.15" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-015D40l001r10 SW_Observables_iT.sub
+VARS N95x100mg-015D40l001r10 N="95" x="10.0" mg="-0.15" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-015D60l001r10 SW_Observables_iT.sub
+VARS N95x100mg-015D60l001r10 N="95" x="10.0" mg="-0.15" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-015D80l001r10 SW_Observables_iT.sub
+VARS N95x100mg-015D80l001r10 N="95" x="10.0" mg="-0.15" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-015D100l001r10 SW_Observables_iT.sub
+VARS N95x100mg-015D100l001r10 N="95" x="10.0" mg="-0.15" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-015D120l001r10 SW_Observables_iT.sub
+VARS N95x100mg-015D120l001r10 N="95" x="10.0" mg="-0.15" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-015D140l001r10 SW_Observables_iT.sub
+VARS N95x100mg-015D140l001r10 N="95" x="10.0" mg="-0.15" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-015D160l001r10 SW_Observables_iT.sub
+VARS N95x100mg-015D160l001r10 N="95" x="10.0" mg="-0.15" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-014111D20l001r10 SW_Observables_iT.sub
+VARS N95x100mg-014111D20l001r10 N="95" x="10.0" mg="-0.14111" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-014111D40l001r10 SW_Observables_iT.sub
+VARS N95x100mg-014111D40l001r10 N="95" x="10.0" mg="-0.14111" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-014111D60l001r10 SW_Observables_iT.sub
+VARS N95x100mg-014111D60l001r10 N="95" x="10.0" mg="-0.14111" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-014111D80l001r10 SW_Observables_iT.sub
+VARS N95x100mg-014111D80l001r10 N="95" x="10.0" mg="-0.14111" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-014111D100l001r10 SW_Observables_iT.sub
+VARS N95x100mg-014111D100l001r10 N="95" x="10.0" mg="-0.14111" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-014111D120l001r10 SW_Observables_iT.sub
+VARS N95x100mg-014111D120l001r10 N="95" x="10.0" mg="-0.14111" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-014111D140l001r10 SW_Observables_iT.sub
+VARS N95x100mg-014111D140l001r10 N="95" x="10.0" mg="-0.14111" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-014111D160l001r10 SW_Observables_iT.sub
+VARS N95x100mg-014111D160l001r10 N="95" x="10.0" mg="-0.14111" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-013222D20l001r10 SW_Observables_iT.sub
+VARS N95x100mg-013222D20l001r10 N="95" x="10.0" mg="-0.13222" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-013222D40l001r10 SW_Observables_iT.sub
+VARS N95x100mg-013222D40l001r10 N="95" x="10.0" mg="-0.13222" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-013222D60l001r10 SW_Observables_iT.sub
+VARS N95x100mg-013222D60l001r10 N="95" x="10.0" mg="-0.13222" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-013222D80l001r10 SW_Observables_iT.sub
+VARS N95x100mg-013222D80l001r10 N="95" x="10.0" mg="-0.13222" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-013222D100l001r10 SW_Observables_iT.sub
+VARS N95x100mg-013222D100l001r10 N="95" x="10.0" mg="-0.13222" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-013222D120l001r10 SW_Observables_iT.sub
+VARS N95x100mg-013222D120l001r10 N="95" x="10.0" mg="-0.13222" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-013222D140l001r10 SW_Observables_iT.sub
+VARS N95x100mg-013222D140l001r10 N="95" x="10.0" mg="-0.13222" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-013222D160l001r10 SW_Observables_iT.sub
+VARS N95x100mg-013222D160l001r10 N="95" x="10.0" mg="-0.13222" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-012333D20l001r10 SW_Observables_iT.sub
+VARS N95x100mg-012333D20l001r10 N="95" x="10.0" mg="-0.12333" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-012333D40l001r10 SW_Observables_iT.sub
+VARS N95x100mg-012333D40l001r10 N="95" x="10.0" mg="-0.12333" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-012333D60l001r10 SW_Observables_iT.sub
+VARS N95x100mg-012333D60l001r10 N="95" x="10.0" mg="-0.12333" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-012333D80l001r10 SW_Observables_iT.sub
+VARS N95x100mg-012333D80l001r10 N="95" x="10.0" mg="-0.12333" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-012333D100l001r10 SW_Observables_iT.sub
+VARS N95x100mg-012333D100l001r10 N="95" x="10.0" mg="-0.12333" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-012333D120l001r10 SW_Observables_iT.sub
+VARS N95x100mg-012333D120l001r10 N="95" x="10.0" mg="-0.12333" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-012333D140l001r10 SW_Observables_iT.sub
+VARS N95x100mg-012333D140l001r10 N="95" x="10.0" mg="-0.12333" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-012333D160l001r10 SW_Observables_iT.sub
+VARS N95x100mg-012333D160l001r10 N="95" x="10.0" mg="-0.12333" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-011444D20l001r10 SW_Observables_iT.sub
+VARS N95x100mg-011444D20l001r10 N="95" x="10.0" mg="-0.11444" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-011444D40l001r10 SW_Observables_iT.sub
+VARS N95x100mg-011444D40l001r10 N="95" x="10.0" mg="-0.11444" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-011444D60l001r10 SW_Observables_iT.sub
+VARS N95x100mg-011444D60l001r10 N="95" x="10.0" mg="-0.11444" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-011444D80l001r10 SW_Observables_iT.sub
+VARS N95x100mg-011444D80l001r10 N="95" x="10.0" mg="-0.11444" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-011444D100l001r10 SW_Observables_iT.sub
+VARS N95x100mg-011444D100l001r10 N="95" x="10.0" mg="-0.11444" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-011444D120l001r10 SW_Observables_iT.sub
+VARS N95x100mg-011444D120l001r10 N="95" x="10.0" mg="-0.11444" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-011444D140l001r10 SW_Observables_iT.sub
+VARS N95x100mg-011444D140l001r10 N="95" x="10.0" mg="-0.11444" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-011444D160l001r10 SW_Observables_iT.sub
+VARS N95x100mg-011444D160l001r10 N="95" x="10.0" mg="-0.11444" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-010556D20l001r10 SW_Observables_iT.sub
+VARS N95x100mg-010556D20l001r10 N="95" x="10.0" mg="-0.10556" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-010556D40l001r10 SW_Observables_iT.sub
+VARS N95x100mg-010556D40l001r10 N="95" x="10.0" mg="-0.10556" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-010556D60l001r10 SW_Observables_iT.sub
+VARS N95x100mg-010556D60l001r10 N="95" x="10.0" mg="-0.10556" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-010556D80l001r10 SW_Observables_iT.sub
+VARS N95x100mg-010556D80l001r10 N="95" x="10.0" mg="-0.10556" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-010556D100l001r10 SW_Observables_iT.sub
+VARS N95x100mg-010556D100l001r10 N="95" x="10.0" mg="-0.10556" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-010556D120l001r10 SW_Observables_iT.sub
+VARS N95x100mg-010556D120l001r10 N="95" x="10.0" mg="-0.10556" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-010556D140l001r10 SW_Observables_iT.sub
+VARS N95x100mg-010556D140l001r10 N="95" x="10.0" mg="-0.10556" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-010556D160l001r10 SW_Observables_iT.sub
+VARS N95x100mg-010556D160l001r10 N="95" x="10.0" mg="-0.10556" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-009667D20l001r10 SW_Observables_iT.sub
+VARS N95x100mg-009667D20l001r10 N="95" x="10.0" mg="-0.09667" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-009667D40l001r10 SW_Observables_iT.sub
+VARS N95x100mg-009667D40l001r10 N="95" x="10.0" mg="-0.09667" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-009667D60l001r10 SW_Observables_iT.sub
+VARS N95x100mg-009667D60l001r10 N="95" x="10.0" mg="-0.09667" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-009667D80l001r10 SW_Observables_iT.sub
+VARS N95x100mg-009667D80l001r10 N="95" x="10.0" mg="-0.09667" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-009667D100l001r10 SW_Observables_iT.sub
+VARS N95x100mg-009667D100l001r10 N="95" x="10.0" mg="-0.09667" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-009667D120l001r10 SW_Observables_iT.sub
+VARS N95x100mg-009667D120l001r10 N="95" x="10.0" mg="-0.09667" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-009667D140l001r10 SW_Observables_iT.sub
+VARS N95x100mg-009667D140l001r10 N="95" x="10.0" mg="-0.09667" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-009667D160l001r10 SW_Observables_iT.sub
+VARS N95x100mg-009667D160l001r10 N="95" x="10.0" mg="-0.09667" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-008778D20l001r10 SW_Observables_iT.sub
+VARS N95x100mg-008778D20l001r10 N="95" x="10.0" mg="-0.08778" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-008778D40l001r10 SW_Observables_iT.sub
+VARS N95x100mg-008778D40l001r10 N="95" x="10.0" mg="-0.08778" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-008778D60l001r10 SW_Observables_iT.sub
+VARS N95x100mg-008778D60l001r10 N="95" x="10.0" mg="-0.08778" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-008778D80l001r10 SW_Observables_iT.sub
+VARS N95x100mg-008778D80l001r10 N="95" x="10.0" mg="-0.08778" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-008778D100l001r10 SW_Observables_iT.sub
+VARS N95x100mg-008778D100l001r10 N="95" x="10.0" mg="-0.08778" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-008778D120l001r10 SW_Observables_iT.sub
+VARS N95x100mg-008778D120l001r10 N="95" x="10.0" mg="-0.08778" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-008778D140l001r10 SW_Observables_iT.sub
+VARS N95x100mg-008778D140l001r10 N="95" x="10.0" mg="-0.08778" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-008778D160l001r10 SW_Observables_iT.sub
+VARS N95x100mg-008778D160l001r10 N="95" x="10.0" mg="-0.08778" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-007889D20l001r10 SW_Observables_iT.sub
+VARS N95x100mg-007889D20l001r10 N="95" x="10.0" mg="-0.07889" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-007889D40l001r10 SW_Observables_iT.sub
+VARS N95x100mg-007889D40l001r10 N="95" x="10.0" mg="-0.07889" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-007889D60l001r10 SW_Observables_iT.sub
+VARS N95x100mg-007889D60l001r10 N="95" x="10.0" mg="-0.07889" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-007889D80l001r10 SW_Observables_iT.sub
+VARS N95x100mg-007889D80l001r10 N="95" x="10.0" mg="-0.07889" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-007889D100l001r10 SW_Observables_iT.sub
+VARS N95x100mg-007889D100l001r10 N="95" x="10.0" mg="-0.07889" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-007889D120l001r10 SW_Observables_iT.sub
+VARS N95x100mg-007889D120l001r10 N="95" x="10.0" mg="-0.07889" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-007889D140l001r10 SW_Observables_iT.sub
+VARS N95x100mg-007889D140l001r10 N="95" x="10.0" mg="-0.07889" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-007889D160l001r10 SW_Observables_iT.sub
+VARS N95x100mg-007889D160l001r10 N="95" x="10.0" mg="-0.07889" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-007D20l001r10 SW_Observables_iT.sub
+VARS N95x100mg-007D20l001r10 N="95" x="10.0" mg="-0.07" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-007D40l001r10 SW_Observables_iT.sub
+VARS N95x100mg-007D40l001r10 N="95" x="10.0" mg="-0.07" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-007D60l001r10 SW_Observables_iT.sub
+VARS N95x100mg-007D60l001r10 N="95" x="10.0" mg="-0.07" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-007D80l001r10 SW_Observables_iT.sub
+VARS N95x100mg-007D80l001r10 N="95" x="10.0" mg="-0.07" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-007D100l001r10 SW_Observables_iT.sub
+VARS N95x100mg-007D100l001r10 N="95" x="10.0" mg="-0.07" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-007D120l001r10 SW_Observables_iT.sub
+VARS N95x100mg-007D120l001r10 N="95" x="10.0" mg="-0.07" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-007D140l001r10 SW_Observables_iT.sub
+VARS N95x100mg-007D140l001r10 N="95" x="10.0" mg="-0.07" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N95x100mg-007D160l001r10 SW_Observables_iT.sub
+VARS N95x100mg-007D160l001r10 N="95" x="10.0" mg="-0.07" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-015D20l001r10 SW_Observables_iT.sub
+VARS N112x100mg-015D20l001r10 N="112" x="10.0" mg="-0.15" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-015D40l001r10 SW_Observables_iT.sub
+VARS N112x100mg-015D40l001r10 N="112" x="10.0" mg="-0.15" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-015D60l001r10 SW_Observables_iT.sub
+VARS N112x100mg-015D60l001r10 N="112" x="10.0" mg="-0.15" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-015D80l001r10 SW_Observables_iT.sub
+VARS N112x100mg-015D80l001r10 N="112" x="10.0" mg="-0.15" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-015D100l001r10 SW_Observables_iT.sub
+VARS N112x100mg-015D100l001r10 N="112" x="10.0" mg="-0.15" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-015D120l001r10 SW_Observables_iT.sub
+VARS N112x100mg-015D120l001r10 N="112" x="10.0" mg="-0.15" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-015D140l001r10 SW_Observables_iT.sub
+VARS N112x100mg-015D140l001r10 N="112" x="10.0" mg="-0.15" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-015D160l001r10 SW_Observables_iT.sub
+VARS N112x100mg-015D160l001r10 N="112" x="10.0" mg="-0.15" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-014111D20l001r10 SW_Observables_iT.sub
+VARS N112x100mg-014111D20l001r10 N="112" x="10.0" mg="-0.14111" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-014111D40l001r10 SW_Observables_iT.sub
+VARS N112x100mg-014111D40l001r10 N="112" x="10.0" mg="-0.14111" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-014111D60l001r10 SW_Observables_iT.sub
+VARS N112x100mg-014111D60l001r10 N="112" x="10.0" mg="-0.14111" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-014111D80l001r10 SW_Observables_iT.sub
+VARS N112x100mg-014111D80l001r10 N="112" x="10.0" mg="-0.14111" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-014111D100l001r10 SW_Observables_iT.sub
+VARS N112x100mg-014111D100l001r10 N="112" x="10.0" mg="-0.14111" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-014111D120l001r10 SW_Observables_iT.sub
+VARS N112x100mg-014111D120l001r10 N="112" x="10.0" mg="-0.14111" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-014111D140l001r10 SW_Observables_iT.sub
+VARS N112x100mg-014111D140l001r10 N="112" x="10.0" mg="-0.14111" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-014111D160l001r10 SW_Observables_iT.sub
+VARS N112x100mg-014111D160l001r10 N="112" x="10.0" mg="-0.14111" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-013222D20l001r10 SW_Observables_iT.sub
+VARS N112x100mg-013222D20l001r10 N="112" x="10.0" mg="-0.13222" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-013222D40l001r10 SW_Observables_iT.sub
+VARS N112x100mg-013222D40l001r10 N="112" x="10.0" mg="-0.13222" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-013222D60l001r10 SW_Observables_iT.sub
+VARS N112x100mg-013222D60l001r10 N="112" x="10.0" mg="-0.13222" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-013222D80l001r10 SW_Observables_iT.sub
+VARS N112x100mg-013222D80l001r10 N="112" x="10.0" mg="-0.13222" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-013222D100l001r10 SW_Observables_iT.sub
+VARS N112x100mg-013222D100l001r10 N="112" x="10.0" mg="-0.13222" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-013222D120l001r10 SW_Observables_iT.sub
+VARS N112x100mg-013222D120l001r10 N="112" x="10.0" mg="-0.13222" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-013222D140l001r10 SW_Observables_iT.sub
+VARS N112x100mg-013222D140l001r10 N="112" x="10.0" mg="-0.13222" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-013222D160l001r10 SW_Observables_iT.sub
+VARS N112x100mg-013222D160l001r10 N="112" x="10.0" mg="-0.13222" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-012333D20l001r10 SW_Observables_iT.sub
+VARS N112x100mg-012333D20l001r10 N="112" x="10.0" mg="-0.12333" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-012333D40l001r10 SW_Observables_iT.sub
+VARS N112x100mg-012333D40l001r10 N="112" x="10.0" mg="-0.12333" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-012333D60l001r10 SW_Observables_iT.sub
+VARS N112x100mg-012333D60l001r10 N="112" x="10.0" mg="-0.12333" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-012333D80l001r10 SW_Observables_iT.sub
+VARS N112x100mg-012333D80l001r10 N="112" x="10.0" mg="-0.12333" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-012333D100l001r10 SW_Observables_iT.sub
+VARS N112x100mg-012333D100l001r10 N="112" x="10.0" mg="-0.12333" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-012333D120l001r10 SW_Observables_iT.sub
+VARS N112x100mg-012333D120l001r10 N="112" x="10.0" mg="-0.12333" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-012333D140l001r10 SW_Observables_iT.sub
+VARS N112x100mg-012333D140l001r10 N="112" x="10.0" mg="-0.12333" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-012333D160l001r10 SW_Observables_iT.sub
+VARS N112x100mg-012333D160l001r10 N="112" x="10.0" mg="-0.12333" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-011444D20l001r10 SW_Observables_iT.sub
+VARS N112x100mg-011444D20l001r10 N="112" x="10.0" mg="-0.11444" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-011444D40l001r10 SW_Observables_iT.sub
+VARS N112x100mg-011444D40l001r10 N="112" x="10.0" mg="-0.11444" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-011444D60l001r10 SW_Observables_iT.sub
+VARS N112x100mg-011444D60l001r10 N="112" x="10.0" mg="-0.11444" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-011444D80l001r10 SW_Observables_iT.sub
+VARS N112x100mg-011444D80l001r10 N="112" x="10.0" mg="-0.11444" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-011444D100l001r10 SW_Observables_iT.sub
+VARS N112x100mg-011444D100l001r10 N="112" x="10.0" mg="-0.11444" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-011444D120l001r10 SW_Observables_iT.sub
+VARS N112x100mg-011444D120l001r10 N="112" x="10.0" mg="-0.11444" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-011444D140l001r10 SW_Observables_iT.sub
+VARS N112x100mg-011444D140l001r10 N="112" x="10.0" mg="-0.11444" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-011444D160l001r10 SW_Observables_iT.sub
+VARS N112x100mg-011444D160l001r10 N="112" x="10.0" mg="-0.11444" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-010556D20l001r10 SW_Observables_iT.sub
+VARS N112x100mg-010556D20l001r10 N="112" x="10.0" mg="-0.10556" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-010556D40l001r10 SW_Observables_iT.sub
+VARS N112x100mg-010556D40l001r10 N="112" x="10.0" mg="-0.10556" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-010556D60l001r10 SW_Observables_iT.sub
+VARS N112x100mg-010556D60l001r10 N="112" x="10.0" mg="-0.10556" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-010556D80l001r10 SW_Observables_iT.sub
+VARS N112x100mg-010556D80l001r10 N="112" x="10.0" mg="-0.10556" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-010556D100l001r10 SW_Observables_iT.sub
+VARS N112x100mg-010556D100l001r10 N="112" x="10.0" mg="-0.10556" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-010556D120l001r10 SW_Observables_iT.sub
+VARS N112x100mg-010556D120l001r10 N="112" x="10.0" mg="-0.10556" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-010556D140l001r10 SW_Observables_iT.sub
+VARS N112x100mg-010556D140l001r10 N="112" x="10.0" mg="-0.10556" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-010556D160l001r10 SW_Observables_iT.sub
+VARS N112x100mg-010556D160l001r10 N="112" x="10.0" mg="-0.10556" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-009667D20l001r10 SW_Observables_iT.sub
+VARS N112x100mg-009667D20l001r10 N="112" x="10.0" mg="-0.09667" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-009667D40l001r10 SW_Observables_iT.sub
+VARS N112x100mg-009667D40l001r10 N="112" x="10.0" mg="-0.09667" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-009667D60l001r10 SW_Observables_iT.sub
+VARS N112x100mg-009667D60l001r10 N="112" x="10.0" mg="-0.09667" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-009667D80l001r10 SW_Observables_iT.sub
+VARS N112x100mg-009667D80l001r10 N="112" x="10.0" mg="-0.09667" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-009667D100l001r10 SW_Observables_iT.sub
+VARS N112x100mg-009667D100l001r10 N="112" x="10.0" mg="-0.09667" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-009667D120l001r10 SW_Observables_iT.sub
+VARS N112x100mg-009667D120l001r10 N="112" x="10.0" mg="-0.09667" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-009667D140l001r10 SW_Observables_iT.sub
+VARS N112x100mg-009667D140l001r10 N="112" x="10.0" mg="-0.09667" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-009667D160l001r10 SW_Observables_iT.sub
+VARS N112x100mg-009667D160l001r10 N="112" x="10.0" mg="-0.09667" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-008778D20l001r10 SW_Observables_iT.sub
+VARS N112x100mg-008778D20l001r10 N="112" x="10.0" mg="-0.08778" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-008778D40l001r10 SW_Observables_iT.sub
+VARS N112x100mg-008778D40l001r10 N="112" x="10.0" mg="-0.08778" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-008778D60l001r10 SW_Observables_iT.sub
+VARS N112x100mg-008778D60l001r10 N="112" x="10.0" mg="-0.08778" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-008778D80l001r10 SW_Observables_iT.sub
+VARS N112x100mg-008778D80l001r10 N="112" x="10.0" mg="-0.08778" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-008778D100l001r10 SW_Observables_iT.sub
+VARS N112x100mg-008778D100l001r10 N="112" x="10.0" mg="-0.08778" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-008778D120l001r10 SW_Observables_iT.sub
+VARS N112x100mg-008778D120l001r10 N="112" x="10.0" mg="-0.08778" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-008778D140l001r10 SW_Observables_iT.sub
+VARS N112x100mg-008778D140l001r10 N="112" x="10.0" mg="-0.08778" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-008778D160l001r10 SW_Observables_iT.sub
+VARS N112x100mg-008778D160l001r10 N="112" x="10.0" mg="-0.08778" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-007889D20l001r10 SW_Observables_iT.sub
+VARS N112x100mg-007889D20l001r10 N="112" x="10.0" mg="-0.07889" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-007889D40l001r10 SW_Observables_iT.sub
+VARS N112x100mg-007889D40l001r10 N="112" x="10.0" mg="-0.07889" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-007889D60l001r10 SW_Observables_iT.sub
+VARS N112x100mg-007889D60l001r10 N="112" x="10.0" mg="-0.07889" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-007889D80l001r10 SW_Observables_iT.sub
+VARS N112x100mg-007889D80l001r10 N="112" x="10.0" mg="-0.07889" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-007889D100l001r10 SW_Observables_iT.sub
+VARS N112x100mg-007889D100l001r10 N="112" x="10.0" mg="-0.07889" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-007889D120l001r10 SW_Observables_iT.sub
+VARS N112x100mg-007889D120l001r10 N="112" x="10.0" mg="-0.07889" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-007889D140l001r10 SW_Observables_iT.sub
+VARS N112x100mg-007889D140l001r10 N="112" x="10.0" mg="-0.07889" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-007889D160l001r10 SW_Observables_iT.sub
+VARS N112x100mg-007889D160l001r10 N="112" x="10.0" mg="-0.07889" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-007D20l001r10 SW_Observables_iT.sub
+VARS N112x100mg-007D20l001r10 N="112" x="10.0" mg="-0.07" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-007D40l001r10 SW_Observables_iT.sub
+VARS N112x100mg-007D40l001r10 N="112" x="10.0" mg="-0.07" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-007D60l001r10 SW_Observables_iT.sub
+VARS N112x100mg-007D60l001r10 N="112" x="10.0" mg="-0.07" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-007D80l001r10 SW_Observables_iT.sub
+VARS N112x100mg-007D80l001r10 N="112" x="10.0" mg="-0.07" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-007D100l001r10 SW_Observables_iT.sub
+VARS N112x100mg-007D100l001r10 N="112" x="10.0" mg="-0.07" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-007D120l001r10 SW_Observables_iT.sub
+VARS N112x100mg-007D120l001r10 N="112" x="10.0" mg="-0.07" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-007D140l001r10 SW_Observables_iT.sub
+VARS N112x100mg-007D140l001r10 N="112" x="10.0" mg="-0.07" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N112x100mg-007D160l001r10 SW_Observables_iT.sub
+VARS N112x100mg-007D160l001r10 N="112" x="10.0" mg="-0.07" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-015D20l001r10 SW_Observables_iT.sub
+VARS N128x100mg-015D20l001r10 N="128" x="10.0" mg="-0.15" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-015D40l001r10 SW_Observables_iT.sub
+VARS N128x100mg-015D40l001r10 N="128" x="10.0" mg="-0.15" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-015D60l001r10 SW_Observables_iT.sub
+VARS N128x100mg-015D60l001r10 N="128" x="10.0" mg="-0.15" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-015D80l001r10 SW_Observables_iT.sub
+VARS N128x100mg-015D80l001r10 N="128" x="10.0" mg="-0.15" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-015D100l001r10 SW_Observables_iT.sub
+VARS N128x100mg-015D100l001r10 N="128" x="10.0" mg="-0.15" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-015D120l001r10 SW_Observables_iT.sub
+VARS N128x100mg-015D120l001r10 N="128" x="10.0" mg="-0.15" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-015D140l001r10 SW_Observables_iT.sub
+VARS N128x100mg-015D140l001r10 N="128" x="10.0" mg="-0.15" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-015D160l001r10 SW_Observables_iT.sub
+VARS N128x100mg-015D160l001r10 N="128" x="10.0" mg="-0.15" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-014111D20l001r10 SW_Observables_iT.sub
+VARS N128x100mg-014111D20l001r10 N="128" x="10.0" mg="-0.14111" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-014111D40l001r10 SW_Observables_iT.sub
+VARS N128x100mg-014111D40l001r10 N="128" x="10.0" mg="-0.14111" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-014111D60l001r10 SW_Observables_iT.sub
+VARS N128x100mg-014111D60l001r10 N="128" x="10.0" mg="-0.14111" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-014111D80l001r10 SW_Observables_iT.sub
+VARS N128x100mg-014111D80l001r10 N="128" x="10.0" mg="-0.14111" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-014111D100l001r10 SW_Observables_iT.sub
+VARS N128x100mg-014111D100l001r10 N="128" x="10.0" mg="-0.14111" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-014111D120l001r10 SW_Observables_iT.sub
+VARS N128x100mg-014111D120l001r10 N="128" x="10.0" mg="-0.14111" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-014111D140l001r10 SW_Observables_iT.sub
+VARS N128x100mg-014111D140l001r10 N="128" x="10.0" mg="-0.14111" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-014111D160l001r10 SW_Observables_iT.sub
+VARS N128x100mg-014111D160l001r10 N="128" x="10.0" mg="-0.14111" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-013222D20l001r10 SW_Observables_iT.sub
+VARS N128x100mg-013222D20l001r10 N="128" x="10.0" mg="-0.13222" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-013222D40l001r10 SW_Observables_iT.sub
+VARS N128x100mg-013222D40l001r10 N="128" x="10.0" mg="-0.13222" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-013222D60l001r10 SW_Observables_iT.sub
+VARS N128x100mg-013222D60l001r10 N="128" x="10.0" mg="-0.13222" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-013222D80l001r10 SW_Observables_iT.sub
+VARS N128x100mg-013222D80l001r10 N="128" x="10.0" mg="-0.13222" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-013222D100l001r10 SW_Observables_iT.sub
+VARS N128x100mg-013222D100l001r10 N="128" x="10.0" mg="-0.13222" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-013222D120l001r10 SW_Observables_iT.sub
+VARS N128x100mg-013222D120l001r10 N="128" x="10.0" mg="-0.13222" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-013222D140l001r10 SW_Observables_iT.sub
+VARS N128x100mg-013222D140l001r10 N="128" x="10.0" mg="-0.13222" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-013222D160l001r10 SW_Observables_iT.sub
+VARS N128x100mg-013222D160l001r10 N="128" x="10.0" mg="-0.13222" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-012333D20l001r10 SW_Observables_iT.sub
+VARS N128x100mg-012333D20l001r10 N="128" x="10.0" mg="-0.12333" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-012333D40l001r10 SW_Observables_iT.sub
+VARS N128x100mg-012333D40l001r10 N="128" x="10.0" mg="-0.12333" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-012333D60l001r10 SW_Observables_iT.sub
+VARS N128x100mg-012333D60l001r10 N="128" x="10.0" mg="-0.12333" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-012333D80l001r10 SW_Observables_iT.sub
+VARS N128x100mg-012333D80l001r10 N="128" x="10.0" mg="-0.12333" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-012333D100l001r10 SW_Observables_iT.sub
+VARS N128x100mg-012333D100l001r10 N="128" x="10.0" mg="-0.12333" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-012333D120l001r10 SW_Observables_iT.sub
+VARS N128x100mg-012333D120l001r10 N="128" x="10.0" mg="-0.12333" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-012333D140l001r10 SW_Observables_iT.sub
+VARS N128x100mg-012333D140l001r10 N="128" x="10.0" mg="-0.12333" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-012333D160l001r10 SW_Observables_iT.sub
+VARS N128x100mg-012333D160l001r10 N="128" x="10.0" mg="-0.12333" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-011444D20l001r10 SW_Observables_iT.sub
+VARS N128x100mg-011444D20l001r10 N="128" x="10.0" mg="-0.11444" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-011444D40l001r10 SW_Observables_iT.sub
+VARS N128x100mg-011444D40l001r10 N="128" x="10.0" mg="-0.11444" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-011444D60l001r10 SW_Observables_iT.sub
+VARS N128x100mg-011444D60l001r10 N="128" x="10.0" mg="-0.11444" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-011444D80l001r10 SW_Observables_iT.sub
+VARS N128x100mg-011444D80l001r10 N="128" x="10.0" mg="-0.11444" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-011444D100l001r10 SW_Observables_iT.sub
+VARS N128x100mg-011444D100l001r10 N="128" x="10.0" mg="-0.11444" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-011444D120l001r10 SW_Observables_iT.sub
+VARS N128x100mg-011444D120l001r10 N="128" x="10.0" mg="-0.11444" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-011444D140l001r10 SW_Observables_iT.sub
+VARS N128x100mg-011444D140l001r10 N="128" x="10.0" mg="-0.11444" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-011444D160l001r10 SW_Observables_iT.sub
+VARS N128x100mg-011444D160l001r10 N="128" x="10.0" mg="-0.11444" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-010556D20l001r10 SW_Observables_iT.sub
+VARS N128x100mg-010556D20l001r10 N="128" x="10.0" mg="-0.10556" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-010556D40l001r10 SW_Observables_iT.sub
+VARS N128x100mg-010556D40l001r10 N="128" x="10.0" mg="-0.10556" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-010556D60l001r10 SW_Observables_iT.sub
+VARS N128x100mg-010556D60l001r10 N="128" x="10.0" mg="-0.10556" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-010556D80l001r10 SW_Observables_iT.sub
+VARS N128x100mg-010556D80l001r10 N="128" x="10.0" mg="-0.10556" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-010556D100l001r10 SW_Observables_iT.sub
+VARS N128x100mg-010556D100l001r10 N="128" x="10.0" mg="-0.10556" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-010556D120l001r10 SW_Observables_iT.sub
+VARS N128x100mg-010556D120l001r10 N="128" x="10.0" mg="-0.10556" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-010556D140l001r10 SW_Observables_iT.sub
+VARS N128x100mg-010556D140l001r10 N="128" x="10.0" mg="-0.10556" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-010556D160l001r10 SW_Observables_iT.sub
+VARS N128x100mg-010556D160l001r10 N="128" x="10.0" mg="-0.10556" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-009667D20l001r10 SW_Observables_iT.sub
+VARS N128x100mg-009667D20l001r10 N="128" x="10.0" mg="-0.09667" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-009667D40l001r10 SW_Observables_iT.sub
+VARS N128x100mg-009667D40l001r10 N="128" x="10.0" mg="-0.09667" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-009667D60l001r10 SW_Observables_iT.sub
+VARS N128x100mg-009667D60l001r10 N="128" x="10.0" mg="-0.09667" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-009667D80l001r10 SW_Observables_iT.sub
+VARS N128x100mg-009667D80l001r10 N="128" x="10.0" mg="-0.09667" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-009667D100l001r10 SW_Observables_iT.sub
+VARS N128x100mg-009667D100l001r10 N="128" x="10.0" mg="-0.09667" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-009667D120l001r10 SW_Observables_iT.sub
+VARS N128x100mg-009667D120l001r10 N="128" x="10.0" mg="-0.09667" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-009667D140l001r10 SW_Observables_iT.sub
+VARS N128x100mg-009667D140l001r10 N="128" x="10.0" mg="-0.09667" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-009667D160l001r10 SW_Observables_iT.sub
+VARS N128x100mg-009667D160l001r10 N="128" x="10.0" mg="-0.09667" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-008778D20l001r10 SW_Observables_iT.sub
+VARS N128x100mg-008778D20l001r10 N="128" x="10.0" mg="-0.08778" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-008778D40l001r10 SW_Observables_iT.sub
+VARS N128x100mg-008778D40l001r10 N="128" x="10.0" mg="-0.08778" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-008778D60l001r10 SW_Observables_iT.sub
+VARS N128x100mg-008778D60l001r10 N="128" x="10.0" mg="-0.08778" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-008778D80l001r10 SW_Observables_iT.sub
+VARS N128x100mg-008778D80l001r10 N="128" x="10.0" mg="-0.08778" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-008778D100l001r10 SW_Observables_iT.sub
+VARS N128x100mg-008778D100l001r10 N="128" x="10.0" mg="-0.08778" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-008778D120l001r10 SW_Observables_iT.sub
+VARS N128x100mg-008778D120l001r10 N="128" x="10.0" mg="-0.08778" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-008778D140l001r10 SW_Observables_iT.sub
+VARS N128x100mg-008778D140l001r10 N="128" x="10.0" mg="-0.08778" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-008778D160l001r10 SW_Observables_iT.sub
+VARS N128x100mg-008778D160l001r10 N="128" x="10.0" mg="-0.08778" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-007889D20l001r10 SW_Observables_iT.sub
+VARS N128x100mg-007889D20l001r10 N="128" x="10.0" mg="-0.07889" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-007889D40l001r10 SW_Observables_iT.sub
+VARS N128x100mg-007889D40l001r10 N="128" x="10.0" mg="-0.07889" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-007889D60l001r10 SW_Observables_iT.sub
+VARS N128x100mg-007889D60l001r10 N="128" x="10.0" mg="-0.07889" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-007889D80l001r10 SW_Observables_iT.sub
+VARS N128x100mg-007889D80l001r10 N="128" x="10.0" mg="-0.07889" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-007889D100l001r10 SW_Observables_iT.sub
+VARS N128x100mg-007889D100l001r10 N="128" x="10.0" mg="-0.07889" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-007889D120l001r10 SW_Observables_iT.sub
+VARS N128x100mg-007889D120l001r10 N="128" x="10.0" mg="-0.07889" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-007889D140l001r10 SW_Observables_iT.sub
+VARS N128x100mg-007889D140l001r10 N="128" x="10.0" mg="-0.07889" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-007889D160l001r10 SW_Observables_iT.sub
+VARS N128x100mg-007889D160l001r10 N="128" x="10.0" mg="-0.07889" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-007D20l001r10 SW_Observables_iT.sub
+VARS N128x100mg-007D20l001r10 N="128" x="10.0" mg="-0.07" D="20" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-007D40l001r10 SW_Observables_iT.sub
+VARS N128x100mg-007D40l001r10 N="128" x="10.0" mg="-0.07" D="40" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-007D60l001r10 SW_Observables_iT.sub
+VARS N128x100mg-007D60l001r10 N="128" x="10.0" mg="-0.07" D="60" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-007D80l001r10 SW_Observables_iT.sub
+VARS N128x100mg-007D80l001r10 N="128" x="10.0" mg="-0.07" D="80" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-007D100l001r10 SW_Observables_iT.sub
+VARS N128x100mg-007D100l001r10 N="128" x="10.0" mg="-0.07" D="100" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-007D120l001r10 SW_Observables_iT.sub
+VARS N128x100mg-007D120l001r10 N="128" x="10.0" mg="-0.07" D="120" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-007D140l001r10 SW_Observables_iT.sub
+VARS N128x100mg-007D140l001r10 N="128" x="10.0" mg="-0.07" D="140" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
+JOB N128x100mg-007D160l001r10 SW_Observables_iT.sub
+VARS N128x100mg-007D160l001r10 N="128" x="10.0" mg="-0.07" D="160" l_0="0.1" lambda="100.0" acc="1e-12" ns="700" r="1.0"
