@@ -1,4 +1,4 @@
-CONFIG dagman.config
+CONFIG /lustre/fs23/group/nic/tangelides/SW_MPS_iT/dagman.config
 JOB N100x250mg00D20l00125r10 SW_Observables_iT.sub
 VARS N100x250mg00D20l00125r10 N="100" x="25.0" mg="0.0" D="20" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0"
 JOB N100x250mg00D40l00125r10 SW_Observables_iT.sub
