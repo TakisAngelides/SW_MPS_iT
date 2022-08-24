@@ -15,6 +15,14 @@ r = parse(Float64, ARGS[9]) # Wilson parameter
 w_1_s_2 = parse(Int64, ARGS[10]) # If this is equal to 1 do Wilson, else do staggered
 first_excited = parse(Bool, ARGS[11]) # If this is true we will compute the first excited state only and not the ground state
 
+if first_excited
+    text_file_name = "/SW_Observables_First_Excited_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_$(first_excited).txt"
+    mps_file_path = "/lustre/fs23/group/nic/tangelides/SW_MPS_First_Excited_States_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_$(first_excited).h5"
+else
+    text_file_name = "/SW_Observables_First_Excited_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_$(first_excited).txt"
+    mps_file_path = "/lustre/fs23/group/nic/tangelides/SW_MPS_States_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_$(first_excited).h5"
+end
+
 mps_file_path = "/lustre/fs23/group/nic/tangelides/SW_MPS_States_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_$(first_excited).h5"
 
 path = "/lustre/fs23/group/nic/tangelides/"
@@ -24,7 +32,6 @@ psi = read(f_h5, "MPS", MPS)
 gs_energy = read(f_h5, "gs_energy")
 close(f_h5)
 
-text_file_name = "/SW_Observables_First_Excited_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_$(first_excited).txt"
 path_to_text_file = path*text_file_name
 
 open(path_to_text_file, "w") do f
