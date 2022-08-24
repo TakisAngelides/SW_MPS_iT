@@ -1,7 +1,7 @@
 CONFIG /lustre/fs23/group/nic/tangelides/SW_MPS_iT/dagman.config
 JOB N64x100mg002D20l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
-VARS N64x100mg002D20l00125r10 N="64" x="10.0" mg="0.02" D="20" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false
+VARS N64x100mg002D20l00125r10 N="64" x="10.0" mg="0.02" D="20" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
 JOB N64x100mg002D40l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
-VARS N64x100mg002D40l00125r10 N="64" x="10.0" mg="0.02" D="40" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false
+VARS N64x100mg002D40l00125r10 N="64" x="10.0" mg="0.02" D="40" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
 JOB N64x100mg002D60l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
-VARS N64x100mg002D60l00125r10 N="64" x="10.0" mg="0.02" D="60" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false
+VARS N64x100mg002D60l00125r10 N="64" x="10.0" mg="0.02" D="60" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
