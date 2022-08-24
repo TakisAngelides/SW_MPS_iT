@@ -2,7 +2,7 @@ environment = "JULIA_DEPOT_PATH='/lustre/fs23/group/nic/tangelides/.julia:$JULIA
 
 executable = /lustre/fs23/group/nic/tangelides/julia-1.7.2/bin/julia
 
-arguments = /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.jl $(N) $(x) $(mg) $(D) $(l_0) $(lambda) $(acc) $(ns) $(r)
+arguments = /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.jl $(N) $(x) $(mg) $(D) $(l_0) $(lambda) $(acc) $(ns) $(r) $(w_1_s_2) $(first_excited)
 
 transfer_input_files = /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.jl
 
@@ -10,10 +10,10 @@ should_transfer_files = IF_NEEDED
 
 max_retries = 5
 
-error = /lustre/fs23/group/nic/tangelides/Logs/$(Cluster)_$(Process)_N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_choice_$(choice).error
+error = /lustre/fs23/group/nic/tangelides/Logs/$(Cluster)_$(Process)_N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_$(first_excited).error
 
-# output = /lustre/fs23/group/nic/tangelides/Logs/$(Cluster)_$(Process)_N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_choice_$(choice).out                    
+# output = /lustre/fs23/group/nic/tangelides/Logs/$(Cluster)_$(Process)_N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_$(first_excited).out                    
 
-# log = /lustre/fs23/group/nic/tangelides/Logs/$(Cluster)_$(Process)_N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_choice_$(choice).log 
+# log = /lustre/fs23/group/nic/tangelides/Logs/$(Cluster)_$(Process)_N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_$(first_excited).log 
 
 queue
