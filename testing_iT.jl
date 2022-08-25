@@ -88,39 +88,60 @@ include("Observables_iT.jl")
 
 # Testing the first excited state energy using exact diagonalization for Ising model
 
-function get_Ising_OpSum(N, J, g_z, g_x)
-        
-    ampo = OpSum()
+# N = 20
+# J = 0.0001
+# g_z = 0.1
+# g_x = 0.2
+# ns = 500
+# D = 20
 
-    for n=1:N-1
-        ampo += 4*J,"Sz",n,"Sz",n+1
-    end
+# sites = siteinds("S=1/2", N)
+# opsum_ising = get_Ising_OpSum(N, J, g_z, g_x)
+# H = get_MPO_from_OpSum(opsum_ising, sites)
+# initial_ansatz_0 = randomMPS(sites, D)
+# sweeps = Sweeps(ns, maxdim = D)
 
-    for n=1:N
-        ampo += 2*g_x,"Sx",n
-        ampo += 2*g_z,"Sz",n
-    end
+# energy_0, psi_0 = dmrg(H, initial_ansatz_0, sweeps, ishermitian = true, maxdim = D)
 
-    return ampo
+# # Ms = [psi_0]
+# # w = energy_0
+# # initial_ansatz_1 = randomMPS(sites, D)
 
-end
+# # energy_1, psi_1 = dmrg(H, Ms, initial_ansatz_1, sweeps, weight = w, ishermitian = true, maxdim = D)
 
-function get_MPO_from_OpSum(OpSum, sites)
+# Heff = H + energy_0.*outer(psi_0', psi_0)
+# initial_ansatz_1 = randomMPS(sites, D)
 
-    return MPO(OpSum, sites)
+# println("Overlap of ansatz with gs: ", inner(psi_0, initial_ansatz_1))
 
-end
+# initial_noise = 1e-2
 
-N = 20
-J = 0.0001
-g_z = 0.1
-g_x = 0.2
+# noise_vector = LinRange(initial_noise, 0.0, ns)
+
+# energy_1, psi_1 = dmrg(Heff, initial_ansatz_1, sweeps, ishermitian = true, maxdim = D, noise = noise_vector)
+
+# println("Overlap of 1st excited state with gs: ", inner(psi_0, psi_1))
+
+# println(energy_0)
+# println(energy_1)
+
+# ---------------------------------------------------------------------------------
+
+# Testing the first excited state of the Schwinger model
+
+N = 6
+x = 1.0
+D = 80
+mg = -0.2
+l_0 = 0.125
+lambda = 100.0
+r = 1.0
 ns = 500
-D = 20
 
-sites = siteinds("S=1/2", N)
-opsum_ising = get_Ising_OpSum(N, J, g_z, g_x)
-H = get_MPO_from_OpSum(opsum_ising, sites)
+params = Dict("N" => N, "l_0" => l_0, "N" => N, "x" => x, "mg" => mg, "r" => r, "lambda" => lambda)
+
+H = get_MPO_from_OpSum(get_SW_OpSum(params), sites)
+sites = siteinds("S=1/2", 2*N)
 initial_ansatz_0 = randomMPS(sites, D)
 sweeps = Sweeps(ns, maxdim = D)
 
@@ -147,6 +168,5 @@ println("Overlap of 1st excited state with gs: ", inner(psi_0, psi_1))
 
 println(energy_0)
 println(energy_1)
-
 
 # ---------------------------------------------------------------------------------
