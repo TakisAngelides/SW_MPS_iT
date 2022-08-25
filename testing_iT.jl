@@ -58,7 +58,7 @@ energy_0, psi_0 = run_SW_DMRG(sites, params, H, true)
 # avg_E_field = real(mean(middle_efl))
 # println(avg_E_field)
 
-lambda = 1000.0
+initial_noise = 1e-5
 previous_psi = randomMPS(sites, D)
 params = Dict("initial_noise" => initial_noise, "silent" => silent, "N" => N, "D" => D, "x" => x, "ns" => ns, "lambda" => lambda, "l_0" => l_0, "mg" => mg, "r" => r, "acc" => acc, "sweep_observables_file_path" => sweep_observables_file_path, "previous_mps_file_path" => previous_mps_file_path, "previous_psi" => previous_psi)
 
