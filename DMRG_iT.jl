@@ -36,7 +36,8 @@ function ITensors.measure!(o::my_observer; kwargs...)
 
     if sweep_is_done && !silent
         open(sweep_observables_file_path, "a+") do f
-            charge_configuration_list = get_SW_charge_configuration(psi, sites)
+            z_config_list = get_z_configuration(psi, sites)
+            charge_configuration_list = get_SW_charge_configuration(z_config_list)
             electric_field_configuration_list = get_SW_electric_field_configuration(charge_configuration_list, l_0)
             left_edge = floor(Int, N*0.48)
             right_edge = floor(Int, N*0.52)
