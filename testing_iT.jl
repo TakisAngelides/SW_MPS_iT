@@ -140,8 +140,8 @@ ns = 500
 
 params = Dict("N" => N, "l_0" => l_0, "N" => N, "x" => x, "mg" => mg, "r" => r, "lambda" => lambda)
 
-H = get_MPO_from_OpSum(get_SW_OpSum(params), sites)
 sites = siteinds("S=1/2", 2*N)
+H = get_MPO_from_OpSum(get_SW_OpSum(params), sites)
 initial_ansatz_0 = randomMPS(sites, D)
 sweeps = Sweeps(ns, maxdim = D)
 
