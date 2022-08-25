@@ -106,12 +106,13 @@ mps_file_path = ""
 
 previous_mps_file_path = ""
 
+sites = siteinds("S=1/2", N)
+
 previous_psi = randomMPS(sites, D)
 
 params = Dict("initial_noise" => initial_noise, "silent" => silent, "N" => 10, "J" => -1, "g_z" => -0.1, "g_x" => 1.5, "ns" => 5, "D" => 34, "acc" => acc, "sweep_observables_file_path" => sweep_observables_file_path, "previous_mps_file_path" => previous_mps_file_path, "previous_psi" => previous_psi)
 
 opsum_ising = get_Ising_OpSum(N, J, g_z, g_x)
-sites = siteinds("S=1/2", N)
 H = get_MPO_from_OpSum(opsum_ising, sites)
 
 energy_0, psi_0 = run_SW_DMRG(sites, params, H, true)
