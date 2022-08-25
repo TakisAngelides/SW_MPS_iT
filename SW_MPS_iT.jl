@@ -48,7 +48,7 @@ if !first_excited
         H = get_MPO_from_OpSum(get_SW_Staggered_OpSum(params), sites)
     end
 
-    energy, psi = run_SW_DMRG(sites, params, H)
+    energy, psi = run_SW_DMRG(sites, params, H, true)
 
     # Save the MPS as h5 file including its sites object
 
@@ -87,7 +87,6 @@ else
     params = Dict("initial_noise" => initial_noise, "silent" => silent, "N" => N, "D" => D, "x" => x, "ns" => ns, "lambda" => lambda, "l_0" => l_0, "mg" => mg, "r" => r, "acc" => acc, "sweep_observables_file_path" => sweep_observables_file_path, "previous_mps_file_path" => previous_mps_file_path, "previous_psi" => previous_psi)
 
     # Compute the MPS
-
     if w_1_s_2 == 1
         P = outer(psi_0', psi_0)
         H = get_MPO_from_OpSum(get_SW_OpSum(params), sites)
@@ -98,7 +97,7 @@ else
         Heff = H + energy_0.*P
     end
 
-    energy, psi = run_SW_DMRG(sites, params, Heff)
+    energy, psi = run_SW_DMRG(sites, params, Heff, false)
 
     # Save the MPS as h5 file including its sites object
 

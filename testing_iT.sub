@@ -1,0 +1,17 @@
+environment = "JULIA_DEPOT_PATH='/lustre/fs23/group/nic/tangelides/.julia:$JULIA_DEPOT_PATH'"
+
+executable = /lustre/fs23/group/nic/tangelides/julia-1.7.2/bin/julia
+
+arguments = /lustre/fs23/group/nic/tangelides/SW_MPS_iT/testing_iT.jl 
+
+transfer_input_files = /lustre/fs23/group/nic/tangelides/SW_MPS_iT/testing_iT.jl
+
+should_transfer_files = IF_NEEDED
+
+error = /lustre/fs23/group/nic/tangelides/Logs/$(Cluster)_$(Process).error
+
+output = /lustre/fs23/group/nic/tangelides/Logs/$(Cluster)_$(Process).out                    
+
+# log = /lustre/fs23/group/nic/tangelides/Logs/$(Cluster)_$(Process).log 
+
+queue

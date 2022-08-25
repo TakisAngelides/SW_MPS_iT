@@ -4,9 +4,9 @@ using Plots
 include("DMRG_iT.jl")
 include("Observables_iT.jl")
 
-function run_SW_DMRG(sites, params, H)
+function run_SW_DMRG(sites, params, H, ishermitian)
 
-    energy, psi = DMRG(H, sites, params)
+    energy, psi = DMRG(H, sites, params, ishermitian)
 
     return energy, psi
 
