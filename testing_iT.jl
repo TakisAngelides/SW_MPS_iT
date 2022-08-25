@@ -12,7 +12,7 @@ mg = 0.125
 l_0 = 0.125
 lambda = 100.0
 acc = 1e-12
-ns = 100
+ns = 1000
 r = 1.0
 D_p = 0
 mg_p = 0.0
@@ -58,11 +58,13 @@ energy_0, psi_0 = run_SW_DMRG(sites, params, H, true)
 # avg_E_field = real(mean(middle_efl))
 # println(avg_E_field)
 
-P = outer(psi_0', psi_0)
-Heff = H + energy_0.*P
-
+lambda = 0.0
 previous_psi = randomMPS(sites, D)
 params = Dict("initial_noise" => initial_noise, "silent" => silent, "N" => N, "D" => D, "x" => x, "ns" => ns, "lambda" => lambda, "l_0" => l_0, "mg" => mg, "r" => r, "acc" => acc, "sweep_observables_file_path" => sweep_observables_file_path, "previous_mps_file_path" => previous_mps_file_path, "previous_psi" => previous_psi)
+
+H = get_MPO_from_OpSum(get_SW_OpSum(params), sites)
+P = outer(psi_0', psi_0)
+Heff = H + energy_0.*P
 
 energy_1, psi_1 = run_SW_DMRG(sites, params, Heff, true)
 
