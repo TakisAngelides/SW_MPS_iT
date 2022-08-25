@@ -62,6 +62,7 @@ P = outer(psi_0', psi_0)
 Heff = H + energy_0.*P
 
 params["previous_psi"] = randomMPS(sites, D)
+params = Dict("initial_noise" => initial_noise, "silent" => silent, "N" => N, "D" => D, "x" => x, "ns" => ns, "lambda" => lambda, "l_0" => l_0, "mg" => mg, "r" => r, "acc" => acc, "sweep_observables_file_path" => sweep_observables_file_path, "previous_mps_file_path" => previous_mps_file_path, "previous_psi" => previous_psi)
 
 energy_1, psi_1 = run_SW_DMRG(sites, params, Heff, true)
 
