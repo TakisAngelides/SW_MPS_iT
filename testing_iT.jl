@@ -109,7 +109,7 @@ energy_0, psi_0 = dmrg(H, initial_ansatz_0, sweeps, ishermitian = true, maxdim =
 
 # energy_1, psi_1 = dmrg(H, Ms, initial_ansatz_1, sweeps, weight = w, ishermitian = true, maxdim = D)
 
-Heff = H - energy_0.*outer(psi_0', psi_0)
+Heff = H + energy_0.*outer(psi_0', psi_0)
 initial_ansatz_1 = randomMPS(sites, D)
 energy_1, psi_1 = dmrg(Heff, initial_ansatz_0, sweeps, ishermitian = true, maxdim = D)
 
