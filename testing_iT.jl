@@ -147,6 +147,8 @@ sweeps = Sweeps(ns, maxdim = D)
 
 energy_0, psi_0 = dmrg(H, initial_ansatz_0, sweeps, ishermitian = true, maxdim = D)
 
+println("Norm of psi_0: ", norm(psi_0))
+
 # Ms = [psi_0]
 # w = energy_0
 # initial_ansatz_1 = randomMPS(sites, D)
