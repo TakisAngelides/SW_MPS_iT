@@ -66,7 +66,7 @@ H = get_MPO_from_OpSum(get_SW_OpSum(params), sites)
 P = outer(psi_0', psi_0)
 Heff = H + energy_0.*P
 
-energy_1, psi_1 = run_SW_DMRG(sites, params, Heff, true)
+energy_1, psi_1 = run_SW_DMRG(sites, params, Heff, false)
 
 println(energy_0)
 println(energy_1)
