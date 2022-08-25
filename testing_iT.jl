@@ -88,12 +88,12 @@ include("Observables_iT.jl")
 
 # Testing the first excited state energy using exact diagonalization for Ising model
 
-N = 10
+N = 20
 J = 0.0001
 g_z = 0.1
 g_x = 0.2
-ns = 1000
-D = 80
+ns = 5000
+D = 20
 
 sites = siteinds("S=1/2", N)
 opsum_ising = get_Ising_OpSum(N, J, g_z, g_x)
