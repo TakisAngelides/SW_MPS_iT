@@ -161,7 +161,7 @@ noise_vector = LinRange(initial_noise, 0.0, ns)
 # energy_1, psi_1 = dmrg(Heff, initial_ansatz_1, sweeps, ishermitian = true, maxdim = D, noise = noise_vector)
 
 Ms = [psi_0]
-w = energy_0
+w = 1.0
 initial_ansatz_1 = randomMPS(sites, D)
 
 energy_1, psi_1 = dmrg(Heff, Ms, initial_ansatz_1, sweeps, weight = w, ishermitian = true, maxdim = D)
