@@ -88,6 +88,29 @@ include("Observables_iT.jl")
 
 # Testing the first excited state energy using exact diagonalization for Ising model
 
+function get_Ising_OpSum(N, J, g_z, g_x)
+        
+    ampo = OpSum()
+
+    for n=1:N-1
+        ampo += 4*J,"Sz",n,"Sz",n+1
+    end
+
+    for n=1:N
+        ampo += 2*g_x,"Sx",n
+        ampo += 2*g_z,"Sz",n
+    end
+
+    return ampo
+
+end
+
+function get_MPO_from_OpSum(OpSum, sites)
+
+    return MPO(OpSum, sites)
+
+end
+
 N = 20
 J = 0.0001
 g_z = 0.1
@@ -112,7 +135,7 @@ energy_0, psi_0 = dmrg(H, initial_ansatz_0, sweeps, ishermitian = true, maxdim =
 Heff = H + energy_0.*outer(psi_0', psi_0)
 initial_ansatz_1 = randomMPS(sites, D)
 
-println(inner(psi_0, initial_ansatz_1))
+println("Overlap of ansatz with gs: ", inner(psi_0, initial_ansatz_1))
 
 initial_noise = 1e-2
 
@@ -120,7 +143,7 @@ noise_vector = LinRange(initial_noise, 0.0, ns)
 
 energy_1, psi_1 = dmrg(Heff, initial_ansatz_1, sweeps, ishermitian = true, maxdim = D, noise = noise_vector)
 
-println(inner(psi_0, psi_1))
+println("Overlap of 1st excited state with gs: ", inner(psi_0, psi_1))
 
 println(energy_0)
 println(energy_1)
