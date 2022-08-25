@@ -132,9 +132,9 @@ include("Observables_iT.jl")
 N = 6
 x = 1.0
 D = 80
-mg = -0.2
-l_0 = 0.125
-lambda = 100.0
+mg = -0.1
+l_0 = 0.01
+lambda = 10.0
 r = 1.0
 ns = 500
 
