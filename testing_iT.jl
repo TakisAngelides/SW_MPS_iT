@@ -104,7 +104,7 @@ sweeps = Sweeps(ns, maxdim = D)
 energy_0, psi_0 = dmrg(H, initial_ansatz_0, sweeps, ishermitian = true, maxdim = D)
 
 Ms = [psi_0]
-w = [energy_0]
+w = energy_0
 initial_ansatz_1 = randomMPS(sites, D)
 
 energy_1, psi_1 = dmrg(H, Ms, initial_ansatz_1, sweeps, weight = w, ishermitian = true, maxdim = D)
