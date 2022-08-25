@@ -149,12 +149,6 @@ energy_0, psi_0 = dmrg(H, initial_ansatz_0, sweeps, ishermitian = true, maxdim =
 
 println("Norm of psi_0: ", norm(psi_0))
 
-# Ms = [psi_0]
-# w = energy_0
-# initial_ansatz_1 = randomMPS(sites, D)
-
-# energy_1, psi_1 = dmrg(H, Ms, initial_ansatz_1, sweeps, weight = w, ishermitian = true, maxdim = D)
-
 Heff = H + energy_0.*outer(psi_0', psi_0)
 initial_ansatz_1 = randomMPS(sites, D)
 
@@ -164,7 +158,13 @@ initial_noise = 1e-2
 
 noise_vector = LinRange(initial_noise, 0.0, ns)
 
-energy_1, psi_1 = dmrg(Heff, initial_ansatz_1, sweeps, ishermitian = true, maxdim = D, noise = noise_vector)
+# energy_1, psi_1 = dmrg(Heff, initial_ansatz_1, sweeps, ishermitian = true, maxdim = D, noise = noise_vector)
+
+Ms = [psi_0]
+w = energy_0
+initial_ansatz_1 = randomMPS(sites, D)
+
+energy_1, psi_1 = dmrg(Heff, Ms, initial_ansatz_1, sweeps, weight = w, ishermitian = true, maxdim = D)
 
 println("Overlap of 1st excited state with gs: ", inner(psi_0, psi_1))
 
