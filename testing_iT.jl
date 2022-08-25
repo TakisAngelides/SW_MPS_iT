@@ -88,43 +88,26 @@ include("Observables_iT.jl")
 
 # Testing the first excited state energy using exact diagonalization for Ising model
 
-J = -1.0
-N = 10
-g_z = -0.1
-g_x = 1.5
-D = 80
-acc = 1e-12
+N = 4
+J = 1.0
+g_z = 0.001
+g_x = 0.02
 ns = 1000
-D_p = 0
-mg_p = 0.0
-silent = true
-initial_noise = 0.0
-
-sweep_observables_file_path = ""
-
-mps_file_path = ""
-
-previous_mps_file_path = ""
+D = 80
 
 sites = siteinds("S=1/2", N)
-
-previous_psi = randomMPS(sites, D)
-
-params = Dict("initial_noise" => initial_noise, "silent" => silent, "N" => 10, "J" => -1, "g_z" => -0.1, "g_x" => 1.5, "ns" => 5, "D" => 34, "acc" => acc, "sweep_observables_file_path" => sweep_observables_file_path, "previous_mps_file_path" => previous_mps_file_path, "previous_psi" => previous_psi)
-
 opsum_ising = get_Ising_OpSum(N, J, g_z, g_x)
 H = get_MPO_from_OpSum(opsum_ising, sites)
+initial_ansatz_0 = randomMPS(sites, D)
+sweeps = Sweeps(ns, maxdim = D)
 
-energy_0, psi_0 = run_SW_DMRG(sites, params, H, true)
+energy_0, psi_0 = dmrg(H, initial_ansatz_0, sweeps, ishermitian = ishermitian, maxdim = D)
 
-previous_psi = randomMPS(sites, D)
+Ms = [psi_0]
+w = [energy_0]
+initial_ansatz_1 = randomMPS(sites, D)
 
-params = Dict("initial_noise" => initial_noise, "silent" => silent, "N" => 10, "J" => -1, "g_z" => -0.1, "g_x" => 1.5, "ns" => 5, "D" => 34, "acc" => acc, "sweep_observables_file_path" => sweep_observables_file_path, "previous_mps_file_path" => previous_mps_file_path, "previous_psi" => previous_psi)
-
-P = outer(psi_0', psi_0)
-Heff = H + energy_0.*P
-
-energy_1, psi_1 = run_SW_DMRG(sites, params, Heff, true)
+energy_1, psi_1 = dmrg(H, Ms, initial_ansatz_1, sweeps, weight = w, ishermitian = ishermitian, maxdim = D)
 
 println(energy_0)
 println(energy_1)
