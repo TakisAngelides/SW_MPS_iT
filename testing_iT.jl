@@ -47,6 +47,12 @@ params = Dict("initial_noise" => initial_noise, "silent" => silent, "N" => N, "D
 # H = get_MPO_from_OpSum(get_SW_OpSum(params), sites)
 
 params = Dict("N" => 10, "J" => -1, "g_z" => -0.1, "g_x" => 1.5, "ns" => 5, "D" => 34)
+J = -1.0
+N = 10
+g_z = -0.1
+g_x = 1.5
+ns = 1000
+D = 80
 opsum_ising = get_Ising_OpSum(N, J, g_z, g_x)
 sites = siteinds("S=1/2", N)
 H = get_MPO_from_OpSum(opsum_ising, sites)
