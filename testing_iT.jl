@@ -7,7 +7,7 @@ include("Observables_iT.jl")
 
 N = 4
 x = 1.0
-D = 20
+D = 40
 mg = 0.125
 l_0 = 0.125
 lambda = 100.0
