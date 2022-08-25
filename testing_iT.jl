@@ -44,7 +44,13 @@ params = Dict("initial_noise" => initial_noise, "silent" => silent, "N" => N, "D
 
 # Compute the MPS
 
-H = get_MPO_from_OpSum(get_SW_OpSum(params), sites)
+# H = get_MPO_from_OpSum(get_SW_OpSum(params), sites)
+
+params = Dict("N" => 10, "J" => -1, "g_z" => -0.1, "g_x" => 1.5, "ns" => 5, "D" => 34)
+
+opsum_ising = get_Ising_OpSum(N, J, g_z, g_x)
+sites = siteinds("S=1/2", N)
+H = get_MPO_from_OpSum(opsum_ising, sites)
 
 energy_0, psi_0 = run_SW_DMRG(sites, params, H, true)
 
@@ -62,11 +68,12 @@ initial_noise = 1e-5
 previous_psi = randomMPS(sites, D)
 params = Dict("initial_noise" => initial_noise, "silent" => silent, "N" => N, "D" => D, "x" => x, "ns" => ns, "lambda" => lambda, "l_0" => l_0, "mg" => mg, "r" => r, "acc" => acc, "sweep_observables_file_path" => sweep_observables_file_path, "previous_mps_file_path" => previous_mps_file_path, "previous_psi" => previous_psi)
 
-H = get_MPO_from_OpSum(get_SW_OpSum(params), sites)
+# H = get_MPO_from_OpSum(get_SW_OpSum(params), sites)
+
 P = outer(psi_0', psi_0)
 Heff = H + energy_0.*P
 
-energy_1, psi_1 = run_SW_DMRG(sites, params, Heff, false)
+energy_1, psi_1 = run_SW_DMRG(sites, params, Heff, true)
 
 println(energy_0)
 println(energy_1)
