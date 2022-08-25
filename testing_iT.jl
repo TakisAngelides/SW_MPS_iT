@@ -92,7 +92,7 @@ N = 20
 J = 0.0001
 g_z = 0.1
 g_x = 0.2
-ns = 5000
+ns = 500
 D = 20
 
 sites = siteinds("S=1/2", N)
@@ -114,7 +114,11 @@ initial_ansatz_1 = randomMPS(sites, D)
 
 println(inner(psi_0, initial_ansatz_1))
 
-energy_1, psi_1 = dmrg(Heff, initial_ansatz_1, sweeps, ishermitian = true, maxdim = D)
+initial_noise = 1e-2
+
+noise_vector = LinRange(initial_noise, 0.0, ns)
+
+energy_1, psi_1 = dmrg(Heff, initial_ansatz_1, sweeps, ishermitian = true, maxdim = D, noise = noise_vector)
 
 println(inner(psi_0, psi_1))
 
