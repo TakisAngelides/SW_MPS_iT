@@ -88,7 +88,7 @@ include("Observables_iT.jl")
 
 # Testing the first excited state energy using exact diagonalization for Ising model
 
-N = 20
+N = 10
 J = 0.0001
 g_z = 0.1
 g_x = 0.2
