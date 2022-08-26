@@ -164,7 +164,7 @@ initial_ansatz_1 = randomMPS(sites, D)
 
 println("Overlap of ansatz with gs: ", inner(psi_0, initial_ansatz_1))
 
-energy_1, psi_1 = dmrg(Heff, Ms, initial_ansatz_1, sweeps, weight = w, ishermitian = true, maxdim = D)
+energy_1, psi_1 = dmrg(H, Ms, initial_ansatz_1, sweeps, weight = w, ishermitian = true, maxdim = D)
 
 println("Overlap of 1st excited state with gs: ", inner(psi_0, psi_1))
 
