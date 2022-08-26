@@ -164,7 +164,7 @@ function get_Staggered_OpSum(params)
     for n=1:N-1
         ampo += x,"S+",n,"S-",n+1
         ampo += x,"S-",n,"S+",n+1
-        ampo += sqrt(x)*mg*(-1)^n,"Sz",n
+        ampo += 2*sqrt(x)*mg*(-1)^n,"Sz",n
     end
 
     for n=1:N-1
@@ -175,7 +175,7 @@ function get_Staggered_OpSum(params)
                 ampo += "Sz",k,"Sz",p
                 ampo += 0.5*(-1)^p,"Sz",k
                 ampo += 0.5*(-1)^k,"Sz",p
-                ampo += (-1)^(p+k),"Id",1
+                ampo += 0.25*(-1)^(p+k),"Id",1
             end
         end
     end
@@ -185,11 +185,11 @@ function get_Staggered_OpSum(params)
             ampo += lambda,"Sz",k,"Sz",p
             ampo += 0.5*lambda*(-1)^p,"Sz",k
             ampo += 0.5*lambda*(-1)^k,"Sz",p
-            ampo += lambda*(-1)^(p+k),"Id",1
+            ampo += 0.25*lambda*(-1)^(p+k),"Id",1
         end
     end
 
-    ampo += -0.5*sqrt(x)*mg,"Id",1
+    ampo += N*sqrt(x)*mg,"Id",1
     ampo += (l_0^2)*(N-1),"Id",1
 
     return ampo
