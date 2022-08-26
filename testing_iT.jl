@@ -127,48 +127,68 @@ include("Observables_iT.jl")
 
 # ---------------------------------------------------------------------------------
 
+# # Testing the first excited state of the Schwinger model with Wilson fermions
+
+# N = 6
+# x = 1.0
+# D = 80
+# mg = -0.1
+# l_0 = 0.01
+# lambda = 10.0
+# r = 1.0
+# ns = 500
+
+# params = Dict("N" => N, "l_0" => l_0, "N" => N, "x" => x, "mg" => mg, "r" => r, "lambda" => lambda)
+
+# sites = siteinds("S=1/2", 2*N)
+# opsum = get_SW_OpSum(params)
+# H = get_MPO_from_OpSum(opsum, sites)
+# initial_ansatz_0 = randomMPS(sites, D)
+# sweeps = Sweeps(ns, maxdim = D)
+
+# energy_0, psi_0 = dmrg(H, initial_ansatz_0, sweeps, ishermitian = true, maxdim = D)
+
+# println("Norm of psi_0: ", norm(psi_0))
+
+# Ms = [psi_0]
+# w = abs(energy_0)
+# initial_ansatz_1 = randomMPS(sites, D)
+
+# println("Overlap of ansatz with gs: ", inner(psi_0, initial_ansatz_1))
+
+# energy_1, psi_1 = dmrg(H, Ms, initial_ansatz_1, sweeps, weight = w, ishermitian = true, maxdim = D)
+
+# println("Overlap of 1st excited state with gs: ", inner(psi_0, psi_1))
+
+# println(energy_0)
+# println(energy_1)
+
+# ---------------------------------------------------------------------------------
+
+# Testing the staggered fermions Schwinger model
+
 # Testing the first excited state of the Schwinger model
 
-N = 6
+N = 10
 x = 1.0
-D = 80
+D = 20
 mg = -0.1
 l_0 = 0.01
-lambda = 10.0
+lambda = 100.0
 r = 1.0
-ns = 500
+ns = 1000
 
 params = Dict("N" => N, "l_0" => l_0, "N" => N, "x" => x, "mg" => mg, "r" => r, "lambda" => lambda)
 
-sites = siteinds("S=1/2", 2*N)
-H = get_MPO_from_OpSum(get_SW_OpSum(params), sites)
+sites = siteinds("S=1/2", N)
+opsum = get_Staggered_OpSum(params)
+H = get_MPO_from_OpSum(opsum, sites)
 initial_ansatz_0 = randomMPS(sites, D)
 sweeps = Sweeps(ns, maxdim = D)
 
 energy_0, psi_0 = dmrg(H, initial_ansatz_0, sweeps, ishermitian = true, maxdim = D)
 
-println("Norm of psi_0: ", norm(psi_0))
-
-# Heff = H + energy_0.*outer(psi_0', psi_0)
-# initial_ansatz_1 = randomMPS(sites, D)
-
-# initial_noise = 1e-2
-
-# noise_vector = LinRange(initial_noise, 0.0, ns)
-
-# energy_1, psi_1 = dmrg(Heff, initial_ansatz_1, sweeps, ishermitian = true, maxdim = D, noise = noise_vector)
-
-Ms = [psi_0]
-w = abs(energy_0)
-initial_ansatz_1 = randomMPS(sites, D)
-
-println("Overlap of ansatz with gs: ", inner(psi_0, initial_ansatz_1))
-
-energy_1, psi_1 = dmrg(H, Ms, initial_ansatz_1, sweeps, weight = w, ishermitian = true, maxdim = D)
-
-println("Overlap of 1st excited state with gs: ", inner(psi_0, psi_1))
-
 println(energy_0)
-println(energy_1)
 
 # ---------------------------------------------------------------------------------
+
