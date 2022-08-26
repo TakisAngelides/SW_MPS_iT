@@ -159,7 +159,8 @@ println("Norm of psi_0: ", norm(psi_0))
 # energy_1, psi_1 = dmrg(Heff, initial_ansatz_1, sweeps, ishermitian = true, maxdim = D, noise = noise_vector)
 
 Ms = [psi_0]
-w = abs(energy_0)
+# w = abs(energy_0)
+w = 1.0
 initial_ansatz_1 = randomMPS(sites, D)
 
 println("Overlap of ansatz with gs: ", inner(psi_0, initial_ansatz_1))
