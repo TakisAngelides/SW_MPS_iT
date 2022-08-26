@@ -45,7 +45,7 @@ if !first_excited
     if w_1_s_2 == 1
         H = get_MPO_from_OpSum(get_SW_OpSum(params), sites)
     else
-        H = get_MPO_from_OpSum(get_SW_Staggered_OpSum(params), sites)
+        H = get_MPO_from_OpSum(get_Staggered_OpSum(params), sites)
     end
 
     energy, psi = run_SW_DMRG(sites, params, H, true)
