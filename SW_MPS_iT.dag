@@ -1,12 +1,313 @@
 CONFIG /lustre/fs23/group/nic/tangelides/SW_MPS_iT/dagman.config
-JOB N64x100D20mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
-VARS N64x100D20mg002l00125r10 N="64" x="10.0" D="20" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="0" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="true"
-RETRY N64x100D20mg002l00125r10 3
-JOB N64x100D40mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
-VARS N64x100D40mg002l00125r10 N="64" x="10.0" D="40" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="20" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="true"
-RETRY N64x100D40mg002l00125r10 3
-JOB N64x100D60mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
-VARS N64x100D60mg002l00125r10 N="64" x="10.0" D="60" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="40" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="true"
-RETRY N64x100D60mg002l00125r10 3
-PARENT N64x100D20mg002l00125r10 CHILD N64x100D40mg002l00125r10
-PARENT N64x100D40mg002l00125r10 CHILD N64x100D60mg002l00125r10
+JOB N100x250D20mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N100x250D20mg002l00125r10 N="100" x="25.0" D="20" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="0" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N100x250D20mg002l00125r10 3
+JOB N100x250D40mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N100x250D40mg002l00125r10 N="100" x="25.0" D="40" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="20" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N100x250D40mg002l00125r10 3
+JOB N100x250D60mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N100x250D60mg002l00125r10 N="100" x="25.0" D="60" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="40" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N100x250D60mg002l00125r10 3
+JOB N100x250D80mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N100x250D80mg002l00125r10 N="100" x="25.0" D="80" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="60" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N100x250D80mg002l00125r10 3
+JOB N100x250D100mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N100x250D100mg002l00125r10 N="100" x="25.0" D="100" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="80" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N100x250D100mg002l00125r10 3
+JOB N100x250D120mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N100x250D120mg002l00125r10 N="100" x="25.0" D="120" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="100" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N100x250D120mg002l00125r10 3
+JOB N100x250D140mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N100x250D140mg002l00125r10 N="100" x="25.0" D="140" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="120" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N100x250D140mg002l00125r10 3
+JOB N100x250D160mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N100x250D160mg002l00125r10 N="100" x="25.0" D="160" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="140" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N100x250D160mg002l00125r10 3
+JOB N100x250D180mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N100x250D180mg002l00125r10 N="100" x="25.0" D="180" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="160" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N100x250D180mg002l00125r10 3
+JOB N100x250D200mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N100x250D200mg002l00125r10 N="100" x="25.0" D="200" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="180" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N100x250D200mg002l00125r10 3
+JOB N125x39062D20mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N125x39062D20mg002l00125r10 N="125" x="39.062" D="20" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="0" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N125x39062D20mg002l00125r10 3
+JOB N125x39062D40mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N125x39062D40mg002l00125r10 N="125" x="39.062" D="40" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="20" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N125x39062D40mg002l00125r10 3
+JOB N125x39062D60mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N125x39062D60mg002l00125r10 N="125" x="39.062" D="60" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="40" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N125x39062D60mg002l00125r10 3
+JOB N125x39062D80mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N125x39062D80mg002l00125r10 N="125" x="39.062" D="80" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="60" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N125x39062D80mg002l00125r10 3
+JOB N125x39062D100mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N125x39062D100mg002l00125r10 N="125" x="39.062" D="100" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="80" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N125x39062D100mg002l00125r10 3
+JOB N125x39062D120mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N125x39062D120mg002l00125r10 N="125" x="39.062" D="120" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="100" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N125x39062D120mg002l00125r10 3
+JOB N125x39062D140mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N125x39062D140mg002l00125r10 N="125" x="39.062" D="140" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="120" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N125x39062D140mg002l00125r10 3
+JOB N125x39062D160mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N125x39062D160mg002l00125r10 N="125" x="39.062" D="160" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="140" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N125x39062D160mg002l00125r10 3
+JOB N125x39062D180mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N125x39062D180mg002l00125r10 N="125" x="39.062" D="180" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="160" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N125x39062D180mg002l00125r10 3
+JOB N125x39062D200mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N125x39062D200mg002l00125r10 N="125" x="39.062" D="200" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="180" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N125x39062D200mg002l00125r10 3
+JOB N150x5625D20mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N150x5625D20mg002l00125r10 N="150" x="56.25" D="20" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="0" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N150x5625D20mg002l00125r10 3
+JOB N150x5625D40mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N150x5625D40mg002l00125r10 N="150" x="56.25" D="40" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="20" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N150x5625D40mg002l00125r10 3
+JOB N150x5625D60mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N150x5625D60mg002l00125r10 N="150" x="56.25" D="60" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="40" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N150x5625D60mg002l00125r10 3
+JOB N150x5625D80mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N150x5625D80mg002l00125r10 N="150" x="56.25" D="80" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="60" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N150x5625D80mg002l00125r10 3
+JOB N150x5625D100mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N150x5625D100mg002l00125r10 N="150" x="56.25" D="100" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="80" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N150x5625D100mg002l00125r10 3
+JOB N150x5625D120mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N150x5625D120mg002l00125r10 N="150" x="56.25" D="120" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="100" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N150x5625D120mg002l00125r10 3
+JOB N150x5625D140mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N150x5625D140mg002l00125r10 N="150" x="56.25" D="140" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="120" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N150x5625D140mg002l00125r10 3
+JOB N150x5625D160mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N150x5625D160mg002l00125r10 N="150" x="56.25" D="160" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="140" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N150x5625D160mg002l00125r10 3
+JOB N150x5625D180mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N150x5625D180mg002l00125r10 N="150" x="56.25" D="180" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="160" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N150x5625D180mg002l00125r10 3
+JOB N150x5625D200mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N150x5625D200mg002l00125r10 N="150" x="56.25" D="200" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="180" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N150x5625D200mg002l00125r10 3
+JOB N200x1000D20mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N200x1000D20mg002l00125r10 N="200" x="100.0" D="20" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="0" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N200x1000D20mg002l00125r10 3
+JOB N200x1000D40mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N200x1000D40mg002l00125r10 N="200" x="100.0" D="40" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="20" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N200x1000D40mg002l00125r10 3
+JOB N200x1000D60mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N200x1000D60mg002l00125r10 N="200" x="100.0" D="60" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="40" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N200x1000D60mg002l00125r10 3
+JOB N200x1000D80mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N200x1000D80mg002l00125r10 N="200" x="100.0" D="80" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="60" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N200x1000D80mg002l00125r10 3
+JOB N200x1000D100mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N200x1000D100mg002l00125r10 N="200" x="100.0" D="100" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="80" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N200x1000D100mg002l00125r10 3
+JOB N200x1000D120mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N200x1000D120mg002l00125r10 N="200" x="100.0" D="120" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="100" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N200x1000D120mg002l00125r10 3
+JOB N200x1000D140mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N200x1000D140mg002l00125r10 N="200" x="100.0" D="140" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="120" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N200x1000D140mg002l00125r10 3
+JOB N200x1000D160mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N200x1000D160mg002l00125r10 N="200" x="100.0" D="160" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="140" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N200x1000D160mg002l00125r10 3
+JOB N200x1000D180mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N200x1000D180mg002l00125r10 N="200" x="100.0" D="180" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="160" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N200x1000D180mg002l00125r10 3
+JOB N200x1000D200mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N200x1000D200mg002l00125r10 N="200" x="100.0" D="200" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="180" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N200x1000D200mg002l00125r10 3
+JOB N225x126562D20mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N225x126562D20mg002l00125r10 N="225" x="126.562" D="20" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="0" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N225x126562D20mg002l00125r10 3
+JOB N225x126562D40mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N225x126562D40mg002l00125r10 N="225" x="126.562" D="40" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="20" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N225x126562D40mg002l00125r10 3
+JOB N225x126562D60mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N225x126562D60mg002l00125r10 N="225" x="126.562" D="60" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="40" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N225x126562D60mg002l00125r10 3
+JOB N225x126562D80mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N225x126562D80mg002l00125r10 N="225" x="126.562" D="80" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="60" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N225x126562D80mg002l00125r10 3
+JOB N225x126562D100mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N225x126562D100mg002l00125r10 N="225" x="126.562" D="100" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="80" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N225x126562D100mg002l00125r10 3
+JOB N225x126562D120mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N225x126562D120mg002l00125r10 N="225" x="126.562" D="120" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="100" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N225x126562D120mg002l00125r10 3
+JOB N225x126562D140mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N225x126562D140mg002l00125r10 N="225" x="126.562" D="140" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="120" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N225x126562D140mg002l00125r10 3
+JOB N225x126562D160mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N225x126562D160mg002l00125r10 N="225" x="126.562" D="160" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="140" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N225x126562D160mg002l00125r10 3
+JOB N225x126562D180mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N225x126562D180mg002l00125r10 N="225" x="126.562" D="180" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="160" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N225x126562D180mg002l00125r10 3
+JOB N225x126562D200mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N225x126562D200mg002l00125r10 N="225" x="126.562" D="200" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="180" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N225x126562D200mg002l00125r10 3
+JOB N250x15625D20mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N250x15625D20mg002l00125r10 N="250" x="156.25" D="20" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="0" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N250x15625D20mg002l00125r10 3
+JOB N250x15625D40mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N250x15625D40mg002l00125r10 N="250" x="156.25" D="40" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="20" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N250x15625D40mg002l00125r10 3
+JOB N250x15625D60mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N250x15625D60mg002l00125r10 N="250" x="156.25" D="60" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="40" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N250x15625D60mg002l00125r10 3
+JOB N250x15625D80mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N250x15625D80mg002l00125r10 N="250" x="156.25" D="80" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="60" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N250x15625D80mg002l00125r10 3
+JOB N250x15625D100mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N250x15625D100mg002l00125r10 N="250" x="156.25" D="100" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="80" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N250x15625D100mg002l00125r10 3
+JOB N250x15625D120mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N250x15625D120mg002l00125r10 N="250" x="156.25" D="120" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="100" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N250x15625D120mg002l00125r10 3
+JOB N250x15625D140mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N250x15625D140mg002l00125r10 N="250" x="156.25" D="140" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="120" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N250x15625D140mg002l00125r10 3
+JOB N250x15625D160mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N250x15625D160mg002l00125r10 N="250" x="156.25" D="160" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="140" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N250x15625D160mg002l00125r10 3
+JOB N250x15625D180mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N250x15625D180mg002l00125r10 N="250" x="156.25" D="180" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="160" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N250x15625D180mg002l00125r10 3
+JOB N250x15625D200mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N250x15625D200mg002l00125r10 N="250" x="156.25" D="200" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="180" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N250x15625D200mg002l00125r10 3
+JOB N275x189062D20mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N275x189062D20mg002l00125r10 N="275" x="189.062" D="20" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="0" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N275x189062D20mg002l00125r10 3
+JOB N275x189062D40mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N275x189062D40mg002l00125r10 N="275" x="189.062" D="40" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="20" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N275x189062D40mg002l00125r10 3
+JOB N275x189062D60mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N275x189062D60mg002l00125r10 N="275" x="189.062" D="60" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="40" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N275x189062D60mg002l00125r10 3
+JOB N275x189062D80mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N275x189062D80mg002l00125r10 N="275" x="189.062" D="80" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="60" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N275x189062D80mg002l00125r10 3
+JOB N275x189062D100mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N275x189062D100mg002l00125r10 N="275" x="189.062" D="100" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="80" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N275x189062D100mg002l00125r10 3
+JOB N275x189062D120mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N275x189062D120mg002l00125r10 N="275" x="189.062" D="120" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="100" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N275x189062D120mg002l00125r10 3
+JOB N275x189062D140mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N275x189062D140mg002l00125r10 N="275" x="189.062" D="140" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="120" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N275x189062D140mg002l00125r10 3
+JOB N275x189062D160mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N275x189062D160mg002l00125r10 N="275" x="189.062" D="160" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="140" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N275x189062D160mg002l00125r10 3
+JOB N275x189062D180mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N275x189062D180mg002l00125r10 N="275" x="189.062" D="180" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="160" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N275x189062D180mg002l00125r10 3
+JOB N275x189062D200mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N275x189062D200mg002l00125r10 N="275" x="189.062" D="200" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="180" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N275x189062D200mg002l00125r10 3
+JOB N300x2250D20mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N300x2250D20mg002l00125r10 N="300" x="225.0" D="20" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="0" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N300x2250D20mg002l00125r10 3
+JOB N300x2250D40mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N300x2250D40mg002l00125r10 N="300" x="225.0" D="40" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="20" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N300x2250D40mg002l00125r10 3
+JOB N300x2250D60mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N300x2250D60mg002l00125r10 N="300" x="225.0" D="60" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="40" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N300x2250D60mg002l00125r10 3
+JOB N300x2250D80mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N300x2250D80mg002l00125r10 N="300" x="225.0" D="80" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="60" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N300x2250D80mg002l00125r10 3
+JOB N300x2250D100mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N300x2250D100mg002l00125r10 N="300" x="225.0" D="100" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="80" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N300x2250D100mg002l00125r10 3
+JOB N300x2250D120mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N300x2250D120mg002l00125r10 N="300" x="225.0" D="120" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="100" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N300x2250D120mg002l00125r10 3
+JOB N300x2250D140mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N300x2250D140mg002l00125r10 N="300" x="225.0" D="140" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="120" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N300x2250D140mg002l00125r10 3
+JOB N300x2250D160mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N300x2250D160mg002l00125r10 N="300" x="225.0" D="160" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="140" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N300x2250D160mg002l00125r10 3
+JOB N300x2250D180mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N300x2250D180mg002l00125r10 N="300" x="225.0" D="180" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="160" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N300x2250D180mg002l00125r10 3
+JOB N300x2250D200mg002l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.sub
+VARS N300x2250D200mg002l00125r10 N="300" x="225.0" D="200" mg="0.02" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" D_p="180" mg_p="0.02" r="1.0" silent="true" initial_noise="0.0" w_1_s_2="1" first_excited="false"
+RETRY N300x2250D200mg002l00125r10 3
+PARENT N100x250D20mg002l00125r10 CHILD N100x250D40mg002l00125r10
+PARENT N100x250D40mg002l00125r10 CHILD N100x250D60mg002l00125r10
+PARENT N100x250D60mg002l00125r10 CHILD N100x250D80mg002l00125r10
+PARENT N100x250D80mg002l00125r10 CHILD N100x250D100mg002l00125r10
+PARENT N100x250D100mg002l00125r10 CHILD N100x250D120mg002l00125r10
+PARENT N100x250D120mg002l00125r10 CHILD N100x250D140mg002l00125r10
+PARENT N100x250D140mg002l00125r10 CHILD N100x250D160mg002l00125r10
+PARENT N100x250D160mg002l00125r10 CHILD N100x250D180mg002l00125r10
+PARENT N100x250D180mg002l00125r10 CHILD N100x250D200mg002l00125r10
+PARENT N125x39062D20mg002l00125r10 CHILD N125x39062D40mg002l00125r10
+PARENT N125x39062D40mg002l00125r10 CHILD N125x39062D60mg002l00125r10
+PARENT N125x39062D60mg002l00125r10 CHILD N125x39062D80mg002l00125r10
+PARENT N125x39062D80mg002l00125r10 CHILD N125x39062D100mg002l00125r10
+PARENT N125x39062D100mg002l00125r10 CHILD N125x39062D120mg002l00125r10
+PARENT N125x39062D120mg002l00125r10 CHILD N125x39062D140mg002l00125r10
+PARENT N125x39062D140mg002l00125r10 CHILD N125x39062D160mg002l00125r10
+PARENT N125x39062D160mg002l00125r10 CHILD N125x39062D180mg002l00125r10
+PARENT N125x39062D180mg002l00125r10 CHILD N125x39062D200mg002l00125r10
+PARENT N150x5625D20mg002l00125r10 CHILD N150x5625D40mg002l00125r10
+PARENT N150x5625D40mg002l00125r10 CHILD N150x5625D60mg002l00125r10
+PARENT N150x5625D60mg002l00125r10 CHILD N150x5625D80mg002l00125r10
+PARENT N150x5625D80mg002l00125r10 CHILD N150x5625D100mg002l00125r10
+PARENT N150x5625D100mg002l00125r10 CHILD N150x5625D120mg002l00125r10
+PARENT N150x5625D120mg002l00125r10 CHILD N150x5625D140mg002l00125r10
+PARENT N150x5625D140mg002l00125r10 CHILD N150x5625D160mg002l00125r10
+PARENT N150x5625D160mg002l00125r10 CHILD N150x5625D180mg002l00125r10
+PARENT N150x5625D180mg002l00125r10 CHILD N150x5625D200mg002l00125r10
+PARENT N200x1000D20mg002l00125r10 CHILD N200x1000D40mg002l00125r10
+PARENT N200x1000D40mg002l00125r10 CHILD N200x1000D60mg002l00125r10
+PARENT N200x1000D60mg002l00125r10 CHILD N200x1000D80mg002l00125r10
+PARENT N200x1000D80mg002l00125r10 CHILD N200x1000D100mg002l00125r10
+PARENT N200x1000D100mg002l00125r10 CHILD N200x1000D120mg002l00125r10
+PARENT N200x1000D120mg002l00125r10 CHILD N200x1000D140mg002l00125r10
+PARENT N200x1000D140mg002l00125r10 CHILD N200x1000D160mg002l00125r10
+PARENT N200x1000D160mg002l00125r10 CHILD N200x1000D180mg002l00125r10
+PARENT N200x1000D180mg002l00125r10 CHILD N200x1000D200mg002l00125r10
+PARENT N225x126562D20mg002l00125r10 CHILD N225x126562D40mg002l00125r10
+PARENT N225x126562D40mg002l00125r10 CHILD N225x126562D60mg002l00125r10
+PARENT N225x126562D60mg002l00125r10 CHILD N225x126562D80mg002l00125r10
+PARENT N225x126562D80mg002l00125r10 CHILD N225x126562D100mg002l00125r10
+PARENT N225x126562D100mg002l00125r10 CHILD N225x126562D120mg002l00125r10
+PARENT N225x126562D120mg002l00125r10 CHILD N225x126562D140mg002l00125r10
+PARENT N225x126562D140mg002l00125r10 CHILD N225x126562D160mg002l00125r10
+PARENT N225x126562D160mg002l00125r10 CHILD N225x126562D180mg002l00125r10
+PARENT N225x126562D180mg002l00125r10 CHILD N225x126562D200mg002l00125r10
+PARENT N250x15625D20mg002l00125r10 CHILD N250x15625D40mg002l00125r10
+PARENT N250x15625D40mg002l00125r10 CHILD N250x15625D60mg002l00125r10
+PARENT N250x15625D60mg002l00125r10 CHILD N250x15625D80mg002l00125r10
+PARENT N250x15625D80mg002l00125r10 CHILD N250x15625D100mg002l00125r10
+PARENT N250x15625D100mg002l00125r10 CHILD N250x15625D120mg002l00125r10
+PARENT N250x15625D120mg002l00125r10 CHILD N250x15625D140mg002l00125r10
+PARENT N250x15625D140mg002l00125r10 CHILD N250x15625D160mg002l00125r10
+PARENT N250x15625D160mg002l00125r10 CHILD N250x15625D180mg002l00125r10
+PARENT N250x15625D180mg002l00125r10 CHILD N250x15625D200mg002l00125r10
+PARENT N275x189062D20mg002l00125r10 CHILD N275x189062D40mg002l00125r10
+PARENT N275x189062D40mg002l00125r10 CHILD N275x189062D60mg002l00125r10
+PARENT N275x189062D60mg002l00125r10 CHILD N275x189062D80mg002l00125r10
+PARENT N275x189062D80mg002l00125r10 CHILD N275x189062D100mg002l00125r10
+PARENT N275x189062D100mg002l00125r10 CHILD N275x189062D120mg002l00125r10
+PARENT N275x189062D120mg002l00125r10 CHILD N275x189062D140mg002l00125r10
+PARENT N275x189062D140mg002l00125r10 CHILD N275x189062D160mg002l00125r10
+PARENT N275x189062D160mg002l00125r10 CHILD N275x189062D180mg002l00125r10
+PARENT N275x189062D180mg002l00125r10 CHILD N275x189062D200mg002l00125r10
+PARENT N300x2250D20mg002l00125r10 CHILD N300x2250D40mg002l00125r10
+PARENT N300x2250D40mg002l00125r10 CHILD N300x2250D60mg002l00125r10
+PARENT N300x2250D60mg002l00125r10 CHILD N300x2250D80mg002l00125r10
+PARENT N300x2250D80mg002l00125r10 CHILD N300x2250D100mg002l00125r10
+PARENT N300x2250D100mg002l00125r10 CHILD N300x2250D120mg002l00125r10
+PARENT N300x2250D120mg002l00125r10 CHILD N300x2250D140mg002l00125r10
+PARENT N300x2250D140mg002l00125r10 CHILD N300x2250D160mg002l00125r10
+PARENT N300x2250D160mg002l00125r10 CHILD N300x2250D180mg002l00125r10
+PARENT N300x2250D180mg002l00125r10 CHILD N300x2250D200mg002l00125r10
