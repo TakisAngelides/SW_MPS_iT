@@ -1,21 +1,161 @@
 CONFIG /lustre/fs23/group/nic/tangelides/SW_MPS_iT/dagman.config
-JOB N200x1000mg-0040803126696459906D20l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
-VARS N200x1000mg-0040803126696459906D20l00125r10 N="200" x="100.0" mg="-0.040803126696459906" D="20" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
-JOB N200x1000mg-0040803126696459906D40l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
-VARS N200x1000mg-0040803126696459906D40l00125r10 N="200" x="100.0" mg="-0.040803126696459906" D="40" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
-JOB N200x1000mg-0040803126696459906D60l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
-VARS N200x1000mg-0040803126696459906D60l00125r10 N="200" x="100.0" mg="-0.040803126696459906" D="60" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
-JOB N200x1000mg-0040803126696459906D80l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
-VARS N200x1000mg-0040803126696459906D80l00125r10 N="200" x="100.0" mg="-0.040803126696459906" D="80" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
-JOB N200x1000mg-0040803126696459906D100l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
-VARS N200x1000mg-0040803126696459906D100l00125r10 N="200" x="100.0" mg="-0.040803126696459906" D="100" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
-JOB N200x1000mg-0040803126696459906D120l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
-VARS N200x1000mg-0040803126696459906D120l00125r10 N="200" x="100.0" mg="-0.040803126696459906" D="120" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
-JOB N200x1000mg-0040803126696459906D140l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
-VARS N200x1000mg-0040803126696459906D140l00125r10 N="200" x="100.0" mg="-0.040803126696459906" D="140" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
-JOB N200x1000mg-0040803126696459906D160l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
-VARS N200x1000mg-0040803126696459906D160l00125r10 N="200" x="100.0" mg="-0.040803126696459906" D="160" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
-JOB N200x1000mg-0040803126696459906D180l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
-VARS N200x1000mg-0040803126696459906D180l00125r10 N="200" x="100.0" mg="-0.040803126696459906" D="180" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
-JOB N200x1000mg-0040803126696459906D200l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
-VARS N200x1000mg-0040803126696459906D200l00125r10 N="200" x="100.0" mg="-0.040803126696459906" D="200" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N100x250mg002D20l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N100x250mg002D20l00125r10 N="100" x="25.0" mg="0.02" D="20" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N100x250mg002D40l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N100x250mg002D40l00125r10 N="100" x="25.0" mg="0.02" D="40" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N100x250mg002D60l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N100x250mg002D60l00125r10 N="100" x="25.0" mg="0.02" D="60" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N100x250mg002D80l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N100x250mg002D80l00125r10 N="100" x="25.0" mg="0.02" D="80" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N100x250mg002D100l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N100x250mg002D100l00125r10 N="100" x="25.0" mg="0.02" D="100" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N100x250mg002D120l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N100x250mg002D120l00125r10 N="100" x="25.0" mg="0.02" D="120" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N100x250mg002D140l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N100x250mg002D140l00125r10 N="100" x="25.0" mg="0.02" D="140" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N100x250mg002D160l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N100x250mg002D160l00125r10 N="100" x="25.0" mg="0.02" D="160" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N100x250mg002D180l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N100x250mg002D180l00125r10 N="100" x="25.0" mg="0.02" D="180" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N100x250mg002D200l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N100x250mg002D200l00125r10 N="100" x="25.0" mg="0.02" D="200" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N125x39062mg002D20l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N125x39062mg002D20l00125r10 N="125" x="39.062" mg="0.02" D="20" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N125x39062mg002D40l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N125x39062mg002D40l00125r10 N="125" x="39.062" mg="0.02" D="40" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N125x39062mg002D60l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N125x39062mg002D60l00125r10 N="125" x="39.062" mg="0.02" D="60" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N125x39062mg002D80l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N125x39062mg002D80l00125r10 N="125" x="39.062" mg="0.02" D="80" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N125x39062mg002D100l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N125x39062mg002D100l00125r10 N="125" x="39.062" mg="0.02" D="100" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N125x39062mg002D120l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N125x39062mg002D120l00125r10 N="125" x="39.062" mg="0.02" D="120" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N125x39062mg002D140l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N125x39062mg002D140l00125r10 N="125" x="39.062" mg="0.02" D="140" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N125x39062mg002D160l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N125x39062mg002D160l00125r10 N="125" x="39.062" mg="0.02" D="160" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N125x39062mg002D180l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N125x39062mg002D180l00125r10 N="125" x="39.062" mg="0.02" D="180" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N125x39062mg002D200l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N125x39062mg002D200l00125r10 N="125" x="39.062" mg="0.02" D="200" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N150x5625mg002D20l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N150x5625mg002D20l00125r10 N="150" x="56.25" mg="0.02" D="20" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N150x5625mg002D40l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N150x5625mg002D40l00125r10 N="150" x="56.25" mg="0.02" D="40" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N150x5625mg002D60l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N150x5625mg002D60l00125r10 N="150" x="56.25" mg="0.02" D="60" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N150x5625mg002D80l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N150x5625mg002D80l00125r10 N="150" x="56.25" mg="0.02" D="80" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N150x5625mg002D100l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N150x5625mg002D100l00125r10 N="150" x="56.25" mg="0.02" D="100" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N150x5625mg002D120l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N150x5625mg002D120l00125r10 N="150" x="56.25" mg="0.02" D="120" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N150x5625mg002D140l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N150x5625mg002D140l00125r10 N="150" x="56.25" mg="0.02" D="140" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N150x5625mg002D160l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N150x5625mg002D160l00125r10 N="150" x="56.25" mg="0.02" D="160" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N150x5625mg002D180l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N150x5625mg002D180l00125r10 N="150" x="56.25" mg="0.02" D="180" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N150x5625mg002D200l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N150x5625mg002D200l00125r10 N="150" x="56.25" mg="0.02" D="200" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N200x1000mg002D20l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N200x1000mg002D20l00125r10 N="200" x="100.0" mg="0.02" D="20" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N200x1000mg002D40l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N200x1000mg002D40l00125r10 N="200" x="100.0" mg="0.02" D="40" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N200x1000mg002D60l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N200x1000mg002D60l00125r10 N="200" x="100.0" mg="0.02" D="60" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N200x1000mg002D80l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N200x1000mg002D80l00125r10 N="200" x="100.0" mg="0.02" D="80" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N200x1000mg002D100l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N200x1000mg002D100l00125r10 N="200" x="100.0" mg="0.02" D="100" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N200x1000mg002D120l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N200x1000mg002D120l00125r10 N="200" x="100.0" mg="0.02" D="120" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N200x1000mg002D140l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N200x1000mg002D140l00125r10 N="200" x="100.0" mg="0.02" D="140" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N200x1000mg002D160l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N200x1000mg002D160l00125r10 N="200" x="100.0" mg="0.02" D="160" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N200x1000mg002D180l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N200x1000mg002D180l00125r10 N="200" x="100.0" mg="0.02" D="180" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N200x1000mg002D200l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N200x1000mg002D200l00125r10 N="200" x="100.0" mg="0.02" D="200" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N225x126562mg002D20l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N225x126562mg002D20l00125r10 N="225" x="126.562" mg="0.02" D="20" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N225x126562mg002D40l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N225x126562mg002D40l00125r10 N="225" x="126.562" mg="0.02" D="40" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N225x126562mg002D60l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N225x126562mg002D60l00125r10 N="225" x="126.562" mg="0.02" D="60" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N225x126562mg002D80l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N225x126562mg002D80l00125r10 N="225" x="126.562" mg="0.02" D="80" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N225x126562mg002D100l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N225x126562mg002D100l00125r10 N="225" x="126.562" mg="0.02" D="100" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N225x126562mg002D120l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N225x126562mg002D120l00125r10 N="225" x="126.562" mg="0.02" D="120" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N225x126562mg002D140l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N225x126562mg002D140l00125r10 N="225" x="126.562" mg="0.02" D="140" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N225x126562mg002D160l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N225x126562mg002D160l00125r10 N="225" x="126.562" mg="0.02" D="160" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N225x126562mg002D180l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N225x126562mg002D180l00125r10 N="225" x="126.562" mg="0.02" D="180" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N225x126562mg002D200l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N225x126562mg002D200l00125r10 N="225" x="126.562" mg="0.02" D="200" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N250x15625mg002D20l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N250x15625mg002D20l00125r10 N="250" x="156.25" mg="0.02" D="20" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N250x15625mg002D40l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N250x15625mg002D40l00125r10 N="250" x="156.25" mg="0.02" D="40" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N250x15625mg002D60l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N250x15625mg002D60l00125r10 N="250" x="156.25" mg="0.02" D="60" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N250x15625mg002D80l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N250x15625mg002D80l00125r10 N="250" x="156.25" mg="0.02" D="80" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N250x15625mg002D100l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N250x15625mg002D100l00125r10 N="250" x="156.25" mg="0.02" D="100" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N250x15625mg002D120l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N250x15625mg002D120l00125r10 N="250" x="156.25" mg="0.02" D="120" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N250x15625mg002D140l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N250x15625mg002D140l00125r10 N="250" x="156.25" mg="0.02" D="140" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N250x15625mg002D160l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N250x15625mg002D160l00125r10 N="250" x="156.25" mg="0.02" D="160" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N250x15625mg002D180l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N250x15625mg002D180l00125r10 N="250" x="156.25" mg="0.02" D="180" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N250x15625mg002D200l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N250x15625mg002D200l00125r10 N="250" x="156.25" mg="0.02" D="200" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N275x189062mg002D20l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N275x189062mg002D20l00125r10 N="275" x="189.062" mg="0.02" D="20" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N275x189062mg002D40l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N275x189062mg002D40l00125r10 N="275" x="189.062" mg="0.02" D="40" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N275x189062mg002D60l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N275x189062mg002D60l00125r10 N="275" x="189.062" mg="0.02" D="60" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N275x189062mg002D80l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N275x189062mg002D80l00125r10 N="275" x="189.062" mg="0.02" D="80" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N275x189062mg002D100l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N275x189062mg002D100l00125r10 N="275" x="189.062" mg="0.02" D="100" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N275x189062mg002D120l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N275x189062mg002D120l00125r10 N="275" x="189.062" mg="0.02" D="120" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N275x189062mg002D140l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N275x189062mg002D140l00125r10 N="275" x="189.062" mg="0.02" D="140" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N275x189062mg002D160l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N275x189062mg002D160l00125r10 N="275" x="189.062" mg="0.02" D="160" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N275x189062mg002D180l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N275x189062mg002D180l00125r10 N="275" x="189.062" mg="0.02" D="180" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N275x189062mg002D200l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N275x189062mg002D200l00125r10 N="275" x="189.062" mg="0.02" D="200" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N300x2250mg002D20l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N300x2250mg002D20l00125r10 N="300" x="225.0" mg="0.02" D="20" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N300x2250mg002D40l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N300x2250mg002D40l00125r10 N="300" x="225.0" mg="0.02" D="40" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N300x2250mg002D60l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N300x2250mg002D60l00125r10 N="300" x="225.0" mg="0.02" D="60" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N300x2250mg002D80l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N300x2250mg002D80l00125r10 N="300" x="225.0" mg="0.02" D="80" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N300x2250mg002D100l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N300x2250mg002D100l00125r10 N="300" x="225.0" mg="0.02" D="100" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N300x2250mg002D120l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N300x2250mg002D120l00125r10 N="300" x="225.0" mg="0.02" D="120" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N300x2250mg002D140l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N300x2250mg002D140l00125r10 N="300" x="225.0" mg="0.02" D="140" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N300x2250mg002D160l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N300x2250mg002D160l00125r10 N="300" x="225.0" mg="0.02" D="160" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N300x2250mg002D180l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N300x2250mg002D180l00125r10 N="300" x="225.0" mg="0.02" D="180" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
+JOB N300x2250mg002D200l00125r10 /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_Observables_iT.sub
+VARS N300x2250mg002D200l00125r10 N="300" x="225.0" mg="0.02" D="200" l_0="0.125" lambda="100.0" acc="1e-12" ns="700" r="1.0" w_1_s_2="1" first_excited="false"
