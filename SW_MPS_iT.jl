@@ -86,13 +86,13 @@ else
 
     # Compute the MPS
 
+    params = Dict("Ms" => [psi_0], "w" => abs(energy_0), "first_excited" => first_excited, "initial_noise" => initial_noise, "silent" => silent, "N" => N, "D" => D, "x" => x, "ns" => ns, "lambda" => lambda, "l_0" => l_0, "mg" => mg, "r" => r, "acc" => acc, "sweep_observables_file_path" => sweep_observables_file_path, "previous_mps_file_path" => previous_mps_file_path, "previous_psi" => previous_psi)
+
     if w_1_s_2 == 1
         H = get_MPO_from_OpSum(get_SW_OpSum(params), sites)
     else
         H = get_MPO_from_OpSum(get_Staggered_OpSum(params), sites)
     end
-
-    params = Dict("Ms" => [psi_0], "w" => abs(energy_0), "first_excited" => first_excited, "initial_noise" => initial_noise, "silent" => silent, "N" => N, "D" => D, "x" => x, "ns" => ns, "lambda" => lambda, "l_0" => l_0, "mg" => mg, "r" => r, "acc" => acc, "sweep_observables_file_path" => sweep_observables_file_path, "previous_mps_file_path" => previous_mps_file_path, "previous_psi" => previous_psi)
 
     energy, psi = run_SW_DMRG(sites, params, H, true)
 
