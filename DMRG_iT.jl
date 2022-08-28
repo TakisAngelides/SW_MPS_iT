@@ -61,12 +61,19 @@ function DMRG(H, sites, params, ishermitian)::Tuple{Float64, MPS}
     acc = params["acc"]
     initial_noise = params["initial_noise"]
     initial_ansatz = params["previous_psi"]
+    first_excited = params["first_excited"]
 
     noise_vector = LinRange(initial_noise, 0.0, ns) # Noise to be added to the MPS during DMRG
     sweeps = Sweeps(ns, maxdim = D) # This is the maximum number of sweeps to be done if accuracy (acc) is not reached
     observer = my_observer(acc, 1000.0, sites, params) # 1000.0 is for initial energy of the algorithm and should be set well above the estimated g.s. energy
     
-    energy, psi = dmrg(H, initial_ansatz, sweeps, ishermitian = ishermitian, noise = noise_vector, observer = observer, maxdim = D)
+    if !first_excited
+        energy, psi = dmrg(H, initial_ansatz, sweeps, ishermitian = ishermitian, noise = noise_vector, observer = observer, maxdim = D)
+    else
+        Ms = params["Ms"]
+        w = params["w"]
+        energy, psi = dmrg(H, Ms, initial_ansatz, sweeps, weight = w, ishermitian = ishermitian, noise = noise_vector, observer = observer, maxdim = D)
+    end
 
     return energy, psi
 

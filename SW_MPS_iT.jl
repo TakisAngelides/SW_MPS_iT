@@ -16,6 +16,12 @@ initial_noise = parse(Float64, ARGS[13]) # Inital noise that decays with each sw
 w_1_s_2 = parse(Int64, ARGS[14]) # If this is equal to 1 do Wilson, else do staggered
 first_excited = parse(Bool, ARGS[15]) # If this is true we will compute the first excited state only and not the ground state
 
+if w_1_s_2 == 1
+    H = get_MPO_from_OpSum(get_SW_OpSum(params), sites)
+else
+    H = get_MPO_from_OpSum(get_Staggered_OpSum(params), sites)
+end
+
 if !first_excited
 
     sweep_observables_file_path = "/lustre/fs23/group/nic/tangelides/SW_Sweep_Observables_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_$(first_excited).txt"
@@ -38,15 +44,9 @@ if !first_excited
         previous_psi = randomMPS(sites, D)
     end
 
-    params = Dict("initial_noise" => initial_noise, "silent" => silent, "N" => N, "D" => D, "x" => x, "ns" => ns, "lambda" => lambda, "l_0" => l_0, "mg" => mg, "r" => r, "acc" => acc, "sweep_observables_file_path" => sweep_observables_file_path, "previous_mps_file_path" => previous_mps_file_path, "previous_psi" => previous_psi)
+    params = Dict("first_excited" => first_excited, "initial_noise" => initial_noise, "silent" => silent, "N" => N, "D" => D, "x" => x, "ns" => ns, "lambda" => lambda, "l_0" => l_0, "mg" => mg, "r" => r, "acc" => acc, "sweep_observables_file_path" => sweep_observables_file_path, "previous_mps_file_path" => previous_mps_file_path, "previous_psi" => previous_psi)
 
     # Compute the MPS
-
-    if w_1_s_2 == 1
-        H = get_MPO_from_OpSum(get_SW_OpSum(params), sites)
-    else
-        H = get_MPO_from_OpSum(get_Staggered_OpSum(params), sites)
-    end
 
     energy, psi = run_SW_DMRG(sites, params, H, true)
 
@@ -78,26 +78,15 @@ else
 
     if isfile(previous_mps_file_path)
         f = h5open(previous_mps_file_path, "r")
-        previous_psi = read(f, "MPS", MPS)
+        previous_psi = read(f, "first_excited_MPS", MPS)
         close(f)
     else
         previous_psi = randomMPS(sites, D)
     end
 
-    params = Dict("initial_noise" => initial_noise, "silent" => silent, "N" => N, "D" => D, "x" => x, "ns" => ns, "lambda" => lambda, "l_0" => l_0, "mg" => mg, "r" => r, "acc" => acc, "sweep_observables_file_path" => sweep_observables_file_path, "previous_mps_file_path" => previous_mps_file_path, "previous_psi" => previous_psi)
+    params = Dict("Ms" => [psi_0], "w" => abs(energy_0), "first_excited" => first_excited, "initial_noise" => initial_noise, "silent" => silent, "N" => N, "D" => D, "x" => x, "ns" => ns, "lambda" => lambda, "l_0" => l_0, "mg" => mg, "r" => r, "acc" => acc, "sweep_observables_file_path" => sweep_observables_file_path, "previous_mps_file_path" => previous_mps_file_path, "previous_psi" => previous_psi)
 
-    # Compute the MPS
-    if w_1_s_2 == 1
-        P = outer(psi_0', psi_0)
-        H = get_MPO_from_OpSum(get_SW_OpSum(params), sites)
-        Heff = H + energy_0.*P
-    else
-        P = outer(psi_0', psi_0)
-        H = get_MPO_from_OpSum(get_Staggered_OpSum(params), sites)
-        Heff = H + energy_0.*P
-    end
-
-    energy, psi = run_SW_DMRG(sites, params, Heff, false)
+    energy, psi = run_SW_DMRG(sites, params, H, true)
 
     # Save the MPS as h5 file including its sites object
 
