@@ -37,7 +37,6 @@ end
 
 path = "/lustre/fs23/group/nic/tangelides/"
 
-
 path_to_text_file = path*text_file_name
 
 open(path_to_text_file, "w") do f
@@ -71,7 +70,7 @@ open(path_to_text_file, "w") do f
     write(f, "z configuration list (Second Line)\n")
 
     if first_excited
-        write(f, "$(first_excited_MPS),$(avg_E_field),$(num_links),$(total_charge),$(cc),$(ee)\n")
+        write(f, "$(first_excited_energy),$(avg_E_field),$(num_links),$(total_charge),$(cc),$(ee)\n")
     else
         write(f, "$(gs_energy),$(avg_E_field),$(num_links),$(total_charge),$(cc),$(ee)\n")
     end
