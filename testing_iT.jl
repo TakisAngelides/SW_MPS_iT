@@ -129,30 +129,55 @@ include("Observables_iT.jl")
 
 # # Testing the first excited state of the Schwinger model with Wilson fermions
 
-# N = 6
-# x = 1.0
-# D = 80
-# mg = -0.1
-# l_0 = 0.01
-# lambda = 10.0
-# r = 1.0
-# ns = 500
+N = 20
+x = 1.0
+D = 10
+mg = -0.1
+l_0 = 0.01
+lambda = 10.0
+r = 1.0
+ns = 50
 
-# params = Dict("N" => N, "l_0" => l_0, "N" => N, "x" => x, "mg" => mg, "r" => r, "lambda" => lambda)
+params = Dict("N" => N, "l_0" => l_0, "N" => N, "x" => x, "mg" => mg, "r" => r, "lambda" => lambda)
 
-# sites = siteinds("S=1/2", 2*N)
-# opsum = get_SW_OpSum(params)
-# H = get_MPO_from_OpSum(opsum, sites)
-# initial_ansatz_0 = randomMPS(sites, D)
-# sweeps = Sweeps(ns, maxdim = D)
+sites = siteinds("S=1/2", 2*N)
+opsum = get_SW_OpSum(params)
+H = get_MPO_from_OpSum(opsum, sites)
+initial_ansatz_0 = randomMPS(sites, D)
+sweeps = Sweeps(ns, maxdim = D)
 
-# energy_0, psi_0 = dmrg(H, initial_ansatz_0, sweeps, ishermitian = true, maxdim = D)
+energy, psi = dmrg(H, initial_ansatz_0, sweeps, ishermitian = true, maxdim = D)
+
+z_configuration_list = get_z_configuration(psi, sites)
+    
+charge_configuration_list = get_SW_charge_configuration(z_configuration_list)
+
+total_charge = sum(charge_configuration_list)
+
+electric_field_configuration_list = get_SW_electric_field_configuration(charge_configuration_list, l_0)
+
+left_edge = floor(Int, N*0.48)
+
+right_edge = floor(Int, N*0.52)
+
+middle_efl = electric_field_configuration_list[left_edge:right_edge]
+
+num_links = length(middle_efl)
+
+avg_E_field = real(mean(middle_efl))
+
+# ee = get_SW_entanglement_entropy(psi)
+
+cc = get_SW_chiral_condensate(psi)
 
 # println("Norm of psi_0: ", norm(psi_0))
 
 # Ms = [psi_0]
 # w = abs(energy_0)
 # initial_ansatz_1 = randomMPS(sites, D)
+
+# println(typeof(Ms))
+# println(typeof(w))
 
 # println("Overlap of ansatz with gs: ", inner(psi_0, initial_ansatz_1))
 
@@ -169,26 +194,26 @@ include("Observables_iT.jl")
 
 # Testing the first excited state of the Schwinger model
 
-N = 10
-x = 1.0
-D = 20
-mg = -0.1
-l_0 = 0.01
-lambda = 100.0
-r = 1.0
-ns = 1000
+# N = 10
+# x = 1.0
+# D = 20
+# mg = -0.1
+# l_0 = 0.01
+# lambda = 100.0
+# r = 1.0
+# ns = 1000
 
-params = Dict("N" => N, "l_0" => l_0, "N" => N, "x" => x, "mg" => mg, "r" => r, "lambda" => lambda)
+# params = Dict("N" => N, "l_0" => l_0, "N" => N, "x" => x, "mg" => mg, "r" => r, "lambda" => lambda)
 
-sites = siteinds("S=1/2", N)
-opsum = get_Staggered_OpSum(params)
-H = get_MPO_from_OpSum(opsum, sites)
-initial_ansatz_0 = randomMPS(sites, D)
-sweeps = Sweeps(ns, maxdim = D)
+# sites = siteinds("S=1/2", N)
+# opsum = get_Staggered_OpSum(params)
+# H = get_MPO_from_OpSum(opsum, sites)
+# initial_ansatz_0 = randomMPS(sites, D)
+# sweeps = Sweeps(ns, maxdim = D)
 
-energy_0, psi_0 = dmrg(H, initial_ansatz_0, sweeps, ishermitian = true, maxdim = D)
+# energy_0, psi_0 = dmrg(H, initial_ansatz_0, sweeps, ishermitian = true, maxdim = D)
 
-println(energy_0)
+# println(energy_0)
 
 # ---------------------------------------------------------------------------------
 

@@ -4,9 +4,9 @@ using Plots
 include("DMRG_iT.jl")
 include("Observables_iT.jl")
 
-function run_SW_DMRG(sites, params, H, ishermitian)
+function run_SW_DMRG(sites, params, H, ishermitian)::Tuple{Float64, MPS}
 
-    energy, psi = DMRG(H, sites, params, ishermitian)
+    energy::Float64, psi::MPS = DMRG(H, sites, params, ishermitian)
 
     return energy, psi
 
@@ -21,7 +21,7 @@ function run_Ising_DMRG()
     opsum_ising = get_Ising_OpSum(N, J, g_z, g_x)
     sites = siteinds("S=1/2", N)
     H_1 = get_MPO_from_OpSum(opsum_ising, sites)
-    energy_1, _ = DMRG(H_1, sites, params)
+    energy_1, psi_1 = DMRG(H_1, sites, params, ishermitian = true)
     println(energy_1)
 
 end

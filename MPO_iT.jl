@@ -1,6 +1,6 @@
-function get_SW_local_charge_OpSum(site_idx)
+function get_SW_local_charge_OpSum(site_idx::Int64)::Sum{Scaled{ComplexF64, Prod{Op}}}
 
-    ampo = OpSum()
+    ampo::Sum{Scaled{ComplexF64, Prod{Op}}} = OpSum()
 
     ampo += "Sz",2*site_idx-1
     ampo += "Sz",2*site_idx
@@ -9,9 +9,9 @@ function get_SW_local_charge_OpSum(site_idx)
 
 end
 
-function get_SW_local_z_OpSum(site_idx)
+function get_SW_local_z_OpSum(site_idx::Int64)::Sum{Scaled{ComplexF64, Prod{Op}}}
 
-    ampo = OpSum()
+    ampo::Sum{Scaled{ComplexF64, Prod{Op}}} = OpSum()
 
     ampo += 2,"Sz",site_idx
 
@@ -19,25 +19,25 @@ function get_SW_local_z_OpSum(site_idx)
 
 end
 
-function get_SW_OpSum(params)
+function get_SW_OpSum(params)::Sum{Scaled{ComplexF64, Prod{Op}}}
 
     """
     N = number of physical sites
     """
 
-    N = params["N"]
-    l_0 = params["l_0"]
-    x = params["x"]
-    mg = params["mg"]
-    r = params["r"]
-    lambda = params["lambda"]
+    N::Int64 = params["N"]
+    l_0::Float64 = params["l_0"]
+    x::Float64 = params["x"]
+    mg::Float64 = params["mg"]
+    r::Float64 = params["r"]
+    lambda::Float64 = params["lambda"]
 
     A = 1im*x*(r - 1)
     B = 1im*x*(r + 1)
     C = 2*1im*(sqrt(x)*mg + x*r)
     F = (N-1)*l_0^2 + N*(N-1)/4 + lambda*N/2
 
-    ampo = OpSum()
+    ampo::Sum{Scaled{ComplexF64, Prod{Op}}} = OpSum()
 
     for n=1:N-1
         ampo += A,"S-",2*n,"S+",2*n+1
@@ -69,25 +69,25 @@ function get_SW_OpSum(params)
 
 end
 
-function get_SW_OpSum_alternative(params)
+function get_SW_OpSum_alternative(params)::Sum{Scaled{ComplexF64, Prod{Op}}}
 
     """
     N = number of physical sites
     """
 
-    N = params["N"]
-    l_0 = params["l_0"]
-    x = params["x"]
-    mg = params["mg"]
-    r = params["r"]
-    lambda = params["lambda"]
+    N::Int64 = params["N"]
+    l_0::Float64 = params["l_0"]
+    x::Float64 = params["x"]
+    mg::Float64 = params["mg"]
+    r::Float64 = params["r"]
+    lambda::Float64 = params["lambda"]
 
     A = 1im*x*(r - 1)
     B = 1im*x*(r + 1)
     C = 2*1im*(sqrt(x)*mg + x*r)
     F = (N-1)*l_0^2 + N*(N-1)/4 + lambda*N/2
 
-    ampo = OpSum()
+    ampo::Sum{Scaled{ComplexF64, Prod{Op}}} = OpSum()
 
     for n=1:N-1
         ampo += A,"S-",2*n,"S+",2*n+1
@@ -128,7 +128,7 @@ function get_SW_OpSum_alternative(params)
 
 end
 
-function get_Ising_OpSum(N, J, g_z, g_x)
+function get_Ising_OpSum(N::Int64, J::Float64, g_z::Float64, g_x::Float64)::Sum{Scaled{ComplexF64, Prod{Op}}}
         
     ampo = OpSum()
 
@@ -145,21 +145,21 @@ function get_Ising_OpSum(N, J, g_z, g_x)
 
 end
 
-function get_MPO_from_OpSum(OpSum, sites)
+function get_MPO_from_OpSum(OpSum, sites::Vector{Index{Int64}})::MPO
 
     return MPO(OpSum, sites)
 
 end
 
-function get_Staggered_OpSum(params)
+function get_Staggered_OpSum(params)::Sum{Scaled{ComplexF64, Prod{Op}}}
 
-    N = params["N"]
-    l_0 = params["l_0"]
-    x = params["x"]
-    mg = params["mg"]
-    lambda = params["lambda"]
+    N::Int64 = params["N"]
+    l_0::Float64 = params["l_0"]
+    x::Float64 = params["x"]
+    mg::Float64 = params["mg"]
+    lambda::Float64 = params["lambda"]
 
-    ampo = OpSum()
+    ampo::Sum{Scaled{ComplexF64, Prod{Op}}} = OpSum()
 
     for n=1:N-1
         ampo += x,"S+",n,"S-",n+1
@@ -196,9 +196,9 @@ function get_Staggered_OpSum(params)
 
 end
 
-function get_Staggered_local_charge_Opsum(site_idx)
+function get_Staggered_local_charge_Opsum(site_idx::Int64)::Sum{Scaled{ComplexF64, Prod{Op}}}
 
-    ampo = OpSum()
+    ampo::Sum{Scaled{ComplexF64, Prod{Op}}} = OpSum()
 
     ampo += "Sz",site_idx
     ampo += 0.5*(-1)^site_idx,"Id",site_idx
@@ -207,9 +207,9 @@ function get_Staggered_local_charge_Opsum(site_idx)
 
 end
 
-function get_SW_chiral_condensate_OpSum(N::Int64)
+function get_SW_chiral_condensate_OpSum(N::Int64)::Sum{Scaled{ComplexF64, Prod{Op}}}
 
-    ampo = OpSum()
+    ampo::Sum{Scaled{ComplexF64, Prod{Op}}} = OpSum()
 
     for n=1:N
         ampo += 1im,"S-",2*n-1,"S+",2*n
