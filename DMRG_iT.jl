@@ -79,7 +79,7 @@ function DMRG(H, sites::Vector{Index{Int64}}, params::Dict, ishermitian::Bool)::
     acc::Float64 = params["acc"]
     initial_noise::Float64 = params["initial_noise"]
     initial_ansatz::MPS = params["previous_psi"]
-    first_excited::MPS = params["first_excited"]
+    first_excited::Bool = params["first_excited"]
 
     noise_vector = LinRange(initial_noise, 0.0, ns) # Noise to be added to the MPS during DMRG
     sweeps = Sweeps(ns, maxdim = D) # This is the maximum number of sweeps to be done if accuracy (acc) is not reached
