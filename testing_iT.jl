@@ -243,6 +243,7 @@ for mg in mg_list
     total_charge = sum(charge_configuration_list)
     electric_field_configuration_list = get_SW_electric_field_configuration(charge_configuration_list, l_0)
     display(real(electric_field_configuration_list))
+    println("The mass is: $(mg)")
     avg_E_field = real(electric_field_configuration_list[9])
     write(file, "$(mg),$(avg_E_field)\n")
 end
