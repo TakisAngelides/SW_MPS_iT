@@ -222,11 +222,12 @@ include("Observables_iT.jl")
 
 N = 50
 x = 1.0
+D = 20
 l_0 = (pi/8)/(2*pi)
 lambda = 10.0
 r = 1.0
 ns = 50
-mg_list = LinRange(-3.0, 0.0, 10)
+mg_list = LinRange(-3.0, 0.0, 5)
 avg_e_field_list = []
 for mg in mg_list
     params = Dict("N" => N, "l_0" => l_0, "N" => N, "x" => x, "mg" => mg, "r" => r, "lambda" => lambda)
