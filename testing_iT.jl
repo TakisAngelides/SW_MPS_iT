@@ -129,46 +129,46 @@ include("Observables_iT.jl")
 
 # # Testing the first excited state of the Schwinger model with Wilson fermions
 
-N = 20
-x = 1.0
-D = 10
-mg = -0.1
-l_0 = 0.01
-lambda = 10.0
-r = 1.0
-ns = 50
+# N = 20
+# x = 1.0
+# D = 10
+# mg = -0.1
+# l_0 = 0.01
+# lambda = 10.0
+# r = 1.0
+# ns = 50
 
-params = Dict("N" => N, "l_0" => l_0, "N" => N, "x" => x, "mg" => mg, "r" => r, "lambda" => lambda)
+# params = Dict("N" => N, "l_0" => l_0, "N" => N, "x" => x, "mg" => mg, "r" => r, "lambda" => lambda)
 
-sites = siteinds("S=1/2", 2*N)
-opsum = get_SW_OpSum(params)
-H = get_MPO_from_OpSum(opsum, sites)
-initial_ansatz_0 = randomMPS(sites, D)
-sweeps = Sweeps(ns, maxdim = D)
+# sites = siteinds("S=1/2", 2*N)
+# opsum = get_SW_OpSum(params)
+# H = get_MPO_from_OpSum(opsum, sites)
+# initial_ansatz_0 = randomMPS(sites, D)
+# sweeps = Sweeps(ns, maxdim = D)
 
-energy, psi = dmrg(H, initial_ansatz_0, sweeps, ishermitian = true, maxdim = D)
+# energy, psi = dmrg(H, initial_ansatz_0, sweeps, ishermitian = true, maxdim = D)
 
-z_configuration_list = get_z_configuration(psi, sites)
+# z_configuration_list = get_z_configuration(psi, sites)
     
-charge_configuration_list = get_SW_charge_configuration(z_configuration_list)
+# charge_configuration_list = get_SW_charge_configuration(z_configuration_list)
 
-total_charge = sum(charge_configuration_list)
+# total_charge = sum(charge_configuration_list)
 
-electric_field_configuration_list = get_SW_electric_field_configuration(charge_configuration_list, l_0)
+# electric_field_configuration_list = get_SW_electric_field_configuration(charge_configuration_list, l_0)
 
-left_edge = floor(Int, N*0.48)
+# left_edge = floor(Int, N*0.48)
 
-right_edge = floor(Int, N*0.52)
+# right_edge = floor(Int, N*0.52)
 
-middle_efl = electric_field_configuration_list[left_edge:right_edge]
+# middle_efl = electric_field_configuration_list[left_edge:right_edge]
 
-num_links = length(middle_efl)
+# num_links = length(middle_efl)
 
-avg_E_field = real(mean(middle_efl))
+# avg_E_field = real(mean(middle_efl))
 
 # ee = get_SW_entanglement_entropy(psi)
 
-cc = get_SW_chiral_condensate(psi)
+# cc = get_SW_chiral_condensate(psi)
 
 # println("Norm of psi_0: ", norm(psi_0))
 
@@ -217,3 +217,32 @@ cc = get_SW_chiral_condensate(psi)
 
 # ---------------------------------------------------------------------------------
 
+# Finding the mass shift at N = 4, x = 0.01: 
+# theta = pi/8, r = 1 and theta = pi/8 + pi, r = -1
+
+N = 50
+x = 1.0
+l_0 = (pi/8)/(2*pi)
+lambda = 10.0
+r = 1.0
+ns = 50
+mg_list = LinRange(-3.0, 0.0, 10)
+avg_e_field_list = []
+for mg in mg_list
+    params = Dict("N" => N, "l_0" => l_0, "N" => N, "x" => x, "mg" => mg, "r" => r, "lambda" => lambda)
+    sites = siteinds("S=1/2", 2*N)
+    opsum = get_SW_OpSum(params)
+    H = get_MPO_from_OpSum(opsum, sites)
+    initial_ansatz_0 = randomMPS(sites, D)
+    sweeps = Sweeps(ns, maxdim = D)
+    energy, psi = dmrg(H, initial_ansatz_0, sweeps, ishermitian = true)
+    z_configuration_list = get_z_configuration(psi, sites)
+    charge_configuration_list = get_SW_charge_configuration(z_configuration_list)
+    total_charge = sum(charge_configuration_list)
+    electric_field_configuration_list = get_SW_electric_field_configuration(charge_configuration_list, l_0)
+    display(real(electric_field_configuration_list))
+    avg_E_field = real(electric_field_configuration_list[2])
+    append!(avg_e_field_list, avg_E_field)
+end
+plot(mg_list, avg_e_field_list)
+savefig("e_vs_m.png")
