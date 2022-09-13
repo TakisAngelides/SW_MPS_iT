@@ -246,4 +246,4 @@ for mg in mg_list
     avg_E_field = real(electric_field_configuration_list[9])
     write(file, "$(mg),$(avg_E_field)\n")
 end
-close(f)
+close(file)
