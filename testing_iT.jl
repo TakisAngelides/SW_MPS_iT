@@ -220,9 +220,9 @@ include("Observables_iT.jl")
 # Finding the mass shift at N = 4, x = 0.01: 
 # theta = pi/8, r = 1 and theta = pi/8 + pi, r = -1
 
-N = 50
+N = 20
 x = 1.0
-D = 20
+D = 60
 l_0 = (pi/8)/(2*pi)
 lambda = 10.0
 r = 1.0
@@ -236,8 +236,8 @@ for mg in mg_list
     opsum = get_SW_OpSum(params)
     H = get_MPO_from_OpSum(opsum, sites)
     initial_ansatz_0 = randomMPS(sites, D)
-    sweeps = Sweeps(ns)
-    energy, psi = dmrg(H, initial_ansatz_0, sweeps, ishermitian = true)
+    sweeps = Sweeps(ns, maxdim = D)
+    energy, psi = dmrg(H, initial_ansatz_0, sweeps, ishermitian = true, maxdim = D)
     z_configuration_list = get_z_configuration(psi, sites)
     charge_configuration_list = get_SW_charge_configuration(z_configuration_list)
     total_charge = sum(charge_configuration_list)
