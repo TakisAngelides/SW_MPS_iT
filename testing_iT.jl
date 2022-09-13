@@ -229,21 +229,21 @@ r = 1.0
 ns = 50
 mg_list = LinRange(-3.0, 0.0, 5)
 avg_e_field_list = []
+file = open("file.txt", "w")
 for mg in mg_list
     params = Dict("N" => N, "l_0" => l_0, "N" => N, "x" => x, "mg" => mg, "r" => r, "lambda" => lambda)
     sites = siteinds("S=1/2", 2*N)
     opsum = get_SW_OpSum(params)
     H = get_MPO_from_OpSum(opsum, sites)
     initial_ansatz_0 = randomMPS(sites, D)
-    sweeps = Sweeps(ns, maxdim = D)
+    sweeps = Sweeps(ns)
     energy, psi = dmrg(H, initial_ansatz_0, sweeps, ishermitian = true)
     z_configuration_list = get_z_configuration(psi, sites)
     charge_configuration_list = get_SW_charge_configuration(z_configuration_list)
     total_charge = sum(charge_configuration_list)
     electric_field_configuration_list = get_SW_electric_field_configuration(charge_configuration_list, l_0)
     display(real(electric_field_configuration_list))
-    avg_E_field = real(electric_field_configuration_list[2])
-    append!(avg_e_field_list, avg_E_field)
+    avg_E_field = real(electric_field_configuration_list[25])
+    write(file, "$(mg),$(avg_E_field)\n")
 end
-plot(mg_list, avg_e_field_list)
-savefig("e_vs_m.png")
+close(f)
