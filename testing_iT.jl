@@ -251,12 +251,12 @@ include("Observables_iT.jl")
 
 N = 20
 x = 1.0
-D = 40
+D = 60
 l_0 = (pi/8+pi)/(2*pi)
 lambda = 100.0
 r = -1.0
 ns = 100
-mg_list = LinRange(1.0, 2.0, 5)
+mg_list = LinRange(1.7, 1.8, 5)
 avg_e_field_list = []
 file = open("file_1.txt", "w")
 for mg in mg_list
