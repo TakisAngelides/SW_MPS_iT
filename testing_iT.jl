@@ -256,7 +256,7 @@ l_0 = (pi/8+pi)/(2*pi)
 lambda = 100.0
 r = -1.0
 ns = 100
-mg_list = LinRange(1.7, 1.8, 5)
+mg_list = LinRange(-5.0, 5.0, 50)
 avg_e_field_list = []
 file = open("file_1.txt", "w")
 for mg in mg_list
