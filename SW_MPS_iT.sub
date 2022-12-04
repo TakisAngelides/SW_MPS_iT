@@ -8,7 +8,7 @@ transfer_input_files = /lustre/fs23/group/nic/tangelides/SW_MPS_iT/SW_MPS_iT.jl
 
 should_transfer_files = IF_NEEDED
 
-mem = 4*(2*$(N)*$(D)*$(D)*16*2/1e6)+1000 
+mem = 4*(2*$(N)*$(D)*$(D)*16*2/1e6)+1000 # if no units are specified here, MB are considered
 
 request_memory = $(mem)
 
