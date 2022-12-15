@@ -219,3 +219,18 @@ function get_SW_chiral_condensate_OpSum(N::Int64)::Sum{Scaled{ComplexF64, Prod{O
     return ampo
 
 end
+
+function get_particle_number_OpSum(N::Int64)::Sum{Scaled{ComplexF64, Prod{Op}}}
+
+    ampo::Sum{Scaled{ComplexF64, Prod{Op}}} = OpSum()
+
+    for n=1:N
+        ampo += 1im,"S-",2*n-1,"S+",2*n
+        ampo += -1im,"S+",2*n-1,"S-",2*n
+    end
+
+    ampo += N,"Id",1
+
+    return ampo
+
+end
