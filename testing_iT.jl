@@ -249,16 +249,50 @@ include("Observables_iT.jl")
 # end
 # close(file)
 
-N = 20
+# N = 20
+# x = 1.0
+# D = 80
+# l_0 = (pi/8+pi)/(2*pi)
+# lambda = 100.0
+# r = -1.0
+# ns = 200
+# mg_list = LinRange(-5.0, 5.0, 50)
+# avg_e_field_list = []
+# file = open("file_1.txt", "w")
+# for mg in mg_list
+#     params = Dict("N" => N, "l_0" => l_0, "N" => N, "x" => x, "mg" => mg, "r" => r, "lambda" => lambda)
+#     sites = siteinds("S=1/2", 2*N)
+#     opsum = get_SW_OpSum(params)
+#     H = get_MPO_from_OpSum(opsum, sites)
+#     initial_ansatz_0 = randomMPS(sites, D)
+#     sweeps = Sweeps(ns, maxdim = D)
+#     energy, psi = dmrg(H, initial_ansatz_0, sweeps, ishermitian = true, maxdim = D)
+#     z_configuration_list = get_z_configuration(psi, sites)
+#     charge_configuration_list = get_SW_charge_configuration(z_configuration_list)
+#     total_charge = sum(charge_configuration_list)
+#     electric_field_configuration_list = get_SW_electric_field_configuration(charge_configuration_list, l_0)
+#     display(real(electric_field_configuration_list))
+#     println("The mass is: $(mg)")
+#     avg_E_field = real(electric_field_configuration_list[9])
+#     write(file, "$(mg),$(avg_E_field)\n")
+# end
+# close(file)
+
+# ---------------------------------------------------------------------------------
+
+# Testing the particle number operator
+
+N = 10
 x = 1.0
-D = 80
-l_0 = (pi/8+pi)/(2*pi)
+D = 10
+l_0 = 0.125
 lambda = 100.0
-r = -1.0
+r = 1.0
 ns = 200
-mg_list = LinRange(-5.0, 5.0, 50)
+# mg_list = LinRange(-5.0, 5.0, 1)
+mg_list = [-0.1]
 avg_e_field_list = []
-file = open("file_1.txt", "w")
+
 for mg in mg_list
     params = Dict("N" => N, "l_0" => l_0, "N" => N, "x" => x, "mg" => mg, "r" => r, "lambda" => lambda)
     sites = siteinds("S=1/2", 2*N)
@@ -267,13 +301,9 @@ for mg in mg_list
     initial_ansatz_0 = randomMPS(sites, D)
     sweeps = Sweeps(ns, maxdim = D)
     energy, psi = dmrg(H, initial_ansatz_0, sweeps, ishermitian = true, maxdim = D)
-    z_configuration_list = get_z_configuration(psi, sites)
-    charge_configuration_list = get_SW_charge_configuration(z_configuration_list)
-    total_charge = sum(charge_configuration_list)
-    electric_field_configuration_list = get_SW_electric_field_configuration(charge_configuration_list, l_0)
-    display(real(electric_field_configuration_list))
-    println("The mass is: $(mg)")
-    avg_E_field = real(electric_field_configuration_list[9])
-    write(file, "$(mg),$(avg_E_field)\n")
+    pn = get_particle_number(psi)
+    println(pn)
 end
-close(file)
+
+# ---------------------------------------------------------------------------------
+
