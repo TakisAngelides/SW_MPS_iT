@@ -1,5 +1,9 @@
-include("run_DMRG_iT.jl")
-include("Observables_iT.jl")
+# include("run_DMRG_iT.jl")
+# include("Observables_iT.jl")
+using ITensors
+using Plots
+using DataStructures
+using StatsBase
 
 # ---------------------------------------------------------------------------------
 
@@ -280,30 +284,180 @@ include("Observables_iT.jl")
 
 # ---------------------------------------------------------------------------------
 
-# Testing the particle number operator
+# # Testing the particle number operator
 
-N = 10
-x = 1.0
-D = 10
-l_0 = 0.125
-lambda = 100.0
-r = 1.0
-ns = 200
-# mg_list = LinRange(-5.0, 5.0, 1)
-mg_list = [-0.1]
-avg_e_field_list = []
+# N = 10
+# x = 1.0
+# D = 10
+# l_0 = 0.125
+# lambda = 100.0
+# r = 1.0
+# ns = 200
+# # mg_list = LinRange(-5.0, 5.0, 1)
+# mg_list = [-0.1]
+# avg_e_field_list = []
 
-for mg in mg_list
-    params = Dict("N" => N, "l_0" => l_0, "N" => N, "x" => x, "mg" => mg, "r" => r, "lambda" => lambda)
-    sites = siteinds("S=1/2", 2*N)
-    opsum = get_SW_OpSum(params)
-    H = get_MPO_from_OpSum(opsum, sites)
-    initial_ansatz_0 = randomMPS(sites, D)
-    sweeps = Sweeps(ns, maxdim = D)
-    energy, psi = dmrg(H, initial_ansatz_0, sweeps, ishermitian = true, maxdim = D)
-    pn = get_particle_number(psi)
-    println(pn)
-end
+# for mg in mg_list
+#     params = Dict("N" => N, "l_0" => l_0, "N" => N, "x" => x, "mg" => mg, "r" => r, "lambda" => lambda)
+#     sites = siteinds("S=1/2", 2*N)
+#     opsum = get_SW_OpSum(params)
+#     H = get_MPO_from_OpSum(opsum, sites)
+#     initial_ansatz_0 = randomMPS(sites, D)
+#     sweeps = Sweeps(ns, maxdim = D)
+#     energy, psi = dmrg(H, initial_ansatz_0, sweeps, ishermitian = true, maxdim = D)
+#     pn = get_particle_number(psi)
+#     println(pn)
+# end
 
 # ---------------------------------------------------------------------------------
 
+# s = siteinds("Qubit", 4)
+# os = [("H", 1), ("X", 2), ("CNOT", 2, 4)]
+# gates = ops(os, s)
+# print(print(gates[1]))
+
+# N = 2
+# δτ = 0.1
+# s = siteinds("S=1/2", N; conserve_qns=true)
+# function ITensors.op(::OpName"expτSS", ::SiteType"S=1/2", s1::Index, s2::Index; τ)
+#     h = -4 * op("Sz", s1) * op("Sz", s2)
+#     return exp(τ * h)
+# end
+# gates = ops([("expτSS", (n, n + 1), (τ=-δτ / 2,)) for n in 1:(N - 1)], s)
+# print(gates)
+
+# ---------------------------------------------------------------------------------
+
+# function ITensors.op(::OpName"expτSS", ::SiteType"S=1/2", s1::Index, s2::Index; τ)
+#     h = -4 * op("Sz", s1) * op("Sz", s2)
+#     return exp(τ * h)
+#   end
+  
+#   function get_rho(N; cutoff = 1E-8, δτ = 0.1, beta_max = 1.0)
+
+#     # Make an array of 'site' indices
+#     s = siteinds("S=1/2", N)
+
+#     # Make gates (1,2),(2,3),(3,4),...
+#     gates = ops([("expτSS", (n, m), (τ=-δτ / 2,)) for n in 1:N for m in n+1:N], s)
+#     # Include gates in reverse order to complete Trotter formula
+#     append!(gates, reverse(gates))
+
+#     # Initial state is infinite-temperature mixed state
+#     rho = MPO(s, "Id") ./ √2
+
+#     # Make H for measuring the energy        
+#     function get_Hamiltonian(N)
+#         H = OpSum()
+#         for n=1:N-1
+#             H += -4,"Sz",n,"Sz",n+1
+#         end
+#         return H
+#     end
+#     H = get_Hamiltonian(N)
+#     H = MPO(H, s)
+
+#     # Do the time evolution by applying the gates
+#     # for Nsteps steps
+#     for β in 0:δτ:beta_max
+#         energy = inner(rho, H)
+#         println("β ", β)
+#         println("energy ", energy)
+#         rho = apply(gates, rho; cutoff)
+#         rho = rho / tr(rho)
+#     end
+
+#     return rho
+# end
+
+# rho = get_rho(3)
+# sample_list = []
+# number_of_samples = 3
+# for _ in 1:number_of_samples
+#     sample_element = ITensors.sample(rho)
+#     shifted_sample = join(string.(sample_element.-1))
+#     println(shifted_sample)
+#     append!(sample_list, shifted_sample)
+# end
+
+# sample_dictionary = counter(sample_list)
+# print(sample_dictionary)
+# print(Dict{String, Float64}(sample_dictionary))
+# map!(x -> x./number_of_samples, values(sample_dictionary))
+# b = bar(sample_dictionary)
+# savefig(b, "barplot.png")
+
+# N = 20
+# r = [bitstring(UInt32(element))[(32-N+1):32] for element in 0:2^N-1]
+# print(r)
+
+
+# ---------------------------------------------------------------------------------
+
+gamma = 0.5
+N = 3
+
+i,j,a,b = Index(2, "i"), Index(2, "j"), Index(2, "a"), Index(2, "b") 
+i1, jN = Index(1, "i1"), Index(1, "iN")
+
+tm = zeros(Float64, 2, 2, 2, 2) 
+tm[1,1,:,:] = [1.0 0.0; 0.0 1.0]
+tm[2,2,:,:] = [1.0 0.0; 0.0 1.0]
+tm[2,1,:,:] = [1.0 0.0; 0.0 sqrt(1-gamma)]
+
+tmns = zeros(Float64, 2, 2, 2, 2) 
+tmns[1,1,:,:] = [1.0 0.0; 0.0 1.0]
+tmns[2,2,:,:] = [1.0 0.0; 0.0 1.0]
+tmns[2,1,:,:] = [1.0 0.0; 0.0 sqrt(1-gamma)]
+
+t1 = zeros(Float64, 2, 2, 2) 
+t1[2,:,:] = [1.0 0.0; 0.0 1.0]
+
+tf = zeros(Float64, 2, 2, 2) 
+tf[2,:,:] = [1.0 0.0; 0.0 1.0]
+
+
+mpo = MPO(N)
+j = 2
+link_indices = [Index(2, "Link,l=$idx") for idx in 1:(N-1)]
+
+for i in 1:N 
+
+    site_index = Index(2, "S=1/2,Site,n=$(i)")
+
+    if i == 1
+
+        mpo[i] = ITensor(t1, link_indices[i], site_index, site_index')
+    
+    elseif i == j
+        
+        mpo[i] = ITensor(tm, dag(link_indices[i-1]), link_indices[i], site_index, site_index')
+
+    elseif i == N
+
+        mpo[i] = ITensor(tf, dag(link_indices[i-1]), site_index, site_index')
+    
+    else
+
+        mpo[i] = ITensor(tmns, dag(link_indices[i-1]), link_indices[i], site_index, site_index')
+        
+    end
+
+end
+
+# @show mpo
+
+tmp = mpo[1]
+tmp = contract(tmp, mpo[2])
+tmp = contract(tmp, mpo[3])
+
+display(NDTensors.dense(tmp[1,1,:,:,1,1]))
+
+# include("MPO_iT.jl")
+# s = siteinds("S=1/2", 4)
+# # mps = randomMPS(Float64, s)
+# mpo = MPO(get_SW_local_z_OpSum(2), s)
+
+# @show mpo
+
+# ---------------------------------------------------------------------------------
