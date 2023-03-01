@@ -151,6 +151,70 @@ function get_MPO_from_OpSum(OpSum, sites::Vector{Index{Int64}})::MPO
 
 end
 
+function get_two_point_correlator(n, m, N, x)
+
+    """
+    Inputs:
+
+    n = left index of correlator
+    m = right index of correlator
+    N = number of lattice sites (=> we have 2*N spin sites)
+    x = 1/(ag)^2
+
+    Outputs:
+
+    The OpSum corresponding to the operator of the two point correlation function psi_bar_n*psi_m/g
+
+    """
+
+    @assert(n <= m, "The condition n <= m was not satisfied, the left index of the correlator needs to be less than the right index")
+    @assert(m <= N, "The condition m <= N was not satisfied, the right index of the correlator needs to be within the boundaries of the lattice")
+
+    os = OpSum()
+
+    C = ((-1)^(n+m))*sqrt(x)
+
+    term_1 = []
+    term_2 = []
+
+    push!(term_1, C*2^((2*m-1)-(2*n-1)+1)) # "Sz" is Z/2 so we multiply a factor here to make it Z
+    push!(term_2, C*2^((2*m-2)-(2*n)+1)) 
+        
+    for i in 1:2*N
+        if i < (2*n-1)
+            push!(term_1, "I", i)
+        elseif i == 2*n-1
+            push!(term_1, "S+", i)
+        elseif i < 2*m
+            push!(term_1, "Sz", i)
+        elseif i == 2*m
+            push!(term_1, "S-", i)
+        else
+            push!(term_1, "I", i)
+        end
+    end
+
+    for i in 1:2*N
+        if i < (2*n)
+            push!(term_2, "I", i)
+        elseif i == 2*n
+            push!(term_2, "S+", i)
+        elseif i < (2*m-1)
+            push!(term_2, "Sz", i)
+        elseif i == 2*m-1
+            push!(term_2, "S-", i)
+        else
+            push!(term_2, "I", i)
+        end
+    end
+
+    os += tuple(term_1...)
+    os += tuple(term_2...)
+
+    return os
+
+end
+
 function get_Staggered_OpSum(params)::Sum{Scaled{ComplexF64, Prod{Op}}}
 
     N::Int64 = params["N"]

@@ -4,6 +4,7 @@ using ITensors
 using Plots
 using DataStructures
 using StatsBase
+include("MPO_iT.jl")
 
 # ---------------------------------------------------------------------------------
 
@@ -394,70 +395,76 @@ using StatsBase
 
 # ---------------------------------------------------------------------------------
 
-gamma = 0.5
-N = 3
+# gamma = 0.5
+# N = 3
 
-i,j,a,b = Index(2, "i"), Index(2, "j"), Index(2, "a"), Index(2, "b") 
-i1, jN = Index(1, "i1"), Index(1, "iN")
+# i,j,a,b = Index(2, "i"), Index(2, "j"), Index(2, "a"), Index(2, "b") 
+# i1, jN = Index(1, "i1"), Index(1, "iN")
 
-tm = zeros(Float64, 2, 2, 2, 2) 
-tm[1,1,:,:] = [1.0 0.0; 0.0 1.0]
-tm[2,2,:,:] = [1.0 0.0; 0.0 1.0]
-tm[2,1,:,:] = [1.0 0.0; 0.0 sqrt(1-gamma)]
+# tm = zeros(Float64, 2, 2, 2, 2) 
+# tm[1,1,:,:] = [1.0 0.0; 0.0 1.0]
+# tm[2,2,:,:] = [1.0 0.0; 0.0 1.0]
+# tm[2,1,:,:] = [1.0 0.0; 0.0 sqrt(1-gamma)]
 
-tmns = zeros(Float64, 2, 2, 2, 2) 
-tmns[1,1,:,:] = [1.0 0.0; 0.0 1.0]
-tmns[2,2,:,:] = [1.0 0.0; 0.0 1.0]
-tmns[2,1,:,:] = [1.0 0.0; 0.0 sqrt(1-gamma)]
+# tmns = zeros(Float64, 2, 2, 2, 2) 
+# tmns[1,1,:,:] = [1.0 0.0; 0.0 1.0]
+# tmns[2,2,:,:] = [1.0 0.0; 0.0 1.0]
+# tmns[2,1,:,:] = [1.0 0.0; 0.0 sqrt(1-gamma)]
 
-t1 = zeros(Float64, 2, 2, 2) 
-t1[2,:,:] = [1.0 0.0; 0.0 1.0]
+# t1 = zeros(Float64, 2, 2, 2) 
+# t1[2,:,:] = [1.0 0.0; 0.0 1.0]
 
-tf = zeros(Float64, 2, 2, 2) 
-tf[2,:,:] = [1.0 0.0; 0.0 1.0]
+# tf = zeros(Float64, 2, 2, 2) 
+# tf[2,:,:] = [1.0 0.0; 0.0 1.0]
 
 
-mpo = MPO(N)
-j = 2
-link_indices = [Index(2, "Link,l=$idx") for idx in 1:(N-1)]
+# mpo = MPO(N)
+# j = 2
+# link_indices = [Index(2, "Link,l=$idx") for idx in 1:(N-1)]
 
-for i in 1:N 
+# for i in 1:N 
 
-    site_index = Index(2, "S=1/2,Site,n=$(i)")
+#     site_index = Index(2, "S=1/2,Site,n=$(i)")
 
-    if i == 1
+#     if i == 1
 
-        mpo[i] = ITensor(t1, link_indices[i], site_index, site_index')
+#         mpo[i] = ITensor(t1, link_indices[i], site_index, site_index')
     
-    elseif i == j
+#     elseif i == j
         
-        mpo[i] = ITensor(tm, dag(link_indices[i-1]), link_indices[i], site_index, site_index')
+#         mpo[i] = ITensor(tm, dag(link_indices[i-1]), link_indices[i], site_index, site_index')
 
-    elseif i == N
+#     elseif i == N
 
-        mpo[i] = ITensor(tf, dag(link_indices[i-1]), site_index, site_index')
+#         mpo[i] = ITensor(tf, dag(link_indices[i-1]), site_index, site_index')
     
-    else
+#     else
 
-        mpo[i] = ITensor(tmns, dag(link_indices[i-1]), link_indices[i], site_index, site_index')
+#         mpo[i] = ITensor(tmns, dag(link_indices[i-1]), link_indices[i], site_index, site_index')
         
-    end
+#     end
 
-end
+# end
 
-# @show mpo
+# # @show mpo
 
-tmp = mpo[1]
-tmp = contract(tmp, mpo[2])
-tmp = contract(tmp, mpo[3])
+# tmp = mpo[1]
+# tmp = contract(tmp, mpo[2])
+# tmp = contract(tmp, mpo[3])
 
-display(NDTensors.dense(tmp[1,1,:,:,1,1]))
+# display(NDTensors.dense(tmp[1,1,:,:,1,1]))
 
-# include("MPO_iT.jl")
-# s = siteinds("S=1/2", 4)
-# # mps = randomMPS(Float64, s)
-# mpo = MPO(get_SW_local_z_OpSum(2), s)
+# # include("MPO_iT.jl")
+# # s = siteinds("S=1/2", 4)
+# # # mps = randomMPS(Float64, s)
+# # mpo = MPO(get_SW_local_z_OpSum(2), s)
 
-# @show mpo
+# # @show mpo
+
+# ---------------------------------------------------------------------------------
+
+# println(get_two_point_correlator(2, 5, 5, 0.5))
+# s = siteinds("S=1/2", 10)
+# display(get_MPO_from_OpSum(get_two_point_correlator(2, 5, 5, 0.5), s))
 
 # ---------------------------------------------------------------------------------
