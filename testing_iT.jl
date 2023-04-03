@@ -197,8 +197,6 @@ include("MPO_iT.jl")
 
 # Testing the staggered fermions Schwinger model
 
-# Testing the first excited state of the Schwinger model
-
 # N = 10
 # x = 1.0
 # D = 20
@@ -466,5 +464,29 @@ include("MPO_iT.jl")
 # println(get_two_point_correlator(2, 5, 5, 0.5))
 # s = siteinds("S=1/2", 10)
 # display(get_MPO_from_OpSum(get_two_point_correlator(2, 5, 5, 0.5), s))
+
+# ---------------------------------------------------------------------------------
+
+N = 20 
+l_0 = 0.5
+mg = 0.33-0.314599
+volume = 10
+x = (N/volume)^2
+lambda = 100.0
+r = 1.0
+ns = 1000
+D = 20
+
+params = Dict("N" => N, "l_0" => l_0, "N" => N, "x" => x, "mg" => mg, "r" => r, "lambda" => lambda)
+
+sites = siteinds("S=1/2", 2*N)
+opsum = get_SW_OpSum(params)
+H = get_MPO_from_OpSum(opsum, sites)
+initial_ansatz_0 = randomMPS(sites, D)
+sweeps = Sweeps(ns, maxdim = D)
+
+energy_0, psi_0 = dmrg(H, initial_ansatz_0, sweeps, ishermitian = true, maxdim = D)
+
+println(energy_0)
 
 # ---------------------------------------------------------------------------------
