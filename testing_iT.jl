@@ -467,7 +467,7 @@ include("MPO_iT.jl")
 
 # ---------------------------------------------------------------------------------
 
-using ITensorsGPU
+using ITensorGPU
 
 function gather_data()
 
