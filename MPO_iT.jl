@@ -298,3 +298,90 @@ function get_particle_number_OpSum(N::Int64)::Sum{Scaled{ComplexF64, Prod{Op}}}
     return ampo
 
 end
+
+function get_Schwinger_staggered_Hamiltonian_OpSum(N, x, mu, l_0, lambd)::Sum{Scaled{ComplexF64, Prod{Op}}}
+    
+    """
+    
+    Inputs:
+    
+    N = number of spin lattice sites
+    
+    x = 1 / (a g)^2
+    
+    mu = 2 m / (g^2 a) = 2 m sqrt(x) / g
+    
+    l_0 = theta / (2 pi) topological theta term - background electric field
+    
+    lambd = penalty term for total charge
+    
+    Outputs: 
+    
+    H = the staggered Hamiltonian for the Schwinger model with type qiskit.opflow.primitive_ops.pauli_sum_op.PauliSumOp
+    
+    """
+    
+    # Build terms of H and at the end we will add them all together
+    H::Sum{Scaled{ComplexF64, Prod{Op}}} = OpSum()
+    
+    # Kinetic term
+    for n in 1:N-1
+        H += 2*x,"Sy",n,"Sy",n+1 # this is 0.5 * 2 * 2 * x where the 2s account for Sy = 0.5*Y
+        H += 2*x,"Sx",n,"Sx",n+1
+    end
+    
+    # Mass term
+    for n in 1:N
+        H += mu * (-1)^(n-1), "Sz", n 
+    end
+     
+    # Electric term
+    for n in 1:N-1 
+        for k in 1:n
+            H += l_0 * (-1)^(k-1), "Id", 1   
+            H += 2*l_0, "Sz", k
+        end
+    end
+            
+    # Electric term
+    for n in 1:N-1
+        for k in 1:n
+            for k_dash in 1:n
+                H += 0.25 * (-1)^(k + k_dash - 2), "Id", 1   
+                H += 0.5 * (-1)^(k - 1), "Sz", k_dash 
+                H += 0.5 * (-1)^(k_dash - 1), "Sz", k
+            end
+        end
+    end
+    
+    # Electric term
+    for n in 1:N-1
+        for k in 1:n
+            for k_dash in k+1:n
+                H += 2, "Sz", k, "Sz", k_dash
+            end
+        end
+    end
+                
+    # Penalty term
+    for k in 1:N
+        for k_dash in 1:N
+            H += lambd * 0.25 * (-1)^(k + k_dash - 2), "Id", 1
+            H += lambd * 0.5 * (-1)^(k - 1), "Sz", k_dash
+            H += lambd * 0.5 * (-1)^(k_dash - 1), "Sz", k
+        end
+    end
+    
+    # Penalty term
+    for k in 1:N
+        for k_dash in k+1:N
+            H += 2 * lambd, "Sz", k, "Sz", k_dash
+        end
+    end
+        
+    # Constant terms    
+    H += lambd*N/4 + (l_0^2)*(N-1) + (1/8)*(N-2)*(N-1) + (1/4)*(N-1), "Id", 1
+
+    return H
+
+end

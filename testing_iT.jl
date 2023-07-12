@@ -2,8 +2,8 @@
 # include("Observables_iT.jl")
 using ITensors
 using Plots
-using DataStructures
-using StatsBase
+# using DataStructures
+# using StatsBase
 include("MPO_iT.jl")
 
 # ---------------------------------------------------------------------------------
@@ -467,26 +467,42 @@ include("MPO_iT.jl")
 
 # ---------------------------------------------------------------------------------
 
-N = 20 
-l_0 = 0.5
-mg = 0.33-0.314599
-volume = 10
-x = (N/volume)^2
-lambda = 100.0
-r = 1.0
-ns = 1000
-D = 20
+using ITensorsGPU
 
-params = Dict("N" => N, "l_0" => l_0, "N" => N, "x" => x, "mg" => mg, "r" => r, "lambda" => lambda)
+function gather_data()
 
-sites = siteinds("S=1/2", 2*N)
-opsum = get_SW_OpSum(params)
-H = get_MPO_from_OpSum(opsum, sites)
-initial_ansatz_0 = randomMPS(sites, D)
-sweeps = Sweeps(ns, maxdim = D)
+    gpu = cu
 
-energy_0, psi_0 = dmrg(H, initial_ansatz_0, sweeps, ishermitian = true, maxdim = D)
+    mg = -0.2
+    N = 6
+    l_0 = 0.125
+    x = 1.0
+    lambda = 100.0
+    mu = 2*mg*sqrt(x)
+    ns = 500
+    D = 50
+    sites = siteinds("S=1/2", N)
 
-println(energy_0)
+    H = get_Schwinger_staggered_Hamiltonian_OpSum(N, x, mu, l_0, lambda)
+    mpo = gpu(get_MPO_from_OpSum(H, sites))
+
+    initial_ansatz_0 = gpu(randomMPS(sites, D))
+    sweeps = Sweeps(ns) # , maxdim = D
+
+    energy_0, psi_0 = dmrg(mpo, initial_ansatz_0, ishermitian = true, sweeps) # , maxdim = D
+
+    P = outer(psi_0', psi_0)
+    mpo_eff = gpu(mpo + 2*abs(energy_0).*P)
+
+    initial_ansatz_1 = gpu(randomMPS(sites, D))
+
+    energy_1, psi_1 = dmrg(mpo_eff, initial_ansatz_1, ishermitian = true, sweeps)
+
+    println(energy_0)
+    println(energy_1)
+
+end
+
+gather_data()
 
 # ---------------------------------------------------------------------------------
