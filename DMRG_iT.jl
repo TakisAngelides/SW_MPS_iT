@@ -9,7 +9,7 @@ mutable struct my_observer <: AbstractObserver
     params::Dict
 end
 
-function ITensors.checkdone!(o::my_observer;kwargs...)::Bool
+function ITensors.checkdone!(o::my_observer; kwargs...)::Bool
     
     sw::Int64 = kwargs[:sweep]
     energy::Float64 = kwargs[:energy]
