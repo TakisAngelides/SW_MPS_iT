@@ -467,39 +467,93 @@ include("MPO_iT.jl")
 
 # ---------------------------------------------------------------------------------
 
-using ITensorGPU
+using Printf
+using HDF5
 
 function gather_data()
 
-    gpu = cu
-
-    mg = -0.2
-    N = 6
-    l_0 = 0.125
+    gap_list = []
+    
+    N_list = [30]
+    l_0_list = [0.125] # LinRange(0, 2*pi, 5)
     x = 1.0
     lambda = 100.0
-    mu = 2*mg*sqrt(x)
-    ns = 500
-    D = 50
-    sites = siteinds("S=1/2", N)
+    ns = 30
+    val = 1/sqrt(pi)
+    mg_list = LinRange(-0.5, 0.0, 5)
+    D = 64
 
-    H = get_Schwinger_staggered_Hamiltonian_OpSum(N, x, mu, l_0, lambda)
-    mpo = gpu(get_MPO_from_OpSum(H, sites))
+    f = h5open("mass_shift_data.hdf5", "w")
 
-    initial_ansatz_0 = gpu(randomMPS(sites, D))
-    sweeps = Sweeps(ns) # , maxdim = D
+    for N in N_list
 
-    energy_0, psi_0 = dmrg(mpo, initial_ansatz_0, ishermitian = true, sweeps) # , maxdim = D
+        sites = siteinds("S=1/2", N)
 
-    P = outer(psi_0', psi_0)
-    mpo_eff = gpu(mpo + 2*abs(energy_0).*P)
+        for (idx_l_0, l_0) in enumerate(l_0_list)
 
-    initial_ansatz_1 = gpu(randomMPS(sites, D))
+            # efd_list = []
 
-    energy_1, psi_1 = dmrg(mpo_eff, initial_ansatz_1, ishermitian = true, sweeps)
+            for mg in mg_list
 
-    println(energy_0)
-    println(energy_1)
+                # charge_configuration = []
+                electric_field_configuration = []
+
+                mu = 2*mg*sqrt(x)
+
+                H = get_Schwinger_staggered_Hamiltonian_OpSum(N, x, mu, l_0, lambda)
+                mpo = get_MPO_from_OpSum(H, sites)
+
+                initial_ansatz_0 = randomMPS(sites)
+                sweeps = Sweeps(ns, maxdim = D) # , maxdim = D
+
+                energy_0, psi_0 = dmrg(mpo, initial_ansatz_0, ishermitian = true, sweeps, outputlevel = 1) # , maxdim = D
+
+                for i in 1:N-1
+                    link_mpo = get_MPO_from_OpSum(get_electric_field_link_operator(i, l_0), sites)
+                    electric_field = inner(psi_0', link_mpo, psi_0)
+                    push!(electric_field_configuration, electric_field)
+                end
+                for i in 1:N
+                    charge_mpo = get_MPO_from_OpSum(get_staggered_site_charge_operator(i), sites)
+                    charge = inner(psi_0', charge_mpo, psi_0)
+                    # push!(charge_configuration, charge)
+                end
+                # scatter(1:N-1, electric_field_configuration, label = "EF")
+                # display(scatter!(1:N, charge_configuration, label = "Q"))
+                # push!(efd_list, real((electric_field_configuration[Int(floor(N/2))-1] + electric_field_configuration[Int(floor(N/2))])/2))
+
+                Ms = [psi_0]
+                w = abs(energy_0)
+                initial_ansatz_1 = randomMPS(sites)
+
+                energy_1, psi_1 = dmrg(mpo, Ms, initial_ansatz_1, sweeps, weight = w, ishermitian = true, outputlevel = 1) # , maxdim = D
+
+                push!(gap_list, energy_1 - energy_0 - val)
+
+                f["$(N)_$(l_0)_$(mg)_gap"] = energy_1 - energy_0 - val
+                f["$(N)_$(l_0)_$(mg)_efd"] = real((electric_field_configuration[Int(floor(N/2))-1] + electric_field_configuration[Int(floor(N/2))])/2)
+                # f["$(N)_$(l_0)_$(mg)_q"] = charge_configuration
+                # f["$(N)_$(l_0)_$(mg)_ef"] = electric_field_configuration
+
+                println(N, " ", l_0, " ", mg)
+
+            end
+
+            # scatter(mg_list, efd_list, label = "")
+            # plot!(mg_list, efd_list, label = "EFD")
+            # hline!([0], label = "")
+
+            # plot(mg_list, gap_list, label = "Gap")
+            # title!(@sprintf("l_0/pi = %.5f", l_0 / pi))
+            # display(scatter!(mg_list, gap_list, label = ""))
+
+        end
+
+        # hline!([0], label = "")
+
+    end
+
+    close(f)
 
 end
 

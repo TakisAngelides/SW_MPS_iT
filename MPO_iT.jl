@@ -385,3 +385,24 @@ function get_Schwinger_staggered_Hamiltonian_OpSum(N, x, mu, l_0, lambd)::Sum{Sc
     return H
 
 end
+
+function get_staggered_site_charge_operator(site_idx)
+        
+    op = OpSum()
+    op += "Sz", site_idx
+    op += 0.5*(-1)^(site_idx-1), "Id", 1
+    
+    return op
+
+end
+
+function get_electric_field_link_operator(link, l_0)
+
+    op = OpSum()
+    for i in 1:link
+        op += get_staggered_site_charge_operator(i)
+    end
+    op += l_0, "Id", 1
+
+end
+
