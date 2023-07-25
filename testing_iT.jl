@@ -474,14 +474,14 @@ include("MPO_iT.jl")
 
 #     gap_list = []
     
-#     N_list = [20]
+#     N_list = [8]
 #     l_0_list = [0.125] # LinRange(0, 2*pi, 5)
 #     x = 1.0
 #     lambda = 100.0
 #     ns = 200
 #     val = 1/sqrt(pi)
 #     mg_list = LinRange(-0.5, 0.0, 5)
-#     D = 500
+#     D = 100
 
 #     f = h5open("mass_shift_data.hdf5", "w")
 
@@ -541,11 +541,11 @@ include("MPO_iT.jl")
 
 #             # scatter(mg_list, efd_list, label = "")
 #             # plot!(mg_list, efd_list, label = "EFD")
-#             # hline!([0], label = "")
 
-#             # plot(mg_list, gap_list, label = "Gap")
-#             # title!(@sprintf("l_0/pi = %.5f", l_0 / pi))
-#             # display(scatter!(mg_list, gap_list, label = ""))
+#             plot(mg_list, gap_list, label = "Gap")
+#             hline!([0], label = "")
+#             title!(@sprintf("l_0/pi = %.5f", l_0 / pi))
+#             display(scatter!(mg_list, gap_list, label = ""))
 
 #         end
 
@@ -560,3 +560,79 @@ include("MPO_iT.jl")
 # gather_data()
 
 # ---------------------------------------------------------------------------------
+
+function get_efd_vs_l_0()
+
+    N = 12
+
+    vol = 10
+
+    x = (N/vol)^2
+
+    D = 40
+
+    mass_shift = 1.5 - 1.185401
+
+    mg = 1 - mass_shift
+
+    l_0_list = LinRange(0.8, 0.9, 5)
+
+    lambda = 100.0
+
+    acc = 1e-9
+
+    ns = 50
+
+    r = 1.0
+
+    D_p = 0
+
+    mg_p = 0.0
+
+    output_level = 0
+
+    initial_noise = 0.0
+
+    sites = siteinds("S=1/2", 2*N)
+
+    sweeps = Sweeps(ns, maxdim = D) # , maxdim = D
+
+    efd_list = []
+
+    params = Dict()
+    params["N"] = N 
+    params["x"] = x
+    params["mg"] = mg
+    params["r"] = r
+    params["lambda"] = lambda
+
+    for l_0 in l_0_list
+
+        println(l_0)
+
+        params["l_0"] = l_0
+
+        H = get_SW_OpSum(params)
+        mpo = get_MPO_from_OpSum(H, sites)
+
+        initial_ansatz_0 = randomMPS(sites)
+
+        energy_0, psi_0 = dmrg(mpo, initial_ansatz_0, ishermitian = true, sweeps, outputlevel = output_level) # , maxdim = D
+
+        z_config = get_z_configuration(psi_0, sites)
+        charge_config = get_SW_charge_configuration(z_config)
+        electric_field_config = get_SW_electric_field_configuration(charge_config, l_0)
+        push!(efd_list, real(electric_field_config[3]))
+
+    end
+
+    scatter(l_0_list, efd_list)
+
+end
+
+get_efd_vs_l_0()
+
+
+# ---------------------------------------------------------------------------------
+
+

@@ -1,3 +1,6 @@
 *.h5
 *.dag.*
 *.py
+*png
+*hdf5
+*txt

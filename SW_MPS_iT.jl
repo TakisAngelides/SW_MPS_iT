@@ -18,11 +18,11 @@ first_excited = parse(Bool, ARGS[15]) # If this is true we will compute the firs
 
 if !first_excited
 
-    sweep_observables_file_path = "/lustre/fs23/group/nic/tangelides/SW_Sweep_Observables_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_$(first_excited).txt"
+    sweep_observables_file_path = "/lustre/fs24/group/group/tangelides/SW_Sweep_Observables_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_$(first_excited).txt"
 
-    mps_file_path = "/lustre/fs23/group/nic/tangelides/SW_MPS_States_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_$(first_excited).h5"
+    mps_file_path = "/lustre/fs24/group/group/tangelides/SW_MPS_States_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_$(first_excited).h5"
 
-    previous_mps_file_path = "/lustre/fs23/group/nic/tangelides/SW_MPS_States_iT/N_$(N)_x_$(x)_D_$(D_p)_l0_$(l_0)_mg_$(mg_p)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_$(first_excited).h5"
+    previous_mps_file_path = "/lustre/fs24/group/group/tangelides/SW_MPS_States_iT/N_$(N)_x_$(x)_D_$(D_p)_l0_$(l_0)_mg_$(mg_p)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_$(first_excited).h5"
 
     if isfile(previous_mps_file_path)
         f = h5open(previous_mps_file_path, "r")
@@ -45,7 +45,7 @@ if !first_excited
     if w_1_s_2 == 1
         H = get_MPO_from_OpSum(get_SW_OpSum(params), sites)
     else
-        H = get_MPO_from_OpSum(get_Staggered_OpSum(params), sites)
+        H = get_MPO_from_OpSum(get_Schwinger_staggered_Hamiltonian_OpSum(params), sites)
     end
 
     energy, psi = run_SW_DMRG(sites, params, H, true)
@@ -63,13 +63,13 @@ if !first_excited
 
 else
 
-    sweep_observables_file_path = "/lustre/fs23/group/nic/tangelides/SW_Sweep_Observables_First_Excited_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_$(first_excited).txt"
+    sweep_observables_file_path = "/lustre/fs24/group/cqta/tangelides/SW_Sweep_Observables_First_Excited_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_$(first_excited).txt"
 
-    previous_mps_file_path = "/lustre/fs23/group/nic/tangelides/SW_MPS_First_Excited_States_iT/N_$(N)_x_$(x)_D_$(D_p)_l0_$(l_0)_mg_$(mg_p)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_$(first_excited).h5"
+    previous_mps_file_path = "/lustre/fs24/group/cqta/tangelides/SW_MPS_First_Excited_States_iT/N_$(N)_x_$(x)_D_$(D_p)_l0_$(l_0)_mg_$(mg_p)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_$(first_excited).h5"
 
-    mps_file_path = "/lustre/fs23/group/nic/tangelides/SW_MPS_First_Excited_States_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_$(first_excited).h5"
+    mps_file_path = "/lustre/fs24/group/cqta/tangelides/SW_MPS_First_Excited_States_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_$(first_excited).h5"
 
-    psi_0_file_path = "/lustre/fs23/group/nic/tangelides/SW_MPS_States_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_false.h5"
+    psi_0_file_path = "/lustre/fs24/group/cqta/tangelides/SW_MPS_States_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_false.h5"
     f = h5open(psi_0_file_path, "r")
     psi_0 = read(f, "MPS", MPS)
     energy_0 = read(f, "gs_energy")
@@ -91,7 +91,7 @@ else
     if w_1_s_2 == 1
         H = get_MPO_from_OpSum(get_SW_OpSum(params), sites)
     else
-        H = get_MPO_from_OpSum(get_Staggered_OpSum(params), sites)
+        H = get_MPO_from_OpSum(get_Schwinger_staggered_Hamiltonian_OpSum(params), sites)
     end
 
     energy, psi = run_SW_DMRG(sites, params, H, true)
