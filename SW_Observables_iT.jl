@@ -18,7 +18,7 @@ first_excited = parse(Bool, ARGS[11]) # If this is true we will compute the firs
 if first_excited
     text_file_name = "/SW_Observables_First_Excited_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_$(first_excited).txt"
     
-    mps_file_path = "/lustre/fs23/group/nic/tangelides/SW_MPS_First_Excited_States_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_$(first_excited).h5"
+    mps_file_path = "/lustre/fs24/group/cqta/tangelides/SW_MPS_First_Excited_States_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_$(first_excited).h5"
 
     f_h5 = h5open(mps_file_path, "r")
     psi = read(f_h5, "first_excited_MPS", MPS)
@@ -27,7 +27,7 @@ if first_excited
 else
     text_file_name = "/SW_Observables_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_$(first_excited).txt"
     
-    mps_file_path = "/lustre/fs23/group/nic/tangelides/SW_MPS_States_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_$(first_excited).h5"
+    mps_file_path = "/lustre/fs24/group/cqta/tangelides/SW_MPS_States_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_$(first_excited).h5"
 
     f_h5 = h5open(mps_file_path, "r")
     psi = read(f_h5, "MPS", MPS)
@@ -35,7 +35,7 @@ else
     close(f_h5)
 end
 
-path = "/lustre/fs23/group/nic/tangelides/"
+path = "/lustre/fs24/group/cqta/tangelides/"
 
 path_to_text_file = path*text_file_name
 
