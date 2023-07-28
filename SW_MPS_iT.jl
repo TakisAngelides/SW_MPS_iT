@@ -18,11 +18,11 @@ r = 1.0
 
 if !first_excited
 
-    sweep_observables_file_path = "/lustre/fs24/group/group/tangelides/SW_Sweep_Observables_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_w1s2_$(w_1_s_2)_fe_$(first_excited).txt"
+    sweep_observables_file_path = "/lustre/fs24/group/tangelides/SW_Sweep_Observables_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_w1s2_$(w_1_s_2)_fe_$(first_excited).txt"
 
-    mps_file_path = "/lustre/fs24/group/group/tangelides/SW_MPS_States_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_w1s2_$(w_1_s_2)_fe_$(first_excited).h5"
+    mps_file_path = "/lustre/fs24/group/tangelides/SW_MPS_States_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_w1s2_$(w_1_s_2)_fe_$(first_excited).h5"
 
-    previous_mps_file_path = "/lustre/fs24/group/group/tangelides/SW_MPS_States_iT/N_$(N)_x_$(x)_D_$(D_p)_l0_$(l_0)_mg_$(mg_p)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_w1s2_$(w_1_s_2)_fe_$(first_excited).h5"
+    previous_mps_file_path = "/lustre/fs24/group/tangelides/SW_MPS_States_iT/N_$(N)_x_$(x)_D_$(D_p)_l0_$(l_0)_mg_$(mg_p)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_w1s2_$(w_1_s_2)_fe_$(first_excited).h5"
 
     if isfile(previous_mps_file_path)
         f = h5open(previous_mps_file_path, "r")
