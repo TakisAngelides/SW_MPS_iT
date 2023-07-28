@@ -11,10 +11,9 @@ acc = parse(Float64, ARGS[8]) # Tolerance for stopping condition of the variatio
 ns = parse(Int64, ARGS[9]) # Maximum number of sweeps of the variational algorithm
 D_p = parse(Int64, ARGS[10]) # Bond dimension of ansatz
 mg_p = parse(Float64, ARGS[11]) # m/g of ansatz
-r = parse(Float64, ARGS[12]) # Wilson parameter
-silent = parse(Bool, ARGS[13]) # Whether to compute total charge, energy, average electric field density per sweep
-initial_noise = parse(Float64, ARGS[14]) # Inital noise that decays with each sweep for the DMRG
-first_excited = parse(Bool, ARGS[15]) # If this is true we will compute the first excited state only and not the ground state
+silent = parse(Bool, ARGS[12]) # Whether to compute total charge, energy, average electric field density per sweep
+initial_noise = parse(Float64, ARGS[13]) # Inital noise that decays with each sweep for the DMRG
+first_excited = parse(Bool, ARGS[14]) # If this is true we will compute the first excited state only and not the ground state
 r = 1.0
 
 if !first_excited
