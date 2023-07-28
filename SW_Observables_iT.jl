@@ -96,7 +96,7 @@ open(path_to_text_file, "w") do f
 
     end
 
-    write(f, "Energy, Average Electric Field, Number of Links, Total Charge, Chiral Condensate, Entanglement Entropy (First Line)\n")
+    write(f, "Energy, Average Electric Field, Number of Links, Total Charge, Entanglement Entropy (First Line)\n")
 
     write(f, "z configuration list (Second Line)\n")
 
