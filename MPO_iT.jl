@@ -379,7 +379,7 @@ function get_Schwinger_staggered_Hamiltonian_OpSum(params)::Sum{Scaled{ComplexF6
     x = params["x"]
     mu = params["mu"]
     l_0 = params["l_0"]
-    lambd = params["lambd"]
+    lambd = params["lambda"]
     
     # Build terms of H and at the end we will add them all together
     H::Sum{Scaled{ComplexF64, Prod{Op}}} = OpSum()
