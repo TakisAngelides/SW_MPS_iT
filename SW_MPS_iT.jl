@@ -64,13 +64,13 @@ if !first_excited
 
 else
 
-    sweep_observables_file_path = "$(path_to_tangelides)SW_Sweep_Observables_First_Excited_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_$(first_excited).txt"
+    sweep_observables_file_path = "$(path_to_tangelides)SW_Sweep_Observables_First_Excited_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_w1s2_$(w_1_s_2)_fe_$(first_excited).txt"
 
-    previous_mps_file_path = "$(path_to_tangelides)SW_MPS_First_Excited_States_iT/N_$(N)_x_$(x)_D_$(D_p)_l0_$(l_0)_mg_$(mg_p)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_$(first_excited).hdf5"
+    previous_mps_file_path = "$(path_to_tangelides)SW_MPS_First_Excited_States_iT/N_$(N)_x_$(x)_D_$(D_p)_l0_$(l_0)_mg_$(mg_p)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_w1s2_$(w_1_s_2)_fe_$(first_excited).hdf5"
 
-    mps_file_path = "$(path_to_tangelides)SW_MPS_First_Excited_States_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_$(first_excited).hdf5"
+    mps_file_path = "$(path_to_tangelides)SW_MPS_First_Excited_States_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_w1s2_$(w_1_s_2)_fe_$(first_excited).hdf5"
 
-    psi_0_file_path = "$(path_to_tangelides)SW_MPS_States_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_r_$(r)_w1s2_$(w_1_s_2)_fe_false.hdf5"
+    psi_0_file_path = "$(path_to_tangelides)SW_MPS_States_iT/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_w1s2_$(w_1_s_2)_fe_false.hdf5"
     
     f = h5open(psi_0_file_path, "r")
     psi_0 = read(f, "MPS", MPS)
