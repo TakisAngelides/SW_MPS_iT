@@ -2,7 +2,7 @@ environment = "JULIA_DEPOT_PATH='/lustre/fs24/group/cqta/tangelides/.julia:$JULI
 
 executable = /lustre/fs24/group/cqta/tangelides/julia-1.8.5/bin/julia
 
-arguments = /lustre/fs24/group/cqta/tangelides/SW_MPS_iT/SW_MPS_iT.jl $(N) $(x) $(D) $(mg) $(l_0) $(lambda) $(acc) $(ns) $(D_p) $(mg_p) $(r) $(silent) $(initial_noise) $(w_1_s_2) $(first_excited)
+arguments = /lustre/fs24/group/cqta/tangelides/SW_MPS_iT/SW_MPS_iT.jl $(w_1_s_2) $(N) $(x) $(D) $(mg) $(l_0) $(lambda) $(acc) $(ns) $(D_p) $(mg_p) $(silent) $(initial_noise) $(first_excited)
 
 transfer_input_files = /lustre/fs24/group/cqta/tangelides/SW_MPS_iT/SW_MPS_iT.jl
 
