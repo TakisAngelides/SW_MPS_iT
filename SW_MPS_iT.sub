@@ -17,7 +17,7 @@ request_memory = $(mem)
 
 max_retries = 5
 
-error = /lustre/fs24/group/cqta/tangelides/Logs/$(Cluster)_$(Process)_N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_silent_$(silent)_initial_noise_$(initial_noise)_w1s2_$(w_1_s_2).error
+error = /lustre/fs24/group/cqta/tangelides/Logs/$(Cluster)_$(Process)_N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_silent_$(silent)_initial_noise_$(initial_noise)_w1s2_$(w_1_s_2)_fe_$(first_excited).error
 
 # output = /lustre/fs24/group/cqta/tangelides/Logs/$(Cluster)_$(Process)_N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ns_$(ns)_acc_$(acc)_lam_$(lambda)_silent_$(silent)_initial_noise_$(initial_noise)_w1s2_$(w_1_s_2)_fe_$(first_excited).out                    
 
