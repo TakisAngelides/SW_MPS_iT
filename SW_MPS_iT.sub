@@ -9,7 +9,7 @@ transfer_input_files = /lustre/fs24/group/cqta/tangelides/SW_MPS_iT/SW_MPS_iT.jl
 should_transfer_files = IF_NEEDED
 
 # if no units are specified here, MB are considered
-mem = 3*(4*(2*$(N)*$(D)*$(D)*16*2/1e6)+1000)
+mem = 10*(4*(2*$(N)*$(D)*$(D)*16*2/1e6)+1000)
 
 request_memory = $(mem)
 
