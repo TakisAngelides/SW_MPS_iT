@@ -56,11 +56,7 @@ open(path_to_text_file, "w") do f
 
         electric_field_configuration_list = get_SW_electric_field_configuration(charge_configuration_list, l_0)
         
-        left_edge = Int(N/2)-1
-        
-        right_edge = Int(N/2)
-        
-        middle_efl = electric_field_configuration_list[left_edge:right_edge]
+        middle_efl = electric_field_configuration_list[Int(ceil(N/2))]
         
         num_links = length(middle_efl)
         
