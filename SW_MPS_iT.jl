@@ -42,7 +42,7 @@ if !first_excited
 
     if w_1_s_2 == 1
         params = Dict("first_excited" => first_excited, "initial_noise" => initial_noise, "silent" => silent, "N" => N, "D" => D, "x" => x, "ns" => ns, "lambda" => lambda, "l_0" => l_0, "mg" => mg, "r" => r, "acc" => acc, "sweep_observables_file_path" => sweep_observables_file_path, "previous_mps_file_path" => previous_mps_file_path, "previous_psi" => previous_psi)
-        H = get_MPO_from_OpSum(get_SW_OpSum(params), sites)
+        H = get_MPO_from_OpSum(get_Schwinger_Wilson_OpSum(params), sites)
     else 
         mu = 2*mg*sqrt(x)
         params = Dict("first_excited" => first_excited, "initial_noise" => initial_noise, "silent" => silent, "N" => N, "D" => D, "x" => x, "ns" => ns, "lambda" => lambda, "l_0" => l_0, "mu" => mu, "acc" => acc, "sweep_observables_file_path" => sweep_observables_file_path, "previous_mps_file_path" => previous_mps_file_path, "previous_psi" => previous_psi)
@@ -88,7 +88,7 @@ else
 
     if w_1_s_2 == 1
         params = Dict("Ms" => [psi_0], "w" => abs(energy_0), "first_excited" => first_excited, "initial_noise" => initial_noise, "silent" => silent, "N" => N, "D" => D, "x" => x, "ns" => ns, "lambda" => lambda, "l_0" => l_0, "mg" => mg, "r" => r, "acc" => acc, "sweep_observables_file_path" => sweep_observables_file_path, "previous_mps_file_path" => previous_mps_file_path, "previous_psi" => previous_psi)
-        H = get_MPO_from_OpSum(get_SW_OpSum(params), sites)
+        H = get_MPO_from_OpSum(get_Schwinger_Wilson_OpSum(params), sites)
     else 
         mu = 2*mg*sqrt(x)
         params = Dict("Ms" => [psi_0], "w" => abs(energy_0), "first_excited" => first_excited, "initial_noise" => initial_noise, "silent" => silent, "N" => N, "D" => D, "x" => x, "ns" => ns, "lambda" => lambda, "l_0" => l_0, "mu" => mu, "acc" => acc, "sweep_observables_file_path" => sweep_observables_file_path, "previous_mps_file_path" => previous_mps_file_path, "previous_psi" => previous_psi)

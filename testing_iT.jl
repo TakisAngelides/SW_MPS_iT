@@ -561,78 +561,101 @@ include("MPO_iT.jl")
 
 # ---------------------------------------------------------------------------------
 
-function get_efd_vs_l_0()
+# function get_efd_vs_l_0()
 
-    N = 12
+#     N = 12
 
-    vol = 10
+#     vol = 10
 
-    x = (N/vol)^2
+#     x = (N/vol)^2
 
-    D = 40
+#     D = 40
 
-    mass_shift = 1.5 - 1.185401
+#     mass_shift = 1.5 - 1.185401
 
-    mg = 1 - mass_shift
+#     mg = 1 - mass_shift
 
-    l_0_list = LinRange(0.8, 0.9, 5)
+#     l_0_list = LinRange(0.8, 0.9, 5)
 
-    lambda = 100.0
+#     lambda = 100.0
 
-    acc = 1e-9
+#     acc = 1e-9
 
-    ns = 50
+#     ns = 50
 
-    r = 1.0
+#     r = 1.0
 
-    D_p = 0
+#     D_p = 0
 
-    mg_p = 0.0
+#     mg_p = 0.0
 
-    output_level = 0
+#     output_level = 0
 
-    initial_noise = 0.0
+#     initial_noise = 0.0
 
-    sites = siteinds("S=1/2", 2*N)
+#     sites = siteinds("S=1/2", 2*N)
 
-    sweeps = Sweeps(ns, maxdim = D) # , maxdim = D
+#     sweeps = Sweeps(ns, maxdim = D) # , maxdim = D
 
-    efd_list = []
+#     efd_list = []
 
-    params = Dict()
-    params["N"] = N 
-    params["x"] = x
-    params["mg"] = mg
-    params["r"] = r
-    params["lambda"] = lambda
+#     params = Dict()
+#     params["N"] = N 
+#     params["x"] = x
+#     params["mg"] = mg
+#     params["r"] = r
+#     params["lambda"] = lambda
 
-    for l_0 in l_0_list
+#     for l_0 in l_0_list
 
-        println(l_0)
+#         println(l_0)
 
-        params["l_0"] = l_0
+#         params["l_0"] = l_0
 
-        H = get_SW_OpSum(params)
-        mpo = get_MPO_from_OpSum(H, sites)
+#         H = get_SW_OpSum(params)
+#         mpo = get_MPO_from_OpSum(H, sites)
 
-        initial_ansatz_0 = randomMPS(sites)
+#         initial_ansatz_0 = randomMPS(sites)
 
-        energy_0, psi_0 = dmrg(mpo, initial_ansatz_0, ishermitian = true, sweeps, outputlevel = output_level) # , maxdim = D
+#         energy_0, psi_0 = dmrg(mpo, initial_ansatz_0, ishermitian = true, sweeps, outputlevel = output_level) # , maxdim = D
 
-        z_config = get_z_configuration(psi_0, sites)
-        charge_config = get_SW_charge_configuration(z_config)
-        electric_field_config = get_SW_electric_field_configuration(charge_config, l_0)
-        push!(efd_list, real(electric_field_config[3]))
+#         z_config = get_z_configuration(psi_0, sites)
+#         charge_config = get_SW_charge_configuration(z_config)
+#         electric_field_config = get_SW_electric_field_configuration(charge_config, l_0)
+#         push!(efd_list, real(electric_field_config[3]))
 
-    end
+#     end
 
-    scatter(l_0_list, efd_list)
+#     scatter(l_0_list, efd_list)
 
-end
+# end
 
-get_efd_vs_l_0()
+# get_efd_vs_l_0()
 
 
 # ---------------------------------------------------------------------------------
 
+# Check the Wilson fermions Schwinger model Hamiltonian against my python computed
 
+# N = 4
+# x = 1.0
+# D = 20
+# l_0 = 1.0
+# lambda = 1.0
+# r = 1.0
+# ns = 100
+# mg = 1.0
+
+# params = Dict("N" => N, "l_0" => l_0, "N" => N, "x" => x, "mg" => mg, "r" => r, "lambda" => lambda)
+
+# sites = siteinds("S=1/2", 2*N)
+
+# opsum = get_Schwinger_Wilson_OpSum(params)
+# H = get_MPO_from_OpSum(opsum, sites)
+# initial_ansatz_0 = randomMPS(sites, D)
+# sweeps = Sweeps(ns, maxdim = D)
+# energy, psi = dmrg(H, initial_ansatz_0, sweeps, ishermitian = true, maxdim = D)
+
+# println(energy)
+
+# ---------------------------------------------------------------------------------

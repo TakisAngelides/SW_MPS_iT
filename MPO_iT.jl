@@ -73,6 +73,52 @@ function get_SW_local_z_OpSum(site_idx::Int64)::Sum{Scaled{ComplexF64, Prod{Op}}
 
 end
 
+function get_Schwinger_Wilson_OpSum(params)::Sum{Scaled{ComplexF64, Prod{Op}}}
+
+    """
+    N = number of physical sites
+    """
+
+    N::Int64 = params["N"]
+    l_0::Float64 = params["l_0"]
+    x::Float64 = params["x"]
+    mg::Float64 = params["mg"]
+    r::Float64 = params["r"]
+    lambda::Float64 = params["lambda"]
+
+    H::Sum{Scaled{ComplexF64, Prod{Op}}} = OpSum()
+
+    for n=1:N-1
+        H += 2*x*(r-1),"Sx",2*n,"Sx",2*n+1
+        H += 2*x*(r-1),"Sy",2*n,"Sy",2*n+1
+    end
+
+    for n=1:N-1
+        H += 2*x*(r+1),"Sx",2*n,"Sx",2*n+1
+        H += 2*x*(r+1),"Sy",2*n,"Sy",2*n+1
+    end
+
+    for n=1:N
+        H += 4*(mg*sqrt(x) + x*r),"Sx",2*n-1,"Sx",2*n
+        H += 4*(mg*sqrt(x) + x*r),"Sy",2*n-1,"Sy",2*n
+    end
+
+    for n=1:2*N-2
+        H += 2*l_0*(N-ceil(n/2)),"Sz",n
+    end
+
+    for n=1:2*N
+        for k in n+1:2*N
+            H += 2*(N-ceil(k/2)+lambda),"Sz",n,"Sz",k
+        end
+    end
+
+    H += ((l_0^2)*(N-1) + 0.25*N*(N-1) + lambda*N/2),"Id",1
+
+    return H
+
+end
+
 function get_SW_OpSum(params)::Sum{Scaled{ComplexF64, Prod{Op}}}
 
     """
