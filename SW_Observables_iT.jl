@@ -52,7 +52,7 @@ open(path_to_text_file, "w") do f
 
         charge_configuration_list = get_SW_charge_configuration(z_configuration_list)
         
-        total_charge = sum(charge_configuration_list)
+        total_charge = real(sum(charge_configuration_list))
 
         electric_field_configuration_list = get_SW_electric_field_configuration(charge_configuration_list, l_0)
         
@@ -62,7 +62,7 @@ open(path_to_text_file, "w") do f
         
         avg_E_field = real(mean(middle_efl))
 
-        ee = get_SW_entanglement_entropy(psi)
+        ee = real(get_SW_entanglement_entropy(psi))
 
         # cc = get_SW_chiral_condensate(psi)
 
@@ -72,7 +72,7 @@ open(path_to_text_file, "w") do f
 
         charge_configuration_list = get_staggered_charge_configuration(z_configuration_list)
         
-        total_charge = sum(charge_configuration_list)
+        total_charge = real(sum(charge_configuration_list))
 
         electric_field_configuration_list = get_SW_electric_field_configuration(charge_configuration_list, l_0)
         
@@ -86,13 +86,13 @@ open(path_to_text_file, "w") do f
         
         avg_E_field = real(mean(middle_efl))
 
-        ee = get_SW_entanglement_entropy(psi)
+        ee = real(get_SW_entanglement_entropy(psi))
 
         # cc = get_SW_chiral_condensate(psi)
 
     end
 
-    write(f, "Energy, Average Electric Field, Number of Links, Total Charge, Entanglement Entropy (First Line)\n")
+    write(f, "Energy, EFD, Number of Links, Total Charge, Entanglement Entropy (First Line)\n")
 
     write(f, "z configuration list (Second Line)\n")
 
