@@ -2,6 +2,7 @@
 # include("Observables_iT.jl")
 using ITensors
 using Plots
+using LinearAlgebra
 # using DataStructures
 # using StatsBase
 include("MPO_iT.jl")
@@ -659,3 +660,60 @@ include("MPO_iT.jl")
 # println(energy)
 
 # ---------------------------------------------------------------------------------
+
+N = 4
+l_0 = 1.0
+x = 3.0
+mg = 2.0
+r = 1.0
+lambda = 100.0
+mu = 2*mg*sqrt(x)
+
+sites_w = siteinds("S=1/2", 2*N)
+dag_sites_w = prime(sites_w)
+sites_s = siteinds("S=1/2", N)
+dag_sites_s = prime(sites_s)
+
+# params_wilson = Dict("N" => N, "l_0" => l_0, "x" => x, "mg" => mg, "r" => r, "lambda" => lambda)
+params_staggered = Dict("N" => N, "l_0" => l_0, "x" => x, "mu" => mu, "lambda" => lambda)
+
+# op_w = get_Schwinger_Wilson_OpSum(params_wilson)
+op_s = get_Schwinger_staggered_Hamiltonian_OpSum(params_staggered)
+
+# mpo_w = MPO(op_w, sites_w)
+mpo_s = MPO(op_s, sites_s)
+
+function get_M_w()
+    tmp_w = ITensor(1.)
+    for i = 1:length(mpo_w)
+        tmp_w *= mpo_w[i]
+    end
+    arr_tmp = Array(tmp_w, dag_sites_w..., sites_w...)
+    reshape(arr_tmp, (2^(2*N), 2^(2*N)))
+end
+# M_w = get_M_w()
+function get_M_s()
+    tmp_s = ITensor(1.)
+    for i = 1:length(mpo_s)
+        tmp_s *= mpo_s[i]
+    end
+    arr_tmp = Array(tmp_s, dag_sites_s..., sites_s...)
+    reshape(arr_tmp, (2^(N), 2^(N)))
+end
+M_s = get_M_s()
+
+# evals_w = eigen(M_w).values
+evals_s = eigen(M_s).values
+
+println("Wilson")
+println()
+# println(evals_w)
+println()
+println("Staggered")
+println()
+println(evals_s)
+println()
+
+# ---------------------------------------------------------------------------------
+
+
