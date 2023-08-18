@@ -88,28 +88,45 @@ function get_Schwinger_Wilson_OpSum(params)::Sum{Scaled{ComplexF64, Prod{Op}}}
 
     H::Sum{Scaled{ComplexF64, Prod{Op}}} = OpSum()
 
+    # These have been commented and we follow the S+, S- convention to make it obvious that Sz is conserved and then we can use conserved quantum number MPS
+
+    # for n=1:N-1
+    #     H += 0.5*x*(r-1),"X",2*n,"X",2*n+1
+    #     H += 0.5*x*(r-1),"Y",2*n,"Y",2*n+1
+    # end
+
+    # for n=1:N-1
+    #     H += 0.5*x*(r+1),"X",2*n,"X",2*n+1
+    #     H += 0.5*x*(r+1),"Y",2*n,"Y",2*n+1
+    # end
+
+    # for n=1:N
+    #     H += (mg*sqrt(x) + x*r),"X",2*n-1,"X",2*n
+    #     H += (mg*sqrt(x) + x*r),"Y",2*n-1,"Y",2*n
+    # end
+
     for n=1:N-1
-        H += 2*x*(r-1),"Sx",2*n,"Sx",2*n+1
-        H += 2*x*(r-1),"Sy",2*n,"Sy",2*n+1
+        H += x*(r-1),"S-",2*n,"S+",2*n+1
+        H += x*(r-1),"S+",2*n,"S-",2*n+1
     end
 
     for n=1:N-1
-        H += 2*x*(r+1),"Sx",2*n,"Sx",2*n+1
-        H += 2*x*(r+1),"Sy",2*n,"Sy",2*n+1
+        H += x*(r+1),"S-",2*n,"S+",2*n+1
+        H += x*(r+1),"S+",2*n,"S-",2*n+1
     end
 
     for n=1:N
-        H += 4*(mg*sqrt(x) + x*r),"Sx",2*n-1,"Sx",2*n
-        H += 4*(mg*sqrt(x) + x*r),"Sy",2*n-1,"Sy",2*n
+        H += 2*(mg*sqrt(x) + x*r),"S-",2*n-1,"S+",2*n
+        H += 2*(mg*sqrt(x) + x*r),"S+",2*n-1,"S-",2*n
     end
 
     for n=1:2*N-2
-        H += 2*l_0*(N-ceil(n/2)),"Sz",n
+        H += l_0*(N-ceil(n/2)),"Z",n
     end
 
     for n=1:2*N
         for k in n+1:2*N
-            H += 2*(N-ceil(k/2)+lambda),"Sz",n,"Sz",k
+            H += 0.5*(N-ceil(k/2)+lambda),"Z",n,"Z",k
         end
     end
 
@@ -245,7 +262,7 @@ function get_Ising_OpSum(N::Int64, J::Float64, g_z::Float64, g_x::Float64)::Sum{
 
 end
 
-function get_MPO_from_OpSum(OpSum, sites::Vector{Index{Int64}})::MPO
+function get_MPO_from_OpSum(OpSum, sites)::MPO
 
     return MPO(OpSum, sites)
 
@@ -431,9 +448,13 @@ function get_Schwinger_staggered_Hamiltonian_OpSum(params)::Sum{Scaled{ComplexF6
     H::Sum{Scaled{ComplexF64, Prod{Op}}} = OpSum()
     
     # Kinetic term
+    # for n in 1:N-1
+    #     H += 2*x,"Sy",n,"Sy",n+1 # this is 0.5 * 2 * 2 * x where the 2s account for Sy = 0.5*Y
+    #     H += 2*x,"Sx",n,"Sx",n+1
+    # end
     for n in 1:N-1
-        H += 2*x,"Sy",n,"Sy",n+1 # this is 0.5 * 2 * 2 * x where the 2s account for Sy = 0.5*Y
-        H += 2*x,"Sx",n,"Sx",n+1
+        H += x,"S+",n,"S-",n+1 # this is 0.5 * 2 * 2 * x where the 2s account for Sy = 0.5*Y
+        H += x,"S-",n,"S+",n+1
     end
     
     # Mass term

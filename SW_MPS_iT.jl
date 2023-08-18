@@ -33,9 +33,9 @@ if !first_excited
         close(f)
     else
         if w_1_s_2 == 1
-            sites = siteinds("S=1/2", 2*N)
+            sites = siteinds("S=1/2", 2*N; conserve_qns = true)
         else
-            sites = siteinds("S=1/2", N)
+            sites = siteinds("S=1/2", N; conserve_qns = true)
         end
         previous_psi = randomMPS(sites, D)
     end

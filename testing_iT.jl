@@ -661,59 +661,106 @@ include("MPO_iT.jl")
 
 # ---------------------------------------------------------------------------------
 
-N = 4
-l_0 = 1.0
-x = 3.0
-mg = 2.0
-r = 1.0
-lambda = 100.0
-mu = 2*mg*sqrt(x)
+# N = 4
+# l_0 = 1.0
+# x = 3.0
+# mg = 2.0
+# r = 1.0
+# lambda = 100.0
+# mu = 2*mg*sqrt(x)
 
-sites_w = siteinds("S=1/2", 2*N)
-dag_sites_w = prime(sites_w)
-sites_s = siteinds("S=1/2", N)
-dag_sites_s = prime(sites_s)
+# sites_w = siteinds("S=1/2", 2*N)
+# dag_sites_w = prime(sites_w)
+# sites_s = siteinds("S=1/2", N)
+# dag_sites_s = prime(sites_s)
 
-# params_wilson = Dict("N" => N, "l_0" => l_0, "x" => x, "mg" => mg, "r" => r, "lambda" => lambda)
-params_staggered = Dict("N" => N, "l_0" => l_0, "x" => x, "mu" => mu, "lambda" => lambda)
+# # params_wilson = Dict("N" => N, "l_0" => l_0, "x" => x, "mg" => mg, "r" => r, "lambda" => lambda)
+# params_staggered = Dict("N" => N, "l_0" => l_0, "x" => x, "mu" => mu, "lambda" => lambda)
 
-# op_w = get_Schwinger_Wilson_OpSum(params_wilson)
-op_s = get_Schwinger_staggered_Hamiltonian_OpSum(params_staggered)
+# # op_w = get_Schwinger_Wilson_OpSum(params_wilson)
+# op_s = get_Schwinger_staggered_Hamiltonian_OpSum(params_staggered)
 
-# mpo_w = MPO(op_w, sites_w)
-mpo_s = MPO(op_s, sites_s)
+# # mpo_w = MPO(op_w, sites_w)
+# mpo_s = MPO(op_s, sites_s)
 
-function get_M_w()
-    tmp_w = ITensor(1.)
-    for i = 1:length(mpo_w)
-        tmp_w *= mpo_w[i]
-    end
-    arr_tmp = Array(tmp_w, dag_sites_w..., sites_w...)
-    reshape(arr_tmp, (2^(2*N), 2^(2*N)))
-end
-# M_w = get_M_w()
-function get_M_s()
-    tmp_s = ITensor(1.)
-    for i = 1:length(mpo_s)
-        tmp_s *= mpo_s[i]
-    end
-    arr_tmp = Array(tmp_s, dag_sites_s..., sites_s...)
-    reshape(arr_tmp, (2^(N), 2^(N)))
-end
-M_s = get_M_s()
+# function get_M_w()
+#     tmp_w = ITensor(1.)
+#     for i = 1:length(mpo_w)
+#         tmp_w *= mpo_w[i]
+#     end
+#     arr_tmp = Array(tmp_w, dag_sites_w..., sites_w...)
+#     reshape(arr_tmp, (2^(2*N), 2^(2*N)))
+# end
+# # M_w = get_M_w()
+# function get_M_s()
+#     tmp_s = ITensor(1.)
+#     for i = 1:length(mpo_s)
+#         tmp_s *= mpo_s[i]
+#     end
+#     arr_tmp = Array(tmp_s, dag_sites_s..., sites_s...)
+#     reshape(arr_tmp, (2^(N), 2^(N)))
+# end
+# M_s = get_M_s()
 
-# evals_w = eigen(M_w).values
-evals_s = eigen(M_s).values
+# # evals_w = eigen(M_w).values
+# evals_s = eigen(M_s).values
 
-println("Wilson")
-println()
-# println(evals_w)
-println()
-println("Staggered")
-println()
-println(evals_s)
-println()
+# println("Wilson")
+# println()
+# # println(evals_w)
+# println()
+# println("Staggered")
+# println()
+# println(evals_s)
+# println()
 
 # ---------------------------------------------------------------------------------
+
+# N = 8 # -13.71
+# x = 0.7
+# D = 20
+# l_0 = 0.8
+# lambda = 0.0
+# r = 1.0
+# ns = 100
+# mg = 0.01
+# mu = 2*sqrt(x)*mg
+
+# params = Dict("N" => N, "l_0" => l_0, "N" => N, "x" => x, "mg" => mg, "r" => r, "lambda" => lambda, "mu" => mu)
+
+# sites = siteinds("S=1/2", 2*N; conserve_qns = true)
+
+# # opsum = get_Schwinger_Wilson_OpSum(params)
+# opsum = get_Schwinger_staggered_Hamiltonian_OpSum(params)
+# H = get_MPO_from_OpSum(opsum, sites)
+
+# state = [isodd(n) ? "0" : "1" for n = 1:2*N]
+# psi0 = productMPS(sites, state)
+# # println(psi0[1])
+
+# sweeps = Sweeps(ns, maxdim = D)
+
+# function get_total_z_mpo()
+#     total_z = OpSum()
+#     for n in 1:2*N
+#         total_z += 2,"Sz",n
+#     end 
+#     total_z = MPO(total_z, sites)
+# end
+# total_z = get_total_z_mpo()
+
+# # println(totalqn(psi0))
+# energy, gs = dmrg(H, psi0, sweeps, ishermitian = true, maxdim = D)
+# println(energy)
+# println(totalqn(gs))
+# # println(inner(dag(prime(gs)), total_z, gs))
+
+# # println(sites[1])
+
+
+
+
+# ---------------------------------------------------------------------------------
+
 
 

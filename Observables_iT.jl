@@ -27,7 +27,7 @@ function get_staggered_charge_configuration(z_configuration_list::Vector{Complex
     
     for k = 1:N_spin
     
-        charge_on_site_k::ComplexF64 = 0.5*((-1)^(k) + z_configuration_list[k])
+        charge_on_site_k::ComplexF64 = 0.5*((-1)^(k-1) + z_configuration_list[k])
     
         append!(charge_configuration_list, charge_on_site_k)
     end
@@ -57,11 +57,11 @@ end
 
 function get_SW_electric_field_configuration(charge_configuration_list::Vector{ComplexF64}, l_0::Float64)::Vector{ComplexF64}
 
-    N::Int64 = length(charge_configuration_list)
+    N_charges::Int64 = length(charge_configuration_list)
 
     electric_field_configuration_list::Vector{ComplexF64} = []
 
-    for i in 1:N-1
+    for i in 1:N_charges-1
         
         L_n::ComplexF64 = l_0 + sum(charge_configuration_list[1:i])
         

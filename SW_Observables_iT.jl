@@ -76,7 +76,7 @@ open(path_to_text_file, "w") do f
 
         electric_field_configuration_list = get_SW_electric_field_configuration(charge_configuration_list, l_0)
         
-        middle_link = Int(ceil(N/2))
+        middle_link = Int(ceil((N-1)/2))
                 
         middle_efl = electric_field_configuration_list[middle_link-2:middle_link+1]
         
