@@ -68,7 +68,7 @@ function ITensors.measure!(o::my_observer; kwargs...)
 
 end
 
-function DMRG(H, sites::Vector{Index{Int64}}, params::Dict, ishermitian::Bool)::Tuple{Float64, MPS}
+function DMRG(H, sites, params::Dict, ishermitian::Bool)::Tuple{Float64, MPS}
 
     """
     ns = number of sweeps
