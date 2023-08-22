@@ -36,7 +36,7 @@ function get_staggered_charge_configuration(z_configuration_list::Vector{Complex
 
 end
 
-function get_z_configuration(psi::MPS, sites::Vector{Index{Int64}})::Vector{ComplexF64}
+function get_z_configuration(psi::MPS, sites)::Vector{ComplexF64}
 
     N_spin::Int64 = length(psi)
 
@@ -78,7 +78,7 @@ function get_SW_entanglement_entropy(psi::MPS)::Float64
 
     half_of_spin_chain::Int64 = Int(N_spin/2)
 
-    sites::Vector{Index{Int64}} = siteinds(psi)
+    sites = siteinds(psi)
 
     orthogonalize!(psi, half_of_spin_chain)
 
@@ -101,7 +101,7 @@ function get_SW_chiral_condensate(psi::MPS)::ComplexF64
     N::Int64 = Int(N_spin/2)
 
     cc_opsum::Sum{Scaled{ComplexF64, Prod{Op}}} = get_SW_chiral_condensate_OpSum(N)
-    sites::Vector{Index{Int64}} = siteinds(psi)
+    sites = siteinds(psi)
     cc_mpo::MPO = get_MPO_from_OpSum(cc_opsum, sites)
     
     return inner(psi', cc_mpo, psi)
@@ -114,7 +114,7 @@ function get_particle_number(psi::MPS)::ComplexF64
     N::Int64 = Int(N_spin/2)
 
     pn_opsum::Sum{Scaled{ComplexF64, Prod{Op}}} = get_particle_number_OpSum(N)
-    sites::Vector{Index{Int64}} = siteinds(psi)
+    sites = siteinds(psi)
     pn_mpo::MPO = get_MPO_from_OpSum(pn_opsum, sites)
     
     return inner(psi', pn_mpo, psi)
