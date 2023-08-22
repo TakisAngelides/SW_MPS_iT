@@ -5,7 +5,7 @@ include("MPO_iT.jl")
 mutable struct my_observer <: AbstractObserver
     energy_tol::Float64
     last_energy::Float64
-    sites::Vector{Index{Int64}}
+    sites
     params::Dict
 end
 
