@@ -36,17 +36,17 @@ function get_staggered_charge_configuration(z_configuration_list::Vector{Complex
 
 end
 
-function get_z_configuration(psi::MPS, sites)::Vector{ComplexF64}
+function get_z_configuration(psi::MPS, sites)
 
     N_spin::Int64 = length(psi)
 
-    z_configuration_list::Vector{ComplexF64} = []
+    z_configuration_list = []
     
     for i=1:N_spin
     
-        z_OpSum::Sum{Scaled{ComplexF64, Prod{Op}}} = get_SW_local_z_OpSum(i)
+        z_OpSum = get_SW_local_z_OpSum(i)
     
-        z_mpo::MPO = get_MPO_from_OpSum(z_OpSum, sites)
+        z_mpo = get_MPO_from_OpSum(z_OpSum, sites)
     
         append!(z_configuration_list, inner(psi', z_mpo, psi))
     end

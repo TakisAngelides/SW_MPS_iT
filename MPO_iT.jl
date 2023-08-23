@@ -16,7 +16,7 @@ function get_SW_charge_configuration(z_configuration_list::Vector{ComplexF64})::
 
 end
 
-function get_z_configuration(psi::MPS, sites::Vector{Index{Int64}})::Vector{ComplexF64}
+function get_z_configuration(psi::MPS, sites)::Vector{ComplexF64}
 
     N_spin::Int64 = length(psi)
 
