@@ -55,11 +55,11 @@ function get_z_configuration(psi::MPS, sites)
 
 end
 
-function get_SW_electric_field_configuration(charge_configuration_list::Vector{ComplexF64}, l_0::Float64)::Vector{ComplexF64}
+function get_SW_electric_field_configuration(charge_configuration_list, l_0::Float64)
 
     N_charges::Int64 = length(charge_configuration_list)
 
-    electric_field_configuration_list::Vector{ComplexF64} = []
+    electric_field_configuration_list = []
 
     for i in 1:N_charges-1
         
