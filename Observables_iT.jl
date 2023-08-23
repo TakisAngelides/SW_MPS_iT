@@ -1,16 +1,16 @@
 include("MPO_iT.jl")
 using ITensors
 
-function get_SW_charge_configuration(z_configuration_list::Vector{ComplexF64})::Vector{ComplexF64}
+function get_SW_charge_configuration(z_configuration_list)
 
     N_spin::Int64 = length(z_configuration_list)
     N::Int64 = Int(N_spin/2)
 
-    charge_configuration_list::Vector{ComplexF64} = []
+    charge_configuration_list = []
     
     for k=1:N
     
-        charge_on_site_k::ComplexF64 = 0.5*(z_configuration_list[2*k-1] + z_configuration_list[2*k])
+        charge_on_site_k = 0.5*(z_configuration_list[2*k-1] + z_configuration_list[2*k])
     
         append!(charge_configuration_list, charge_on_site_k)
     end
