@@ -38,7 +38,7 @@ if !first_excited
             sites = siteinds("S=1/2", N; conserve_qns = true)
         end
         state = [isodd(n) ? "0" : "1" for n = 1:length(sites)]
-        previous_psi = productMPS(sites, state)
+        previous_psi = randomMPS(sites, state; linkdims = D)
     end
 
     if w_1_s_2 == 1
@@ -85,7 +85,7 @@ else
         close(f)
     else
         state = [isodd(n) ? "1" : "0" for n = 1:length(sites)]
-        previous_psi = productMPS(sites, state)
+        previous_psi = randomMPS(sites, state; linkdims = D)
     end
 
     if w_1_s_2 == 1
