@@ -47,7 +47,8 @@ if !first_excited
     else 
         mu = 2*mg*sqrt(x)
         params = Dict("first_excited" => first_excited, "initial_noise" => initial_noise, "silent" => silent, "N" => N, "D" => D, "x" => x, "ns" => ns, "lambda" => lambda, "l_0" => l_0, "mu" => mu, "acc" => acc, "sweep_observables_file_path" => sweep_observables_file_path, "previous_mps_file_path" => previous_mps_file_path, "previous_psi" => previous_psi)
-        H = get_MPO_from_OpSum(get_Schwinger_staggered_Hamiltonian_OpSum(params), sites)
+        # H = get_MPO_from_OpSum(get_Schwinger_staggered_Hamiltonian_OpSum(params), sites)
+        H = get_Schwinger_staggered_Hamiltonian_MPO(params, sites)
     end
 
     energy, psi = run_SW_DMRG(sites, params, H, true)
@@ -94,7 +95,8 @@ else
     else 
         mu = 2*mg*sqrt(x)
         params = Dict("Ms" => [psi_0], "w" => abs(energy_0), "first_excited" => first_excited, "initial_noise" => initial_noise, "silent" => silent, "N" => N, "D" => D, "x" => x, "ns" => ns, "lambda" => lambda, "l_0" => l_0, "mu" => mu, "acc" => acc, "sweep_observables_file_path" => sweep_observables_file_path, "previous_mps_file_path" => previous_mps_file_path, "previous_psi" => previous_psi)
-        H = get_MPO_from_OpSum(get_Schwinger_staggered_Hamiltonian_OpSum(params), sites)
+        # H = get_MPO_from_OpSum(get_Schwinger_staggered_Hamiltonian_OpSum(params), sites)
+        H = get_Schwinger_staggered_Hamiltonian_MPO(params, sites)
     end
 
     energy, psi = run_SW_DMRG(sites, params, H, true)

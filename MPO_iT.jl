@@ -533,3 +533,93 @@ function get_electric_field_link_operator(link, l_0)
 
 end
 
+function get_Schwinger_staggered_Hamiltonian_MPO(params, sites)::MPO
+
+    N = params["N"]
+    x = params["x"]
+    mu = params["mu"]
+    l_0 = params["l_0"]
+
+    ## construct the MPO QN subspace ##
+    H = MPO(N)
+    Link = []
+    ## 1 generate all the link space
+    for n = 1:N-1
+        ln = Index(QN() => 1, QN("Sz", -2) => 1, QN("Sz", 2) => 1, QN("Sz", 0) => 1, QN("Sz", 0) => 1; tags = join(["Link,l=", string(n)]))
+        push!(Link, ln)
+    end
+    ## 1 generate the local tensor subspace of MPO, where lr is the right link and ll is the left link
+    lr = Link[1]
+    lp = prime(sites[1])
+    lpdag = dag(sites[1])
+    H[1] = ITensor(lr, lp, lpdag)
+    h02 = 0.5*mu + 0.25 + (0.25+l_0)*(N-1)
+    ## (1) H[1][1] : h_{2}*\sigma^{z} + const*I
+    H[1][lr=>1,lp=>1,lpdag=>1] = h02*1 + (0.5*l_0+0.125*N)*N+(N-1)*l_0*l_0
+    H[1][lr=>1,lp=>2,lpdag=>2] = -1*h02 + (0.5*l_0+0.125*N)*N+(N-1)*l_0*l_0
+    ## (2) H[1][2] : \sigma^{+}
+    H[1][lr=>2,lp=>1,lpdag=>2] = 1.
+    ## (3) H[1][3] : \sigma^{-}
+    H[1][lr=>3,lp=>2,lpdag=>1] = 1.
+    ## (4) H[1][4] : \sigma^{z}
+    H[1][lr=>4,lp=>1,lpdag=>1] = 1.
+    H[1][lr=>4,lp=>2,lpdag=>2] = -1.
+    ## (5) H[1][5] = I
+    H[1][lr=>5,lp=>1,lpdag=>1] = 1.
+    H[1][lr=>5,lp=>2,lpdag=>2] = 1.
+
+    for n = 2:N-1
+        ll = dag(Link[n-1])
+        lr = Link[n]
+        lp = prime(sites[n])
+        lpdag = dag(sites[n])
+        H[n] = ITensor(ll, lr, lp, lpdag)
+        hn1 = 0.5*(N-n)
+        hn2 = -0.5*mu*(-1)^n + 0.125*(1-(-1)^n) + (0.25+l_0)*(N-n)
+        ## (1) H[n][1,1] = I
+        H[n][ll=>1,lr=>1,lp=>1,lpdag=>1] = 1.
+        H[n][ll=>1,lr=>1,lp=>2,lpdag=>2] = 1.
+        ## (2) H[n][2,1] = x * \sigma^{-}
+        H[n][ll=>2,lr=>1,lp=>2,lpdag=>1] = x
+        ## (3) H[n][3,1] = x * \sigma^{+}
+        H[n][ll=>3,lr=>1,lp=>1,lpdag=>2] = x
+        ## (4) H[n][4,1] = h_{1} * \sigma^{z}
+        H[n][ll=>4,lr=>1,lp=>1,lpdag=>1] = hn1
+        H[n][ll=>4,lr=>1,lp=>2,lpdag=>2] = -hn1
+        ## (5) H[n][5,1] = h_{2} * \sigma^{z}
+        H[n][ll=>5,lr=>1,lp=>1,lpdag=>1] = hn2
+        H[n][ll=>5,lr=>1,lp=>2,lpdag=>2] = -hn2
+        ## (6) H[n][5,2] = \sigma^{+}
+        H[n][ll=>5,lr=>2,lp=>1,lpdag=>2] = 1.
+        ## (7) H[n][5,3] = \sigma^{-}
+        H[n][ll=>5,lr=>3,lp=>2,lpdag=>1] = 1.
+        ## (8) H[n][5,4] = \sigma^{z}
+        H[n][ll=>5,lr=>4,lp=>1,lpdag=>1] = 1.
+        H[n][ll=>5,lr=>4,lp=>2,lpdag=>2] = -1.
+        ## (9) H[n][5,5] = Id
+        H[n][ll=>5,lr=>5,lp=>1,lpdag=>1] = 1.
+        H[n][ll=>5,lr=>5,lp=>2,lpdag=>2] = 1.
+        ## (10) H[n][4,4] = Id
+        H[n][ll=>4,lr=>4,lp=>1,lpdag=>1] = 1.
+        H[n][ll=>4,lr=>4,lp=>2,lpdag=>2] = 1.
+    end
+
+    ll = dag(Link[N-1])
+    lp = prime(sites[N])
+    lpdag = dag(sites[N])
+    H[N] = ITensor(ll, lp, lpdag)
+    hN2 = -0.5*mu
+    ## (1) H[N][1] = I
+    H[N][ll=>1,lp=>1,lpdag=>1] = 1.
+    H[N][ll=>1,lp=>2,lpdag=>2] = 1.
+    ## (2) H[N][2] = x * \sigma^{-}
+    H[N][ll=>2,lp=>2,lpdag=>1] = x
+    ## (3) H[N][3] = x * \sigma^{+}
+    H[N][ll=>3,lp=>1,lpdag=>2] = x
+    ## (4) H[N][5] = h_{2} * \sigma^{z}
+    H[N][ll=>5,lp=>1,lpdag=>1] = hN2
+    H[N][ll=>5,lp=>2,lpdag=>2] = -hN2
+
+    return H
+
+end
