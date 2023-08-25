@@ -19,15 +19,15 @@ function get_SW_charge_configuration(z_configuration_list)
 
 end
 
-function get_staggered_charge_configuration(z_configuration_list::Vector{ComplexF64})::Vector{ComplexF64}
+function get_staggered_charge_configuration(z_configuration_list)
 
     N_spin::Int64 = length(z_configuration_list)
 
-    charge_configuration_list::Vector{ComplexF64} = []
+    charge_configuration_list = []
     
     for k = 1:N_spin
     
-        charge_on_site_k::ComplexF64 = 0.5*((-1)^(k-1) + z_configuration_list[k])
+        charge_on_site_k = 0.5*((-1)^(k-1) + z_configuration_list[k])
     
         append!(charge_configuration_list, charge_on_site_k)
     end
