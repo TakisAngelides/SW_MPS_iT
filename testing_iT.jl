@@ -3,6 +3,7 @@
 using ITensors
 using Plots
 using LinearAlgebra
+using Statistics
 # using DataStructures
 # using StatsBase
 include("MPO_iT.jl")
@@ -716,51 +717,627 @@ include("MPO_iT.jl")
 
 # ---------------------------------------------------------------------------------
 
-# N = 8 # -13.71
-# x = 0.7
+# N = 20
+# vol = 30
+# x = (N/vol)^2
 # D = 20
-# l_0 = 0.8
+# l_0 = 0.01
 # lambda = 0.0
 # r = 1.0
-# ns = 100
-# mg = 0.01
-# mu = 2*sqrt(x)*mg
+# ns = 5
 
-# params = Dict("N" => N, "l_0" => l_0, "N" => N, "x" => x, "mg" => mg, "r" => r, "lambda" => lambda, "mu" => mu)
+# # mu = 2*sqrt(x)*mg
 
+# mg_list = LinRange(-1.5, 0, 5)
+# efd = []
 # sites = siteinds("S=1/2", 2*N; conserve_qns = true)
+# pn_mpo = get_MPO_from_OpSum(get_particle_number_OpSum(N), sites)
+# pn = []
 
-# # opsum = get_Schwinger_Wilson_OpSum(params)
-# opsum = get_Schwinger_staggered_Hamiltonian_OpSum(params)
-# H = get_MPO_from_OpSum(opsum, sites)
+# for mg in mg_list
 
-# state = [isodd(n) ? "0" : "1" for n = 1:2*N]
-# psi0 = productMPS(sites, state)
-# # println(psi0[1])
+#     mu = 2*sqrt(x)*mg
 
-# sweeps = Sweeps(ns, maxdim = D)
+#     params = Dict("N" => N, "l_0" => l_0, "N" => N, "x" => x, "mg" => mg, "r" => r, "lambda" => lambda, "mu" => mu) # , "mu" => mu
 
-# function get_total_z_mpo()
-#     total_z = OpSum()
-#     for n in 1:2*N
-#         total_z += 2,"Sz",n
-#     end 
-#     total_z = MPO(total_z, sites)
+#     # opsum = get_Schwinger_Wilson_OpSum(params)
+#     opsum = get_Schwinger_staggered_Hamiltonian_OpSum(params)
+#     H = get_MPO_from_OpSum(opsum, sites)
+
+#     state = [isodd(n) ? "0" : "1" for n = 1:2*N]
+#     psi0 = randomMPS(sites, state, linkdims = D)
+
+#     sweeps = Sweeps(ns, maxdim = D)
+
+#     # function get_total_z_mpo()
+#     #     total_z = OpSum()
+#     #     for n in 1:2*N
+#     #         total_z += 2,"Sz",n
+#     #     end 
+#     #     total_z = MPO(total_z, sites)
+#     # end
+#     # total_z = get_total_z_mpo()
+
+#     # println(totalqn(psi0))
+#     energy, gs = dmrg(H, psi0, sweeps, ishermitian = true, maxdim = D, outputlevel = 1)
+#     # println(energy)
+#     # println(totalqn(gs))
+#     # println(inner(gs', total_z, gs))
+#     # println(inds(psi0[10]))
+
+#     z_config = get_z_configuration(gs, sites)
+#     q_config = real(get_SW_charge_configuration(z_config))
+#     efd_config = real(get_SW_electric_field_configuration(q_config, l_0))
+
+#     # println(q_config[1])
+#     # println(efd_config)
+#     push!(efd, efd_config[div(N, 2)])
+#     push!(pn, real(inner(gs', pn_mpo, gs)))
+
 # end
-# total_z = get_total_z_mpo()
 
-# # println(totalqn(psi0))
-# energy, gs = dmrg(H, psi0, sweeps, ishermitian = true, maxdim = D)
-# println(energy)
-# println(totalqn(gs))
-# # println(inner(dag(prime(gs)), total_z, gs))
+# p1 = plot(mg_list, efd)
+# title!("EFD")
+# display(p1)
+# p2 = plot(mg_list, pn)
+# title!("Particle Number")
+# display(p2)
 
-# # println(sites[1])
+# ---------------------------------------------------------------------------------
 
+# N = 8
+# vol = 30
+# x = (N/vol)^2
+# D = 20
+# lambda = 0.0
+# r = 1.0
+# ns = 20
+# l_0 = 0.1
+# mg_list = LinRange(-1, 0, 2)
+# gap = []
+# efd = []
 
+# for mg in mg_list
+
+#     mu = 2*sqrt(x)*mg
+
+#     params = Dict("N" => N, "l_0" => l_0, "N" => N, "x" => x, "mg" => mg, "r" => r, "lambda" => lambda, "mu" => mu)
+
+#     sites = siteinds("S=1/2", 2*N; conserve_qns = true)
+
+#     opsum = get_Schwinger_Wilson_OpSum(params)
+#     # opsum = get_Schwinger_staggered_Hamiltonian_OpSum(params)
+
+#     H = get_MPO_from_OpSum(opsum, sites)
+
+#     state = [isodd(n) ? "0" : "1" for n = 1:2*N]
+#     psi0 = productMPS(sites, state)
+
+#     sweeps = Sweeps(ns, maxdim = D)
+
+#     energy, gs = dmrg(H, psi0, sweeps, ishermitian = true, maxdim = D)
+
+#     z_configuration_list = get_z_configuration(gs, sites)
+
+#     charge_configuration_list = get_SW_charge_configuration(z_configuration_list)
+    
+#     total_charge = real(sum(charge_configuration_list))
+
+#     electric_field_configuration_list = get_SW_electric_field_configuration(charge_configuration_list, l_0)
+    
+#     middle_efl = electric_field_configuration_list[Int(ceil(N/2))]
+    
+#     num_links = length(middle_efl)
+    
+#     avg_E_field = real(mean(middle_efl))
+#     push!(efd, avg_E_field)
+
+#     Ms = [gs]
+#     w = abs(energy)
+
+#     state = [isodd(n) ? "1" : "0" for n = 1:2*N]
+#     psi1 = productMPS(sites, state)
+
+#     energy_1, psi_1 = dmrg(H, Ms, psi1, sweeps, weight = w, ishermitian = true, maxdim = D)
+
+#     push!(gap, energy_1 - energy - 1/sqrt(pi))
+
+# end
+
+# # scatter(mg_list, gap, label = "gap")
+# # scatter(mg_list, efd, label = "efd")
+# # hline!([0])
+
+# println("EFD: ", efd)
+# println("Gap: ", gap)
 
 
 # ---------------------------------------------------------------------------------
 
+# using ITensors
+# using ITensors.HDF5
+
+# let
+    
+#     N = 10
+#     x = 1
+#     mg = -0.07
+#     bf = 0. #background field
+#     mu = 2*mg*sqrt(x)
+#     Dmax = 20
+#     nsweeps = 80
+#     weight = 100
+#     K = 1
+
+#     params = Dict("N" => N, "l_0" => bf, "x" => x, "mg" => mg, "lambda" => 0, "mu" => mu)
 
 
+#     sites = siteinds("S=1/2", N; conserve_qns = true)
+
+#     H = get_Schwinger_staggered_Hamiltonian_MPO(params, sites)
+
+#     psi_i = []
+#     for m = 1:K
+#         state = [isodd(n) ? "Dn" : "Up" for n=1:N]
+#         temp_psi_i = randomMPS(sites, state; linkdims=4)
+#         push!(psi_i, temp_psi_i)
+#         @show flux(psi_i[m])
+#     end
+
+#     sweeps = Sweeps(nsweeps, maxdim = Dmax)
+
+#     H_mine = get_Schwinger_staggered_Hamiltonian_OpSum(params)
+#     H_mine = get_MPO_from_OpSum(H_mine, sites)
+
+#     energy, gs = dmrg(H, psi_i[1], sweeps, ishermitian = true, maxdim = Dmax)
+#     energy_mine, gs = dmrg(H_mine, psi_i[1], sweeps, ishermitian = true, maxdim = Dmax)
+
+#     println(energy) # + (0.5*bf+0.125*N)*N+(N-1)*bf*bf
+#     println(energy_mine)
+
+#    return
+# end
+
+
+# ---------------------------------------------------------------------------------
+
+# function get_gauge_invariant_subspace_projector_MPO(max_link_site_dim, sites, external_charges)
+
+#     n = length(sites) # this is 2N-1 where N is the number of matter sites, i.e. we dont have a link to the right of the last matter site
+
+#     links = [Index(max_link_site_dim, "Link,l=$j") for j in 1:n-1]
+#     mpo = MPO(sites)
+
+#     for site_idx in 1:n
+
+#         # case of matter sites
+#         if isodd(site_idx)
+
+#             matter_idx = div(site_idx + 1, 2) # this ranges from 1 to N
+            
+#             if site_idx == 1
+
+#                 u, d, r = prime(sites[site_idx]), dag(sites[site_idx]), links[site_idx] # indices up, down and right
+#                 mpo[site_idx] = ITensor(Int64, u, d, r)
+                
+#                 for uval in 1:2
+#                     for rval in 1:max_link_site_dim
+
+#                         # Convert index values to the physical quantities based on q_n = (Z_n + (-1)^(matter_idx-1))/2
+#                         if isodd(matter_idx)
+#                             if uval == 1
+#                                 q = 1
+#                             else
+#                                 q = 0
+#                             end
+#                         else
+#                             if uval == 1
+#                                 q = 0
+#                             else
+#                                 q = -1
+#                             end
+#                         end
+#                         L_n = rval - 1 - max_link_site_dim # this will now range from -max_link_site_dim to +max_link_site_dim
+
+#                         # Check for Gauss law
+#                         if L_n == q + external_charges[matter_idx]
+#                             mpo[site_idx][u => uval, d => uval, r => rval] = 1 # d => uval makes this a delta function on the physical legs 
+#                         end
+#                     end
+#                 end
+
+#             elseif site_idx == n
+
+#                 u, d, l = prime(sites[site_idx]), dag(sites[site_idx]), links[site_idx-1] # indices up, down and left
+#                 mpo[site_idx] = ITensor(Int64, u, d, l)
+                
+#                 for uval in 1:2
+#                     for lval in 1:max_link_site_dim
+
+#                         # Convert index values to the physical quantities based on q_n = (Z_n + (-1)^(matter_idx-1))/2
+#                         if isodd(matter_idx)
+#                             if uval == 1
+#                                 q = 1
+#                             else
+#                                 q = 0
+#                             end
+#                         else
+#                             if uval == 1
+#                                 q = 0
+#                             else
+#                                 q = -1
+#                             end
+#                         end
+#                         L_nminus1 = lval - 1 - max_link_site_dim # this will now range from -max_link_site_dim to +max_link_site_dim
+
+#                         # Check for Gauss law
+#                         if -L_nminus1 == q + external_charges[matter_idx]
+#                             mpo[site_idx][u => uval, d => uval, l => lval] = 1 
+#                         end
+#                     end
+#                 end
+
+#             else
+
+#                 u, d, l, r = prime(sites[site_idx]), dag(sites[site_idx]), links[site_idx-1], links[site_idx] # indices up, down and left
+#                 mpo[site_idx] = ITensor(Int64, u, d, l, r)
+                
+#                 for uval in 1:2
+#                     for lval in 1:max_link_site_dim
+#                         for rval in 1:max_link_site_dim
+
+#                             # Convert index values to the physical quantities based on q_n = (Z_n + (-1)^(matter_idx-1))/2
+#                             if isodd(matter_idx)
+#                                 if uval == 1
+#                                     q = 1
+#                                 else
+#                                     q = 0
+#                                 end
+#                             else
+#                                 if uval == 1
+#                                     q = 0
+#                                 else
+#                                     q = -1
+#                                 end
+#                             end
+#                             L_nminus1 = lval - 1 - max_link_site_dim # this will now range from -max_link_site_dim to +max_link_site_dim
+#                             L_n = rval - 1 - max_link_site_dim
+
+#                             # Check for Gauss law L_n - L_n-1 = q_n + Q_n
+#                             if L_n == L_nminus1 + q + external_charges[matter_idx]
+#                                 mpo[site_idx][u => uval, d => uval, l => lval, r => rval] = 1
+#                             end
+
+#                         end
+#                     end
+#                 end
+
+#             end
+
+#         # case of gauge fields
+#         else
+
+#             u, d, l, r = prime(sites[site_idx]), dag(sites[site_idx]), links[site_idx-1], links[site_idx] # indices up, down and left
+#             mpo[site_idx] = ITensor(Int64, u, d, l, r)
+            
+#             for uval in 1:2
+#                 for lval in 1:max_link_site_dim
+#                     mpo[site_idx][u => uval, d => uval, l => lval, r => lval] = 1 # this is just delta on the physical legs and a delta on the virtual legs
+#                 end
+#             end
+
+#         end
+
+#     end
+
+#     return mpo
+
+# end
+
+# function getQLMSites(N::Int)
+#     Ntotal = 2 * N - 1
+#     s = Vector{Index{Int64}}(undef, Ntotal)
+#     # Make an array of 'site' indices alternating between spin 1/2 and spin 1
+#     for i = 1:Ntotal
+#         if isodd(i)
+#             s[i] = siteind("S=1/2", i)
+#         else
+#             s[i] = siteind("S=1", i)
+#         end
+#     end
+#     return s
+# end
+
+# N = 4
+# sites = getQLMSites(N)
+
+# mpo = get_gauge_invariant_subspace_projector_MPO(1, sites, [0 for _ in 1:N])
+
+# ---------------------------------------------------------------------------------
+
+# Test the first order phase transition with staggered fermions
+
+# let
+    
+#     N = 20
+#     vol = 30
+#     x = (N/vol)^2
+#     mg = 10
+#     bf_list = LinRange(0, 2, 5)
+#     mu = 2*mg*sqrt(x)
+#     Dmax = 40
+#     nsweeps = 100
+#     cutoff = 1e-16
+
+#     ef_list = []
+#     pn_list = []
+
+#     for (bf_idx, bf) in enumerate(bf_list)
+
+#         println(bf_idx)
+
+#         params = Dict("N" => N, "l_0" => bf, "x" => x, "mg" => mg, "lambda" => 0, "mu" => mu)
+
+#         sites = siteinds("S=1/2", N; conserve_qns = true)
+#         state = [isodd(n) ? "Dn" : "Up" for n=1:N]
+#         init = randomMPS(sites, state; linkdims=4)
+#         sweeps = Sweeps(nsweeps, maxdim = Dmax)
+
+#         H = get_Schwinger_staggered_Hamiltonian_MPO(params, sites)
+
+#         energy, gs = dmrg(H, init, sweeps; ishermitian = true, outputlevel = 1)
+
+#         # opsum = get_electric_field_link_operator(div(N, 2)-1, bf) + get_electric_field_link_operator(div(N, 2), bf)
+#         # push!(ef_list, inner(gs', MPO(opsum, sites), gs))
+
+#         pn_mpo = get_staggered_particle_number_MPO(N, sites)
+#         push!(pn_list, inner(gs', pn_mpo, gs))
+
+#     end
+
+#     # p = plot(bf_list, ef_list, label = "EF: N = $(N), vol = $(vol), $(Dmax), $(nsweeps), $(cutoff)")
+#     # display(p)
+
+#     p = plot(bf_list, pn_list, label = "PN: N = $(N), vol = $(vol), $(Dmax), $(nsweeps), $(cutoff)")
+#     display(p)
+
+# end
+
+# ---------------------------------------------------------------------------------
+
+# Test the first order phase transition with Wilson fermions
+
+# let
+    
+#     N = 50
+#     vol = 40
+#     x = (N/vol)^2
+#     mg = 0.5
+#     r = 1
+#     bf_list = LinRange(0.4, 0.75, 10)
+#     mu = 2*mg*sqrt(x)
+#     Dmax = 10
+#     nsweeps = 5
+#     cutoff = 1e-7
+
+#     ef_list = []
+#     pn_list = []
+
+#     for (bf_idx, bf) in enumerate(bf_list)
+
+#         println(bf_idx)
+
+#         params = Dict("N" => N, "l_0" => bf, "x" => x, "mg" => mg, "lambda" => 0, "mu" => mu, "r" => r)
+
+#         sites = siteinds("S=1/2", 2*N; conserve_qns = true)
+#         state = [isodd(n) ? "Dn" : "Up" for n=1:2*N]
+#         init = randomMPS(sites, state)
+#         sweeps = Sweeps(nsweeps, maxdim = Dmax)
+
+#         H = get_Schwinger_Wilson_OpSum(params)
+#         H = MPO(H, sites)
+
+#         energy, gs = dmrg(H, init, sweeps; ishermitian = true, outputlevel = 1)
+
+#         z_config = get_z_configuration(gs, sites)
+#         q_config = get_SW_charge_configuration(z_config)
+#         ef_config = get_SW_electric_field_configuration(q_config, bf)
+#         push!(ef_list, real(ef_config[div(N, 2)]))
+
+#         # pn_mpo = get_particle_number_OpSum(N)
+#         # pn_mpo = MPO(pn_mpo, sites)
+#         # push!(pn_list, inner(gs', pn_mpo, gs))
+
+#     end
+
+#     p = plot(bf_list, ef_list, label = "EF: N = $(N), vol = $(vol), mg = $(mg), $(Dmax), $(nsweeps), $(cutoff)")
+#     display(p)
+
+#     # p = plot(bf_list, pn_list, label = "PN: N = $(N), vol = $(vol), mg = $(mg), $(Dmax), $(nsweeps), $(cutoff)")
+#     # display(p)
+
+#     println(x)
+
+# end
+
+# ---------------------------------------------------------------------------------
+
+# Perform the bisection method to find the l_0^* of the first order phase transition
+# with Wilson fermions as a first test
+
+function get_efd(N, l_0, x, mg_lat, lambda, r, nsweeps, Dmax, tol)
+
+    params = Dict("N" => N, "l_0" => l_0, "x" => x, "mg" => mg_lat, "lambda" => lambda, "r" => r)
+
+    sites = siteinds("S=1/2", 2*N; conserve_qns = true)
+    state = [isodd(n) ? "Dn" : "Up" for n=1:2*N]
+    init = randomMPS(sites, state)
+    sweeps = Sweeps(nsweeps, maxdim = Dmax)
+
+    H = get_Schwinger_Wilson_OpSum(params)
+    H = MPO(H, sites)
+
+    sweeps = Sweeps(nsweeps, maxdim = Dmax)
+    observer = DMRGObserver(;energy_tol = tol) # This allows to track the energy during DMRG and if the change in energy is smaller than tol it stops
+    energy, gs = dmrg(H, init, sweeps; outputlevel = 1, observer = observer, ishermitian = true) # outputlevel = 1 prints out during DMRG otherwise set to 0, here one can include cutoff = cutoff instead of maxdim = D
+
+    z_config = get_z_configuration(gs, sites)
+    q_config = get_SW_charge_configuration(z_config)
+    ef_config = real(get_SW_electric_field_configuration(q_config, l_0))
+
+    return ef_config[div(N, 2)]
+
+end
+
+function get_mass_shift(N, x, l_0, lambda, r, nsweeps, Dmax, tol, mg_star_tol)
+
+    mg_values = []
+    efd = []
+
+    mg_left = -0.3
+    mg_right = 0.0
+
+    left = get_efd(N, l_0, x, mg_left, lambda, r, nsweeps, Dmax, tol)
+    left_initial = left
+    right = get_efd(N, l_0, x, mg_right, lambda, r, nsweeps, Dmax, tol)
+    
+    push!(mg_values, mg_left)
+    push!(efd, left)
+    push!(mg_values, mg_right)
+    push!(efd, right)
+
+    compare = abs(mg_right - mg_left)
+    while compare > mg_star_tol
+
+        println("The distance between the mgs is $(compare)")
+
+        mg_middle = (mg_right + mg_left)/2
+        middle = get_efd(N, l_0, x, mg_middle, lambda, r, nsweeps, Dmax, tol)
+
+        push!(mg_values, mg_middle)
+        push!(efd, middle)
+
+        if left_initial < 0
+            if middle < 0
+                mg_left = mg_middle
+                left = middle
+            else
+                mg_right = mg_middle
+                right = middle
+            end
+        else
+            if middle > 0
+                mg_left = mg_middle
+                left = middle
+            else
+                mg_right = mg_middle
+                right = middle
+            end
+        end
+
+        compare = abs(mg_right - mg_left)
+
+    end
+
+    return -(mg_left + mg_right)/2, mg_values, efd
+
+end
+
+function get_l0_star(N, x, mg_r, lambda, r, nsweeps, Dmax, tol, l0_star_tol, l0_right_initial, mg_star_tol, l0_left_initial)
+
+    l_0_values = []
+    efd = []
+
+    l0_left = l0_left_initial
+    l0_right = l0_right_initial
+
+    mass_shift_left, _, _ = get_mass_shift(N, x, l0_left, lambda, r, nsweeps, Dmax, tol, mg_star_tol)
+    mass_shift_right, _, _ = get_mass_shift(N, x, l0_right, lambda, r, nsweeps, Dmax, tol, mg_star_tol)
+
+    mg_lat_left = mg_r - mass_shift_left
+    mg_lat_right = mg_r - mass_shift_right
+
+    left = get_efd(N, l0_left, x, mg_lat_left, lambda, r, nsweeps, Dmax, tol)
+    right = get_efd(N, l0_right, x, mg_lat_right, lambda, r, nsweeps, Dmax, tol)
+
+    push!(l_0_values, l0_left)
+    push!(efd, left)
+    push!(l_0_values, l0_right)
+    push!(efd, right)
+
+    compare = abs(l0_right - l0_left)
+    while compare > l0_star_tol
+
+        println("The distance between l0s is $(compare)")
+
+        l0_middle = (l0_right + l0_left)/2
+        mass_shift_middle, _, _ = get_mass_shift(N, x, l0_middle, lambda, r, nsweeps, Dmax, tol, mg_star_tol)
+        mg_lat = mg_r - mass_shift_middle
+        middle = get_efd(N, l0_middle, x, mg_lat, lambda, r, nsweeps, Dmax, tol)
+
+        push!(l_0_values, l0_middle)
+        push!(efd, middle)
+
+        if middle > 0
+            l0_left = l0_middle
+            left = middle
+        else
+            l0_right = l0_middle
+            right = middle
+        end
+
+        compare = abs(l0_right - l0_left)
+
+    end
+
+    return (l0_left + l0_right)/2, l_0_values, efd
+
+end
+
+N = 20
+x = 0.63
+mg_r = 2.0
+lambda = 0.0
+r = 1
+nsweeps = 5
+Dmax = 40
+tol = 1e-11
+l0_star_tol = 1e-3
+mg_star_tol = 1e-3
+l0_left_initial = 0.7
+l0_right_initial = 0.9
+l_0 = 0.8
+
+# mass_shift, mg_values, efd = get_mass_shift(N, x, l_0, lambda, r, nsweeps, Dmax, tol, mg_star_tol)
+
+# p = plot()
+# scatter!(p, mg_values, efd)
+# vline!([-mass_shift])
+
+# mg_list = LinRange(-0.3, 0, 10)
+# efd_list = []
+# for mg in mg_list
+#     push!(efd_list, get_efd(N, l_0, x, mg, lambda, r, nsweeps, Dmax, tol))
+# end
+# plot!(p, mg_list, efd_list)
+# display(p)
+
+# println(N, " ", x, " ", l_0, " ", mass_shift)
+
+# ---
+
+l0_star, l_0_values, efd = get_l0_star(N, x, mg_r, lambda, r, nsweeps, Dmax, tol, l0_star_tol, l0_right_initial, mg_star_tol, l0_left_initial)
+
+p = plot()
+scatter!(p, l_0_values, efd)
+vline!([l0_star])
+display(p)
+
+println(N, " ", x, " ", l0_star)
+
+# ---
+
+# 1./[30, 40, 50, 60, 70]
+# 0.7628906250000002, 0.8478515625
+
+# ---------------------------------------------------------------------------------
