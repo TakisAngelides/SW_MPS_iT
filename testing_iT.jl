@@ -1294,19 +1294,19 @@ function get_l0_star(N, x, mg_r, lambda, r, nsweeps, Dmax, tol, l0_star_tol, l0_
 
 end
 
-N = 20
-x = 0.63
+N = 8
+x = 0.054
 mg_r = 2.0
 lambda = 0.0
 r = 1
-nsweeps = 5
-Dmax = 40
-tol = 1e-11
-l0_star_tol = 1e-3
-mg_star_tol = 1e-3
-l0_left_initial = 0.7
-l0_right_initial = 0.9
-l_0 = 0.8
+nsweeps = 3
+Dmax = 10
+tol = 1e-9
+l0_star_tol = 1e-2
+mg_star_tol = 1e-2
+l0_left_initial = 0.4
+l0_right_initial = 1.5
+# l_0 = 0.8
 
 # mass_shift, mg_values, efd = get_mass_shift(N, x, l_0, lambda, r, nsweeps, Dmax, tol, mg_star_tol)
 
@@ -1337,7 +1337,40 @@ println(N, " ", x, " ", l0_star)
 
 # ---
 
-# 1./[30, 40, 50, 60, 70]
-# 0.7628906250000002, 0.8478515625
+# let
+
+# mg_r = 2.0
+# lambda = 0.0
+# r = 1
+# nsweeps = 10
+# Dmax = 40
+# tol = 1e-11
+# l0_star_tol = 1e-3
+# mg_star_tol = 1e-3
+# l0_left_initial = 0.5
+# l0_right_initial = 2.0
+
+# ratio = 1 ./ [30]
+# N_list = [10]
+# x_list = ((N .- 1) ./ ratio).^2
+
+# l0_star_list = []
+
+# for i in 1:length(N_list)
+
+#     N, x = N_list[i], x_list[i]
+#     l0_star, _, _ = get_l0_star(N, x, mg_r, lambda, r, nsweeps, Dmax, tol, l0_star_tol, l0_right_initial, mg_star_tol, l0_left_initial)
+#     push!(l0_star_list, l0_star)
+
+# end
+
+# p = plot()
+# scatter!(ratio, l0_star_list)
+# display(p)
+# println(l0_star_list)
+
+# end
+
+# 0.6191406250000001, 0.6019531250000001, 0.593359375, 0.582275390625
 
 # ---------------------------------------------------------------------------------
