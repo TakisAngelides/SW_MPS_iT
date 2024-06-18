@@ -35,7 +35,7 @@ function get_z_configuration(psi::MPS, sites)::Vector{ComplexF64}
 
 end
 
-function get_SW_electric_field_configuration(charge_configuration_list::Vector{ComplexF64}, l_0::Float64)::Vector{ComplexF64}
+function get_SW_electric_field_configuration(charge_configuration_list::Vector, l_0::Float64)::Vector{ComplexF64}
 
     N::Int64 = length(charge_configuration_list)
 
@@ -406,8 +406,8 @@ function get_particle_number_OpSum(N::Int64)::Sum{Scaled{ComplexF64, Prod{Op}}}
     ampo::Sum{Scaled{ComplexF64, Prod{Op}}} = OpSum()
 
     for n=1:N
-        ampo += 1im,"S-",2*n-1,"S+",2*n
-        ampo += -1im,"S+",2*n-1,"S-",2*n
+        ampo += "S-",2*n-1,"S+",2*n
+        ampo += "S+",2*n-1,"S-",2*n
     end
 
     ampo += N,"Id",1
@@ -621,5 +621,19 @@ function get_Schwinger_staggered_Hamiltonian_MPO(params, sites)::MPO
     H[N][ll=>5,lp=>2,lpdag=>2] = -hN2
 
     return H
+
+end
+
+function get_staggered_particle_number_MPO(N, sites)
+
+    res = OpSum()
+
+    for n in 1:N
+        res += 0.5*(-1)^(n-1), "Z", n 
+    end
+
+    res += 0.5*N,"Id",1
+
+    return MPO(res, sites)
 
 end
