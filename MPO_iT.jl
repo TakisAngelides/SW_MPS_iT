@@ -637,3 +637,32 @@ function get_staggered_particle_number_MPO(N, sites)
     return MPO(res, sites)
 
 end
+
+function get_Staggered_Hamiltonian_MPO_paper(N, l_0, x, mg, lambda, sites)
+
+    ampo = OpSum()
+
+    for n=1:N-1
+        ampo += x,"S+",n,"S-",n+1
+        ampo += x,"S-",n,"S+",n+1
+    end
+
+    for n=0:N-1
+        for k=n+1:N-1    
+            ampo += (0.5*(N-k-1+lambda)),"Z",n+1,"Z",k+1
+        end
+    end
+
+    for n=0:N-2
+        ampo += (N/4 - 0.5*ceil(n/2) + l_0*(N-n-1)),"Z",n+1
+    end
+
+    for n=0:N-1
+        ampo += (mg*sqrt(x)*(-1)^n),"Z",n+1
+    end
+
+    ampo += ((N-1)*l_0^2 + 0.5*l_0*N + (1/8)*N^2 + lambda*N/4),"Id",1
+
+    return MPO(ampo, sites)
+
+end
